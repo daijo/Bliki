@@ -1,0 +1,14 @@
+MarkDown
+========
+
+A format for writing for the web by John Gruber. [link][1]
+
+Implementations
+---------------
+Upskirt
+Markdown in Python [link][2]
+
+References
+----------
+[1]: http://daringfireball.net/projects/markdown/syntax
+[2]: http://www.freewisdom.org/projects/python-markdown/

@@ -1,0 +1,26 @@
+PotWiki
+=======
+
+Vim plugin to read a PlainTextWiki.
+
+[get here][1]
+
+Install
+-------
+Put potwiki.vim in ~/.vim/plugin. 
+
+Config
+------
+Add this to your .vimrc:
+
+" Plain Text Wiki plugin
+let potwiki_home = "~/Documents/Bliki/IndexPage.txt"
+let potwiki_suffix = ".txt"
+au Filetype potwiki set sts=4
+highlight PotwikiWord          guifg=darkcyan
+highlight PotwikiWordNotFound  guibg=Red guifg=Yellow
+
+
+Reference
+---------
+[1]: http://www.vim.org/scripts/script.php?script_id=1018

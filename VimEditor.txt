@@ -1,0 +1,21 @@
+VimEditor
+=========
+
+Vi iMproved. A scriptable text editor available on most UNIX systems,
+
+Quick Reference
+---------------
+* b w word/token left, right
+* { } beginning of previous, next paragraph
+* ( ) beginning of previous, next sentence
+* ^ $ first, last character of line
+* i a insert before, after cursor
+* o O open a new line below, above the current line
+* x X delete character under, before cursor
+* dd D delete current line, to the end of line
+* yy Y yank current line into register
+* p P put register after, before cursor position
+
+Reference
+---------
+http://tnerual.eriogerg.free.fr/vimqrc.html
