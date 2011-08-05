@@ -22,5 +22,4 @@ location: Phnom Penh, Cambodia
 
 I'll save it as back-to-basics.txt and it will be the first commit to my blog git. Lets see when you can read it on the Web.
 
-I'm saving the best to last. I will keep the notion on Plain Text Wikis and this will really be a Plain Text BLIKI! CamelCase words will link to files like CamelCase.txt (or html after being pushed to a server and converted).
-
+I'm saving the best to last. I will keep the notion on Plain Text Wikis and this will really be a Plain Text BLIKI! CamelCase words will link to files like CamelCase.txt if I use a editor plugin (or CamelCase.html after being pushed to a server and converted).
