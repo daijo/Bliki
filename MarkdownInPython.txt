@@ -1,0 +1,13 @@
+title: Markdown in Python
+author: Daniel Hjort
+date: 2011/08/06
+location: Phnom Penh, Cambodia
+tags: markdown, python, git
+
+Found a nice Markdown parser in Python [link][1]. Checking out the [Github][2] page I found a lot of neat stuff I can use in additon to the parser. A markdown plugin for VimEditor and a GitVCS hook that parse MarkDown files after they have been pushed to a repo. I only need to write a PythonLanguage script that parse all text files and turn all CamelCase words in to Markdown links to html/CamelCase.html. I'm also leaning towards using the [Mongoose][3]. 
+
+Ok let me just try a nice feature. Easy link back to an old article like FirstPost.
+
+[1]: http://www.freewisdom.org/projects/python-markdown/
+[2]: https://github.com/waylan/
+[3]: https://code.google.com/p/mongoose/

@@ -21,6 +21,4 @@ highlight PotwikiWord          guifg=darkcyan
 highlight PotwikiWordNotFound  guibg=Red guifg=Yellow
 
 
-Reference
----------
 [1]: http://www.vim.org/scripts/script.php?script_id=1018
