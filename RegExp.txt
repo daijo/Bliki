@@ -1,0 +1,8 @@
+RegExp
+======
+
+* PythonLanguage [docs][1]
+* PerlLanguage [manul][2]
+
+[1]: http://docs.python.org/library/re.html
+[2]: http://www.troubleshooters.com/codecorn/littperl/perlreg.htm

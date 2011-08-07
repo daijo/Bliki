@@ -1,0 +1,9 @@
+SedTool
+=======
+
+A Unix stream editor utility. Note that the GNU version and BSD version (on Mac) differ. Use -E option on Mac to use modern RegExp.
+
+[Tutorial][1]
+
+
+[1]: http://www.grymoire.com/Unix/Sed.html
