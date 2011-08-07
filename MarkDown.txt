@@ -18,5 +18,38 @@ MarkDown in Python
 
     markdown_py file.txt > file.html
 
+
+Syntax
+------
+
+Line breaks
+-----------
+This is a sentence.
+This sentence end up on the same line.
+Force line break by inserting two spaces before end of line.  
+This sentence is on another line.
+
+Emphasis
+--------
+_italic_ and __bold__
+
+Block quotes
+------------
+> Text in block quote.
+>> Nested block quote.
+
+Lists
+-----
+* Item 1
+    * Subitem (4 space indent)
+* Item 2
+
+Links
+-----
+An [example](http://url.com/)
+
+An [example][id]. Then, anywhere
+
+
 [1]: http://daringfireball.net/projects/markdown/syntax
 [2]: http://www.freewisdom.org/projects/python-markdown/

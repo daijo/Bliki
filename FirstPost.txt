@@ -6,7 +6,7 @@ tags: bliki, git
 
 I'm a fan of Plain Text Wikis like Mark Reid's Text mate plugin [link][1] and the PotWiki plugin for VimEditor. I've been keeping one on my laptop for my personal reference for about a year using both plugins on the same files. It's great to have something that simple working that great. I kept it in sync between my work computer and my home computer using Spideroak. But last month my laptop got stolen and it pushed me to push the Wiki to a private GitHub repo instead. So now my Wiki is Gitified and I'm a little happier then before.
 
-Next question: Can I put my blog in Git? I have a hosted WordPress blog that began with the an exported BlogSpot blog. So how about a Plain Text Blog stored in a git that I can push to my webserver? Sounds neat. Of course you're never first with an idea. [Toto][2] does this seem a bit too heavyweight for me. Ruby? Gems? Heroku? Too much. I'm thinking the dependencies should be limited to Git and basic UnixTools. It will be a static page but that's fine for me.
+Next question: Can I put my blog in GitVCS? I have a hosted WordPress blog that began with the an exported BlogSpot blog. So how about a Plain Text Blog stored in a git that I can push to my webserver? Sounds neat. Of course you're never first with an idea. [Toto][2] does this seem a bit too heavyweight for me. Ruby? Gems? Heroku? Too much. I'm thinking the dependencies should be limited to Git and basic UnixTools. It will be a static page but that's fine for me.
 
 I will however steal the Toto format of having a YAML header for blog posts. This post have the header:
 

@@ -1,0 +1,80 @@
+Git Usage
+=========
+
+[Docs][1]
+
+Add git submodule
+-----------------
+cd project
+git submodule add git://github.com/dchelimsky/rspec.git vendor\plugins\rspec
+
+Git Email etc.
+--------------
+$ git config --global user.name "Firstname Lastname"Sets the name of the user for all git instances on the system
+$ git config --global user.email "your_email@youremail.com"
+
+Clone a repo
+------------
+git clone git@github.com:daijo/RestKit.git
+
+Add upstream and fetch from upstream
+------------------------------------
+cd Spoon-Knife
+$ git remote add upstream git://github.com/octocat/Spoon-Knife.git
+$ git fetch upstream
+
+Fetch and merge
+---------------
+$ git fetch upstreamFetches any new changes from the original repo
+$ git merge upstream/master
+
+Pull from repo
+--------------
+(git init)
+git pull /Users/daijo/Dropbox/Patchwork/Projects/webpage.git/ master
+
+Discard your changes
+--------------------
+git checkout master -f
+git clean -f
+
+Example .gitignore
+------------------
+bin/*
+gen/*
+.DS_Store
+
+Add and commit changed file
+---------------------------
+git add [file]  
+git commit
+
+Change your mind after add
+--------------------------
+git rm -r --cached .
+
+Push to repo
+------------
+git push /Users/daijo/Dropbox/Patchwork/Projects/webpage.git/
+
+Put on Github
+-------------
+Create a repo on github (say it's called created_repo)
+
+cd existing_repo
+git remote add origin git@github.com:daijo/created_repo.git
+git push origin master
+
+Lightweight Tag
+---------------
+git tag tag_name
+
+Viewing available tags is done with -l:
+
+git tag -l
+
+push tags with:
+
+git push origin tags
+
+[1]: https://www.kernel.org/pub/software/scm/git/docs/
