@@ -13,12 +13,12 @@ Config
 ------
 Add this to your .vimrc:
 
-" Plain Text Wiki plugin
-let potwiki_home = "~/Documents/Bliki/IndexPage.txt"
-let potwiki_suffix = ".txt"
-au Filetype potwiki set sts=4
-highlight PotwikiWord          guifg=darkcyan
-highlight PotwikiWordNotFound  guibg=Red guifg=Yellow
+    " Plain Text Wiki plugin
+    let potwiki_home = "~/Documents/Bliki/IndexPage.txt"
+    let potwiki_suffix = ".txt"
+    au Filetype potwiki set sts=4
+    highlight PotwikiWord          guifg=darkcyan
+    highlight PotwikiWordNotFound  guibg=Red guifg=Yellow
 
 
 [1]: http://www.vim.org/scripts/script.php?script_id=1018
