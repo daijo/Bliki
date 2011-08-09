@@ -1,0 +1,6 @@
+DisqusService
+=============
+
+Add to site
+-----------
+http://docs.disqus.com/developers/universal/
