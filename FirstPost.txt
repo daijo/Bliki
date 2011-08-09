@@ -4,9 +4,9 @@ date: 2011/08/05
 location: Phnom Penh, Cambodia
 tags: bliki, git
 
-I'm a fan of Plain Text Wikis like Mark Reid's Text mate plugin [link][1] and the PotWiki plugin for VimEditor. I've been keeping one on my laptop for my personal reference for about a year using both plugins on the same files. It's great to have something that simple working that great. I kept it in sync between my work computer and my home computer using Spideroak. But last month my laptop got stolen and it pushed me to push the Wiki to a private GitHub repo instead. So now my Wiki is Gitified and I'm a little happier then before.
+I'm a fan of the concept of Plain Text Wikis like Mark Reid's Text mate plugin [link][1] and the PotWiki plugin for VimEditor. I've been keeping one on my laptop for my personal reference for about a year using both plugins on the same set of files. It's great to have something that simple working that great. Just recently I pushed the Wiki to a private GitHub repo. So now my Wiki is Gitified and I'm a little happier then before.
 
-Next question: Can I put my blog in GitVCS? I have a hosted WordPress blog that began with the an exported BlogSpot blog. So how about a Plain Text Blog stored in a git that I can push to my webserver? Sounds neat. Of course you're never first with an idea. [Toto][2] does this seem a bit too heavyweight for me. Ruby? Gems? Heroku? Too much. I'm thinking the dependencies should be limited to Git and basic UnixTools. It will be a static page but that's fine for me.
+Now it would be mighty nice to put my blog in GitVersionControl to. So how about a Plain Text Blog stored in a git that I can push to my webserver? Sounds neat. Of course you're never first with an idea. [Toto][2] does this but seem a bit too heavyweight for me. Ruby? Gems? Heroku? Too much. I'm thinking the dependencies should be limited to Git and basic UnixTools. It will be a static page (no comments or online editing) but that's fine for me.
 
 I will however steal the Toto format of having a YAML header for blog posts. This post have the header:
 
@@ -15,9 +15,9 @@ I will however steal the Toto format of having a YAML header for blog posts. Thi
     date: 2011/08/05
     location: Phnom Penh, Cambodia
 
-I'll save it as FirstPost.txt (making it a linkable wikipage) and it will be the first commit to my blog git. Lets see when you can read it on the Web. I use MarkDown to format the posts and wikipages.
+I'll save it as FirstPost.txt (making it a linkable wikipage) and it will be the first commit to my blog git. I use MarkDown to format the posts and wikipages. I'll add a "tags:" section with comma separated tags.
 
-Keeping the notion on Plain Text Wikis and this will really be a Plain Text BLIKI! CamelCase words will link to files like CamelCase.txt if I use a editor plugin like mentioned above (or to  CamelCase.html after being pushed to a server and converted from MarkDown to HTML). I imagine the serverside script also will generate an indexpage with links to latest blog entries, to an archive and to all wikipages.
+Keeping the notion on Plain Text Wikis and this will really be a Plain Text BLIKI! CamelCase words will link to files like CamelCase.txt if I use a editor plugin like mentioned above (or to  CamelCase.html after being pushed to a server and converted from MarkDown to HTML). I imagine the serverside script also will generate an indexpage with links to latest blog entries, to an archive and to all wikipages. The webserver representation of the Bliki will be an static artifact but the Bliki will live in the text editor and in Git. If collaboration is needed you can let different people push/pull from the same repo.
 
 
 [1]: http://interconnected.org/home/2007/05/20/plain_text_wiki
