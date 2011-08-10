@@ -1,3 +1,2 @@
-title: "Techareg Bliki"
-target_dir: ~/danielhjort.net/bliki
-
+BLIKI_NAME="Techareg Bliki"
+TARGET_DIR="~/danielhjort.net/bliki"

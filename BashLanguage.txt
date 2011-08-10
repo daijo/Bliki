@@ -1,0 +1,7 @@
+BashLanguage
+============
+
+[Writing rubsut sripts][1]
+
+
+[1]: http://www.davidpashley.com/articles/writing-robust-shell-scripts.html
