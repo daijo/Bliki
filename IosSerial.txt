@@ -1,0 +1,14 @@
+IosSerial
+=========
+
+Projects
+--------
+
+* [hijack][1]
+* [RS232 Terminal for direct connection][2]
+* [Redpark serial cable][3]
+
+[1]: http://eecs.umich.edu/~prabal/projects/hijack/
+[2]: http://itunes.apple.com/us/app/rs232-terminal-for-direct/id348887344?mt=8
+[3]: http://www.redpark.com/c2db9.html
+
