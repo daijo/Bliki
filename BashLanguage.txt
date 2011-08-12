@@ -1,7 +1,11 @@
 BashLanguage
 ============
 
-[Writing rubsut sripts][1]
+A UNIX shell (command interpreter) default on many GNU/Linux distributions and on Mac OS X since 10.3.
+
+* [Advanced Bash-Scripting Guide][1]
+* [Writing rubust scripts][2]
 
 
-[1]: http://www.davidpashley.com/articles/writing-robust-shell-scripts.html
+[1]: http://tldp.org/LDP/abs/html/
+[2]: http://www.davidpashley.com/articles/writing-robust-shell-scripts.html
