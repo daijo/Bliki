@@ -2,3 +2,7 @@ PotBliki
 ========
 
 Tool for running and publishing a plain text Bliki.
+
+[On Github][1]
+
+[1]: https://github.com/daijo/PotBliki 
