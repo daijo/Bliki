@@ -1,0 +1,11 @@
+SatelliteCom
+============
+
+Info on different satelitte communication systems.
+
+ORBCOMM
+-------
+
+[Main Site](http://www.orbcomm.com/)
+[Modem](http://www.digi.com/products/model?mid=3311)
+[Magellan GSC 100](http://www.telcomwireless.com/globalcom.htm)
