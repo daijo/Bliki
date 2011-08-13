@@ -1,10 +1,31 @@
-SatelliteCom
-============
+SatelliteComm
+=============
 
-Info on different satelitte communication systems.
+Info on different satellite communication systems.
+
+Iridium
+-------
+
+Satellite phones and SDB (Short data burst) modems. (Slow speed)
+
+Inmarsat
+--------
+
+Cheap handset Inmarsat satellite phone IsatPhone. Slow with only 2400bps data over satellite.
+
+Thuraya
+-------
+
+Satellite phones and Thuraya Module (not for consumers).
+
+* Short message service
+* 9.6 kbit/s data
+* 60 kbit/s down and 15 kbit/s up 
 
 ORBCOMM
 -------
+
+High latency service focused on M2M applications.
 
 [Main Site](http://www.orbcomm.com/)
 [Modem](http://www.digi.com/products/model?mid=3311)

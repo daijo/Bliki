@@ -21,6 +21,7 @@ Quick Reference
 * :q!	Exit Vim without saving changes.
 * :wq	Write the file and exit.
 * :x  Like :wq but saves if it needs to.
+* ~ toggle capital letter
 
 http://tnerual.eriogerg.free.fr/vimqrc.html
 
