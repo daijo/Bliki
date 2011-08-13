@@ -1,15 +1,16 @@
-MarkDown
-========
+~MarkDown
+=========
 
 A format for writing for the web by John Gruber. [link][1]
 
 Implementations
 ---------------
-*Upskirt
-*Markdown in Python [link][2]
 
-MarkDown in Python
-------------------
+* Upskirt [link][3]
+* Markdown in Python [link][2]
+
+~MarkDown in Python
+-------------------
     
     git clone git://github.com/waylan/Python-Markdown.git python-markdown
     cd python-markdown
@@ -19,8 +20,8 @@ MarkDown in Python
     markdown_py file.txt > file.html
 
 
-Syntax
-------
+Examples
+--------
 
 Line breaks
 -----------
@@ -53,3 +54,4 @@ An [example][id]. Then, anywhere
 
 [1]: http://daringfireball.net/projects/markdown/syntax
 [2]: http://www.freewisdom.org/projects/python-markdown/
+[3]: https://github.com/bnoordhuis/upskirt
