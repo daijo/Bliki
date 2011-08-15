@@ -11,7 +11,7 @@ Satellite phones and SDB (Short data burst) modems. (Slow speed)
 Inmarsat
 --------
 
-Cheap handset Inmarsat satellite phone IsatPhone. Slow with only 2400bps data over satellite.
+Cheap handset Inmarsat satellite phone IsatPhone. Effective 20kbps (2.4 kbps) on plain text data over satellite.
 
 Thuraya
 -------

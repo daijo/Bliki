@@ -15,13 +15,14 @@ Quick Reference
 * dd D delete current line, to the end of line
 * yy Y yank current line into register
 * p P put register after, before cursor position
-* :e filename Open a new file.
+* :e filename Open a new file
+* :bd Close the current buffer
 * :w filename	Save changes to a file.
 * :q  Quit Vim. If you have unsaved changes, Vim refuses to exit.
 * :q!	Exit Vim without saving changes.
 * :wq	Write the file and exit.
 * :x  Like :wq but saves if it needs to.
-* ~ toggle capital letter
+* ~~ toggle capital letter
 
 http://tnerual.eriogerg.free.fr/vimqrc.html
 
