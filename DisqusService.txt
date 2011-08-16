@@ -1,6 +1,9 @@
 DisqusService
 =============
 
+A discussion platform for websites.
+
 Add to site
 -----------
-http://docs.disqus.com/developers/universal/
+
+[Unversal code](http://docs.disqus.com/developers/universal/)
