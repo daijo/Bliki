@@ -1,7 +1,10 @@
 NodeJs
 ======
 
-Serverside runtime for V8 JavaScript.
+Serverside runtime for V8 JavaScript. The next big thing?
+
+[Node Beginner Book][1]
+[v0.4.10 API docs][2]
 
 Execute shell script
 --------------------
@@ -19,4 +22,8 @@ Execute shell script
         console.log('exec error: ' + error);
       }
     });
+
+[1]: http://www.nodebeginner.org/
+[2]: http://nodejs.org/docs/v0.4.10/api/
+
 
