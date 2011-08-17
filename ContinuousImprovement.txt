@@ -1,0 +1,19 @@
+~ContinuousImprovement
+======================
+
+A ongoing process of improving the work itself and it's outcome.
+
+
+Agile Retrospectives
+====================
+
+A meeting with the people involved (project team) in the project looking back at a previous period of time. 
+
+What did happen and when? What was good and what was bad? What can be improved? What is most important? Choose a limited improvment scope for the coming period of time and repeat the process.
+
+[Agile Retrospectives Resource Wiki][1]
+
+
+
+[1]: http://agileretrospectivewiki.org/index.php?title=Main_Page
+
