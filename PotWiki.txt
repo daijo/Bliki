@@ -1,5 +1,5 @@
-PotWiki
-=======
+~PotWiki
+========
 
 Vim plugin to read a PlainTextWiki.
 

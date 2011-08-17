@@ -1,5 +1,5 @@
-RegExp
-======
+~RegExp
+=======
 
 * PythonLanguage [docs][1]
 * PerlLanguage [manul][2]

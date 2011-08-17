@@ -1,5 +1,5 @@
-SatelliteComm
-=============
+~SatelliteComm
+==============
 
 Info on different satellite communication systems.
 

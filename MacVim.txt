@@ -1,5 +1,5 @@
-MacVim
-======
+~MacVim
+=======
 
 A Cocoa port of VimEditor available at [GitHub][1] and [Google Code][2]. Ready for PythonLanguage scripting.
 

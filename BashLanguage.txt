@@ -1,5 +1,5 @@
-BashLanguage
-============
+~BashLanguage
+=============
 
 A UNIX shell (command interpreter) default on many GNU/Linux distributions and on Mac OS X since 10.3.
 
