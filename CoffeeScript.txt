@@ -1,0 +1,8 @@
+~CoffeeScript
+=============
+
+Compiles to JavaScript but looks nicer.
+
+[Home][1]
+
+[1]: http://jashkenas.github.com/coffee-script/
