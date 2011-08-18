@@ -79,4 +79,10 @@ push tags with:
 
     git push origin tags
 
+Search for pattern
+------------------
+
+    git grep -p [pattern]
+
+
 [1]: https://www.kernel.org/pub/software/scm/git/docs/

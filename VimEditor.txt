@@ -10,6 +10,7 @@ Quick Reference
 * ( ) beginning of previous, next sentence
 * ^ $ first, last character of line
 * i a insert before, after cursor
+* ctrl-o ctrl-i move forward/backward in edit location history
 * o O open a new line below, above the current line
 * x X delete character under, before cursor
 * dd D delete current line, to the end of line
