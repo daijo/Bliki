@@ -1,0 +1,55 @@
+~AtCommands
+===========
+
+    AT
+
+    OK
+    AT+CMGF=1 (text mode)
+
+    OK
+    AT+CMGS="+85578503417"
+
+    > Bla bla!
+    +CMGS: 1
+
+    OK
+
+    +CMTI: "SM",4  (received a text)
+    AT+CMGL="ALL"
+
+    +CMGL: 1,"REC READ","+822","","11/04/19,17:35:42+28"
+    Your main baeS
+    +CMGL: 2,"REC READ","+822","","11/0413laao n2.
+    +C3E1"3+s
+    +CMGL: 4,"REC UNREAD","+85517222316","","11/06/30,18:52:29+28"
+    Te
+    OK
+    AT+CMGR=4
+
+    +CMGR: "REC READ","+85517222316","","11/06/30,18:52:29+28"
+    Test
+
+    AT+CMGD=?  // delete help
+
+    +CMGD: (1-30),(0-4)
+
+    OK
+    ..
+    AT+CMGD=1 // delete msg 1
+
+    OK
+
+    AT+CMGD=2
+
+    OK
+
+    +CMTI: "SM",1  // receiving 2 new messages
+
+    +CMTI: "SM",2
+
+    AT+CMSS=4,"+85517222316" // send message already in storage, no need to read from memory via serial unless have to parse the message
+
+    +CMSS: 34
+
+    OK
+

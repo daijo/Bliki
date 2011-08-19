@@ -1,0 +1,14 @@
+~GoogleTest
+===========
+
+<http://code.google.com/p/googletest/>
+
+[Example project](https://github.com/daijo/LearningTestsCC)
+
+
+Macports
+--------
+Maybe not necessary, just download the source and keep in our project.
+
+    sudo port install google-test
+
