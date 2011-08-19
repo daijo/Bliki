@@ -25,7 +25,10 @@ Quick Reference
 * :x  Like :wq but saves if it needs to.
 * ~~ toggle capital letter
 
-http://tnerual.eriogerg.free.fr/vimqrc.html
+<http://tnerual.eriogerg.free.fr/vimqrc.html>
+<http://www.ibm.com/developerworks/linux/library/l-vim-script-1/index.html>
+<http://vim.wikia.com/wiki/~Vim_Tips_Wiki>
+
 
 Plugins
 -------

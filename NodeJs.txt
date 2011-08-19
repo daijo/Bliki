@@ -23,6 +23,15 @@ Execute shell script
       }
     });
 
+Node.js - Javascript Roundtrip
+==============================
+
+[Article][3]
+[Code][4]
+
+
 [1]: http://www.nodebeginner.org/
 [2]: http://nodejs.org/docs/v0.4.10/api/
+[3]: http://oranlooney.com/json-round-trip/
+[4]: https://github.com/olooney/json-cache-example/
 

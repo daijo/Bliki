@@ -1,0 +1,17 @@
+~PersonalKanban
+===============
+
+Can also be done in a plain text format (see PlainTextGtd).
+
+Example of plain text layout:
+
+
+    # Ready
+
+    # Doing
+
+    # Done
+
+Simple.
+
+

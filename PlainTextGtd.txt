@@ -7,13 +7,16 @@ Edit .vimrc to fold on # markdown headers.
 
 Example:
 
-# Today
+    # Today
 
-# Calendar
+    # Calendar
 
-# Follow up
+    # Follow up
 
-# Sometime/Maybe
-## Work
+    # Sometime/Maybe
+    ## Work
 
-## Private
+    ## Private
+
+Also see PersonalKanban, it's a complement and  works well in plain text too.
+
