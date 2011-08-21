@@ -1,0 +1,8 @@
+~HaskellLanguage
+================
+
+A purely functional language.
+
+<http://learnyouahaskell.com/>
+<http://www.haskell.org/haskellwiki/Haskell>
+<http://hunit.sourceforge.net/>
