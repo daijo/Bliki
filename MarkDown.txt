@@ -15,7 +15,7 @@ Implementations
     git clone git://github.com/waylan/Python-Markdown.git python-markdown
     cd python-markdown
     python setup.py install (need sudo, or do next step)
-    cp build/scripts-2.6/markdown_py ~/bin/
+    cp build/scripts-2.6/markdown_py ~~/bin/
 
     markdown_py file.txt > file.html
 
@@ -23,33 +23,96 @@ Implementations
 Examples
 --------
 
-Line breaks
------------
+### Line breaks
+
 This is a sentence.
 This sentence end up on the same line.
 Force line break by inserting two spaces before end of line.  
 This sentence is on another line.
 
-Emphasis
---------
+    This is a sentence.
+    This sentence end up on the same line.
+    Force line break by inserting two spaces before end of line.  
+    This sentence is on another line.
+
+### Emphasis
+
 _italic_ and __bold__
 
-Block quotes
-------------
+    _italic_ and __bold__
+
+### Code block
+
+    Code blocks are text indented four spaces.
+
+### Block quotes
+
 > Text in block quote.
 >> Nested block quote.
 
-Lists
------
+    > Text in block quote.
+    >> Nested block quote.
+
+### Horizontal divider
+
+Above divider.
+
+----
+
+Below divider.
+
+    Above divider.
+
+    ----
+
+    Below divider.
+
+### Lists
+
+    * Item 1
+        * Subitem (4 space indent)
+    * Item 2
+
 * Item 1
     * Subitem (4 space indent)
 * Item 2
 
-Links
------
-An [example](http://url.com/)
+### Headers
 
-An [example][id]. Then, anywhere
+h1
+==
+# h1
+h2
+--
+## h2
+### h3
+#### h4
+##### h5
+###### h6
+
+    h1
+    ==
+    # h1
+    h2
+    --
+    ## h2
+    ### h3
+    #### h4
+    ##### h5
+    ###### h6
+
+
+### Links
+
+An [example](http://www.danielhjort.net/).
+
+    An [example](http://www.danielhjort.net/))
+
+An [example][1]. Then, put the url anywhere.
+
+    An [example][1]. Then, put the url anywhere.
+ 
+    [1]: http://daringfireball.net/projects/markdown/syntax
 
 
 [1]: http://daringfireball.net/projects/markdown/syntax
