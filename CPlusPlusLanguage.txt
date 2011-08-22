@@ -1,0 +1,14 @@
+~CPlusPlusLanguage
+==================
+
+Hello world
+-----------
+
+    #include <iostream>
+ 
+    int main()
+    {
+       std::cout << "Hello, world!\n";
+    }
+
+<http://www.josuttis.com/libbook/examples.html>
