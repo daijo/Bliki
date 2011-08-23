@@ -5,25 +5,28 @@ Vi iMproved. A scriptable text editor available on most UNIX systems,
 
 Quick Reference
 ---------------
-* b w word/token left, right
-* { } beginning of previous, next paragraph
-* ( ) beginning of previous, next sentence
-* ^ $ first, last character of line
-* i a insert before, after cursor
-* ctrl-o ctrl-i move forward/backward in edit location history
-* o O open a new line below, above the current line
-* x X delete character under, before cursor
-* dd D delete current line, to the end of line
-* yy Y yank current line into register
-* p P put register after, before cursor position
-* :e filename Open a new file
-* :bd Close the current buffer
+* b w word/token left, right.
+* { } beginning of previous, next paragraph.
+* ( ) beginning of previous, next sentence.
+* ^ $ first, last character of line.
+* i a insert before, after cursor.
+* ctrl-o ctrl-i move forward/backward in edit location history.
+* o O open a new line below, above the current line.
+* x X delete character under, before cursor.
+* dd D delete current line, to the end of line.
+* yy Y yank current line into register.
+* p P put register after, before cursor position.
+* :e filename Open a new file.
+* :bd Close the current buffer.
+* :ls List buffers.
 * :w filename	Save changes to a file.
 * :q  Quit Vim. If you have unsaved changes, Vim refuses to exit.
 * :q!	Exit Vim without saving changes.
 * :wq	Write the file and exit.
 * :x  Like :wq but saves if it needs to.
-* ~~ toggle capital letter
+* :sp filename Open in new window.
+* Ctrl-W + arrow direction Move to other window.
+* ~~ toggle capital letter.
 
 <http://tnerual.eriogerg.free.fr/vimqrc.html>
 <http://www.ibm.com/developerworks/linux/library/l-vim-script-1/index.html>
