@@ -10,27 +10,28 @@ body {
 }
 p {
   font-family: 	Helvetica, Arial, sans-serif;
-  font-size: 		0.875em;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: 	Georgia, serif;
   font-weight: 	bold;
 }
-h1 { 
-  font-size: 		1.5em;
-  margin:			10px 0 0.5em;
-  text-align: 	center
-}
-h2 {font-size:1.17em;}
-h3 {font-size:1.1em;}
-h4 {font-size:1em;}
-h5 {font-size:0.95em;}
-h6 {font-size:0.875em;}
 
-code,pre {font:1em/130% "courier new",courier,monospace;}
+h1 { font-size: 2em; margin: .67em 0 ; text-align: center}
+h2 { font-size: 1.5em; margin: .75em 0 }
+h3 { font-size: 1.17em; margin: .83em 0 }
+h4 { font-size: 1em; margin: 1em 0 }
+h5 { font-size: .83em; margin: 1.5em 0 }
+h6 { font-size: .75em; margin: 1.67em 0 }
+
+code,pre {font: "courier new",courier,monospace;}
 code{max-width:99%; word-wrap:break-word; background:rgb(224,224,224);}
 pre{display: block; padding: 0.5em 1em; background:rgb(224,224,224); border: 1px solid #bebab0;}
 
-blockquote{max-width:99%; background:rgb(224,224,224); display: block; padding: 0.5em 1em; background:rgb(224,224,224); 
-
+blockquote {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  padding-left: 15px;
+  border-left: 3px solid #ccc;
+} 
