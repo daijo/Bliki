@@ -77,7 +77,8 @@ Viewing available tags is done with -l:
 
 push tags with:
 
-    git push origin tags
+    git push origin tags (old?)
+    git push --tags
 
 Search for pattern
 ------------------
