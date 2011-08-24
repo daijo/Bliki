@@ -1,8 +1,65 @@
 ~PotBliki
 =========
 
-Tool for running and publishing a plain text Bliki.
+Plain text [Bliki][1] tools inspired by Edwin Steiner's [PotWiki][2] for Vim, Matt Web's [TextMate bundle][3] and the Git-powered plain text blog [Toto][4].
 
-[On Github][1]
+The project goal is to provide a small set of simple tools for publishing a personal Bliki.
 
-[1]: https://github.com/daijo/~PotBliki 
+Uses [Python-Markdown][5]. [Source][6] available on Github.
+
+## Start using
+
+1. Install lib/python_markdown.
+2. Install the script in your PATH using 'install [PATH]'.
+3. In the directory you want to be your Bliki home run 'potwiki init'.
+4. Edit .bliki/bliki_conf
+5. Write wikipages and posts in Markdown.
+6. Run 'potwiki make'.
+
+It is recommended to use a plain text wiki plugin for your editor.
+
+## Post header
+
+Every blog post should have the following header:
+
+    title: [TITLE]
+    author: [LASTNAME] [FIRSTNAME]
+    date: [YYYY]/[MM]/[DD]
+    location: [CITY], [COUNTRY]
+    tags: [TAGS]
+
+## Escape WikiWords
+
+Sometimes you want to escape the WikiWords. Use ~ in front of the WikiWord (~WikiWord) and it won't be made in to a link. If you want to use a ~ write ~~ and one will survive the process.
+
+## Github Integration
+
+### Edit pages on Github
+
+If you store the Bliki repository on Github you can fill in the following info in .bliki/bliki_conf:
+
+    GITHUB_REPO_URL="https://github.com/daijo/Bliki"
+
+This will make a "Edit on Github" link appear on each page. If you have access to the repo there you can edit the page following the link.
+
+### Update Bliki on Github post-receive
+
+TBD
+
+## Disqus Integration
+
+If you have a Disqus-account, register the Bliki there and enter the Disqus short name in your .bliki_conf:
+
+    DISQUS_SHORTNAME="techaregbliki"
+
+Roadmap
+-------
+
+[Roadmap on Github](https://github.com/daijo/PotBliki/issues/milestones)
+
+[1]: http://en.wikipedia.org/wiki/Bliki
+[2]: http://www.vim.org/scripts/script.php?script_id=1018
+[3]: http://interconnected.org/home/2007/05/20/plain_text_wiki
+[4]: http://cloudhead.io/toto
+[5]: https://github.com/waylan/Python-Markdown
+[6]: https://github.com/daijo/~PotBliki
