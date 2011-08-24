@@ -61,6 +61,10 @@ This will make a "Edit on Github" link appear on each page. If you have access t
 
 TBD
 
+Set Githubs post-receive post to:
+
+    [Your bliki's URL]/cgi-bin/push.cgi
+
 ## Disqus Integration
 
 If you have a Disqus-account, register the Bliki there and enter the Disqus short name in your .bliki_conf:
