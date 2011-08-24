@@ -32,7 +32,15 @@ Every blog post should have the following header:
 
 Sometimes you want to escape the ~WikiWords. Use ~ in front of the WikiWord and it won't be made in to a link. If you want to use a ~ write ~~ and one will survive the process.
 
-    ~WikiWord
+    ~~WikiWord
+
+is rendered like
+
+~WikiWord;
+
+while
+
+    WikiWord
 
 is rendered like
 
