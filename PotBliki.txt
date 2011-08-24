@@ -40,7 +40,7 @@ is rendered like
 
 while
 
-    WikiWord
+    ~WikiWord
 
 is rendered like
 
