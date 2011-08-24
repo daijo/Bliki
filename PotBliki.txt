@@ -29,8 +29,9 @@ Every blog post should have the following header:
     tags: [TAGS]
 
 ## Escape ~WikiWords
+Warning: this section will not be correct if vieved in plain text but will look correct in the Bliki.
 
-Sometimes you want to escape the ~WikiWords. Use ~ in front of the WikiWord and it won't be made in to a link. If you want to use a ~ write ~~ and one will survive the process.
+Sometimes you want to escape the ~WikiWords. Use ~~ in front of the WikiWord and it won't be made in to a link. If you want to use a ~~ write ~~~ and one will survive the process.
 
     ~~WikiWord
 
@@ -69,7 +70,7 @@ If you have a Disqus-account, register the Bliki there and enter the Disqus shor
 Roadmap
 -------
 
-[Roadmap on Github](https://github.com/daijo/PotBliki/issues/milestones)
+[Roadmap on Github](https://github.com/daijo/~PotBliki/issues/milestones)
 
 [1]: http://en.wikipedia.org/wiki/Bliki
 [2]: http://www.vim.org/scripts/script.php?script_id=1018
