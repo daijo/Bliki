@@ -3,9 +3,9 @@ SedTool
 
 A Unix stream editor utility. Note that the GNU version and BSD version (on Mac) differ. Use -E option on Mac to use modern RegExp.
 
-[Tutorial][1]
-[One liners][2]
-[The SED $HOME][3]
+* [Tutorial][1]
+* [One liners][2]
+* [The SED $HOME][3]
 
 [1]: http://www.grymoire.com/Unix/Sed.html
 [2]: http://sed.sourceforge.net/sed1line.txt
