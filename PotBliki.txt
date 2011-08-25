@@ -59,11 +59,18 @@ This will make a "Edit on Github" link appear on each page. If you have access t
 
 ### Update Bliki on Github post-receive
 
-TBD
+Install the script on the server according to 'Start using' and pull the bliki git from Github.
+
+Make sure the TARGET_DIR in bliki_conf point to the web server root. In the bliki directory run:
+
+    potbliki github
+    potbliki make
 
 Set Githubs post-receive post to:
 
     [Your bliki's URL]/cgi-bin/push.cgi
+
+Anytime you push to your repo on Github the bliki will now pull from the repo and remake the bliki.
 
 ## Disqus Integration
 
