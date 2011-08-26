@@ -5,11 +5,11 @@ Plain text [Bliki][1] tools inspired by Edwin Steiner's [PotWiki][2] for Vim, Ma
 
 The project goal is to provide a small set of simple tools for publishing a personal Bliki.
 
-Uses [Python-Markdown][5]. [Source][6] available on Github.
+Uses [Sundown][5]. [Source][6] available on Github.
 
 ## Start using
 
-1. Install lib/python_markdown.
+1. Install lib/sundown.
 2. Install the script in your PATH using 'install [PATH]'.
 3. In the directory you want to be your Bliki home run 'potwiki init'.
 4. Edit .bliki/bliki_conf
@@ -87,5 +87,5 @@ Roadmap
 [2]: http://www.vim.org/scripts/script.php?script_id=1018
 [3]: http://interconnected.org/home/2007/05/20/plain_text_wiki
 [4]: http://cloudhead.io/toto
-[5]: https://github.com/waylan/Python-Markdown
+[5]: https://github.com/tanoku/sundown
 [6]: https://github.com/daijo/~PotBliki
