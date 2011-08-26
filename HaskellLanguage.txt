@@ -6,3 +6,8 @@ A purely functional language.
 <http://learnyouahaskell.com/>
 <http://www.haskell.org/haskellwiki/Haskell>
 <http://hunit.sourceforge.net/>
+
+On Mac
+------
+
+<http://www.haskell.org/haskellwiki/Mac_OS_X>
