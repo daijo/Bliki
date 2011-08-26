@@ -15,6 +15,16 @@ Then on older git versions:
 
 [blog](http://chrisjean.com/2009/04/20/git-submodules-adding-using-removing-and-updating/)
 
+Remove git submodule
+--------------------
+
+    Delete the relevant line from the .gitmodules file.
+    Delete the relevant section from .git/config.
+    git rm --cached path_to_submodule (no trailing slash).
+    Commit and delete the now untracked submodule files.
+
+From [Stackoverflow](http://stackoverflow.com/questions/1260748/how-do-i-remove-a-git-submodule).
+
 Git Email etc.
 --------------
     $ git config --global user.name "Firstname Lastname" Sets the name of the user for all git instances on the system
