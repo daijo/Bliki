@@ -4,9 +4,6 @@ date: 2011/08/26
 location: Phnom Penh, Cambodia
 tags: bliki, git
 
-Second Post
-===========
-
 Actually this is the first post I make by pushing to my Git repo at Github. So the PotBliki project have been coming along. 322 sloc of Bash script so far. Not very polished yet. I'm working on my 0.3 release now. The goal when finished with that is simple install on Mac and Linux.
 
 I'll be back soon with more info.
