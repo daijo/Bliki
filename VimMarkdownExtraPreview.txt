@@ -1,15 +1,15 @@
 VimMarkdownExtraPreview
 =======================
 
-Available on [GitHub][1]. Needs python built with PythonLanguage support. Get that by:
+Available on [Github][1]. Needs python built with PythonLanguage support. Get that by:
 
     1. sudo port install vim +python
-    2. or use [MacVim][2] 
+    2. or use [~MacVim][2] 
 
 Install
 -------
 
-Clone from GitHub and copy /plugin content to ~/.vim/plugin and doc content to ~/.vim/doc
+Clone from Github and copy /plugin content to ~/.vim/plugin and doc content to ~/.vim/doc
 
 
 [1]: https://github.com/waylan/vim-markdown-extra-preview
