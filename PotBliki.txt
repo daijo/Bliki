@@ -9,7 +9,7 @@ Uses [Sundown][5]. [Source][6] available on Github.
 
 ## Start using
 
-1. Install lib/sundown.
+1. Install lib/sundown (install where you will put potbliki).
 2. Install the script in your PATH using 'install [PATH]'.
 3. In the directory you want to be your Bliki home run 'potwiki init'.
 4. Edit .bliki/bliki_conf
