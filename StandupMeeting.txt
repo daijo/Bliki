@@ -6,4 +6,4 @@ Standup Meeting
 Great [article][2] by Jason Yip.
 
 [1]: http://en.wikipedia.org/wiki/Stand-up_meeting
-[2]: http://martinfowler.com/articles/~itsNotJustStandingUp.html
+[2]: http://martinfowler.com/articles/its~NotJustStandingUp.html
