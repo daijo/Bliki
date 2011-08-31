@@ -1,0 +1,11 @@
+title: Rough Order of Magnitude Estimate
+author: Daniel Hjort
+date: 2010/11/25
+location: Shanghai, China
+tags: estimate, planning, repost
+
+In the recent article [Avoiding the Infinite Abyss][1] Andy Hunt writes about how the sheer amount of choice (like any natural number of hours) can paralyze the person/team doing the estimation of a task. He suggests using a limited number of choices like 1 hour, 1 day, 3 days and a week.
+
+This reminds me of Rough Order of Magnitude Estimates. A technique used by for example physicists to make quick and often accurate enough estimates of natural phenomena. Often this is as close you can get with out actual measurement and calculation. And if we could calculate how long a software development task would take to complete based on measurement software development would be a lot different. So stick to rough estimates. Anything else is a waste of time.
+
+[1]: http://pragprog.com/magazines/2010-11/guru-meditation 
