@@ -36,5 +36,6 @@ Quick Reference
 Plugins
 -------
 
+* NerdTree
 * PotWiki
 * VimMarkdownExtraPreview 
