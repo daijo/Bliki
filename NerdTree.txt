@@ -3,7 +3,7 @@
 
 VimEditor plugin to show a file drawer.
 
-[Download][1] on the Vim site or pull from [Github]2[].
+[Download][1] on the Vim site or pull from [Github][2].
 
 [1]: http://www.vim.org/scripts/script.php?script_id=1658
 [2]: https://github.com/scrooloose/nerdtree
