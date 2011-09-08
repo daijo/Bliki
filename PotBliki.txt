@@ -7,6 +7,11 @@ The project goal is to provide a small set of simple tools for publishing a pers
 
 Uses [Sundown][5]. [Source][6] available on Github.
 
+## Run tests
+
+    chmod u+x runtests
+    ./runtests
+
 ## Start using
 
 1. Install lib/sundown (install where you will put potbliki).
