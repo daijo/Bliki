@@ -32,7 +32,28 @@ Git Email etc.
 
 Clone a repo
 ------------
-    git clone git@github.com:daijo/RestKit.git
+    git clone git@github.com:daijo/~RestKit.git
+
+Create branch
+-------------
+    git branch [branch_name]
+
+Switch branch
+-------------
+    git checkout [branch_name]
+
+Merge branch
+------------
+    git checkout master
+    git merge [branch_name]
+
+Delete branch
+-------------
+With check if changes are merged to otehr branch first:
+    git branch -d [branch_name]
+
+Without check, force delete:
+    git branch -D [branch_name]
 
 Add upstream and fetch from upstream
 ------------------------------------
@@ -72,6 +93,10 @@ Change your mind after add
 Push to repo
 ------------
     git push /Users/daijo/Dropbox/Patchwork/Projects/webpage.git/
+
+alt.
+
+    git push
 
 Put on Github
 -------------
