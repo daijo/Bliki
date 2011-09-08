@@ -50,9 +50,11 @@ Merge branch
 Delete branch
 -------------
 With check if changes are merged to otehr branch first:
+
     git branch -d [branch_name]
 
 Without check, force delete:
+
     git branch -D [branch_name]
 
 Add upstream and fetch from upstream
