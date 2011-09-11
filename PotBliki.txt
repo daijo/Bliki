@@ -29,6 +29,10 @@ Make the bliki:
 
     <Leader>bm
 
+Open bliki in default browser:
+
+    <Leader>bo
+
 ## Post header
 
 Every blog post should have the following header:
