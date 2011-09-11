@@ -23,6 +23,12 @@ Uses [Sundown][5]. [Source][6] available on Github.
 
 It is recommended to use a plain text wiki plugin for your editor.
 
+## Vim plugin
+
+Make the bliki:
+
+    <Leader>bm
+
 ## Post header
 
 Every blog post should have the following header:
