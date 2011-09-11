@@ -28,10 +28,13 @@ Quick Reference
 * Ctrl-W + arrow direction Move to other window.
 * ~~ toggle capital letter.
 
-<http://tnerual.eriogerg.free.fr/vimqrc.html>
-<http://www.ibm.com/developerworks/linux/library/l-vim-script-1/index.html>
-<http://vim.wikia.com/wiki/~Vim_Tips_Wiki>
-
+Some links
+----------
+* <http://tnerual.eriogerg.free.fr/vimqrc.html>
+* <http://www.ibm.com/developerworks/linux/library/l-vim-script-1/index.html>
+* <http://vim.wikia.com/wiki/~Vim_Tips_Wiki>
+* <http://video.google.com/videoplay?docid=2538831956647446078>
+* <http://vim.runpaint.org/>
 
 Plugins
 -------
