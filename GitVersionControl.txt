@@ -2,6 +2,7 @@ Git Usage
 =========
 
 [Docs][1]
+[Git tips][2]
 
 Add git submodule
 -----------------
@@ -127,3 +128,4 @@ Search for pattern
 
 
 [1]: https://www.kernel.org/pub/software/scm/git/docs/
+[2]: http://mislav.uniqpath.com/2010/07/git-tips/
