@@ -1,7 +1,7 @@
 Git Usage
 =========
 
-[Docs][1]
+[Docs][1]  
 [Git tips][2]
 
 Add git submodule
