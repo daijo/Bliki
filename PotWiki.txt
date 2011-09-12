@@ -23,18 +23,18 @@ Add this to your .vimrc:
 Quick reference
 ---------------
 
-   <Leader>ww   - open the Wiki HomePage
-   <Leader>wi   - open the Wiki index
-   <Leader>wf   - follow a WikiWord (can be used in any buffer!)
-   <Leader>we   - edit a Wiki file
+    <Leader>ww   - open the Wiki HomePage
+    <Leader>wi   - open the Wiki index
+    <Leader>wf   - follow a WikiWord (can be used in any buffer!)
+    <Leader>we   - edit a Wiki file
 
 While editing a Wiki file:
 
-   <Leader><Leader> - close the file
-   <CR>             - follow the WikiWord under the cursor
-   <Tab>            - move to the next WikiWord
-   <BS>             - move to the previous WikiWord
-   <Leader>wr       - reload WikiWords 
+    <Leader><Leader> - close the file
+    <CR>             - follow the WikiWord under the cursor
+    <Tab>            - move to the next WikiWord
+    <BS>             - move to the previous WikiWord
+    <Leader>wr       - reload WikiWords 
 
 
 [1]: http://www.vim.org/scripts/script.php?script_id=1018
