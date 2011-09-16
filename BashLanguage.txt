@@ -9,7 +9,9 @@ A UNIX shell (command interpreter) default on many GNU/Linux distributions and o
 Bash Shortcuts
 --------------
 
-Found in a [Blog][3] by Alan Skorking.
+Originaly found in a [Blog][3] by Alan Skorking.
+
+In Terminal on Macs you have to go into Preferences -> Settings -> [Your preset ] ->Keyboard and check the box 'Use option as meta key' to be able to use the Alt-key as below. This will rob you of the ability to write characters like é by typing 'Alt+e e' in the Terminal application.
 
 ### Command Editing Shortcuts
 
