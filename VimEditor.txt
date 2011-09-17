@@ -28,6 +28,13 @@ Quick Reference
 * Ctrl-W + arrow direction Move to other window.
 * ~~ toggle capital letter.
 
+VimL
+----
+
+Call a movement command in a script:
+
+    exe "normal! gg"
+
 Some links
 ----------
 * <http://tnerual.eriogerg.free.fr/vimqrc.html>
