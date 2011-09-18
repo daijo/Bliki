@@ -10,7 +10,7 @@ This reminds me of Rough Order of Magnitude Estimates. A technique used by for e
 
 __Addendum (2011/09/18):__
 
-I found a preceeding [article][2] by Dan North about the Perils of Estimation.
+I found a preceeding article by Dan North about [the perils of estimation][2].
 
 He also adds this point:
 
