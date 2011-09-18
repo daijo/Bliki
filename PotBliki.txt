@@ -25,6 +25,10 @@ It is recommended to use a plain text wiki plugin for your editor.
 
 ## Vim plugin
 
+Add a post header:
+
+    <Leader>bn
+
 Make the bliki:
 
     <Leader>bm
