@@ -13,7 +13,7 @@ Andy make a point that if you don’t capture your ideas you will stop noticing 
 
 One thing you might carry around is your Phone/PDA. As people trying to call me know I often don’t. We come back to why later. If you stand being reachable (interrupted) all the time this might be for you.
 
-Another suggestion is to use a simple notebook/pen. Since maybe a year back I have been trying to always bring a small Moleskine whereever I go. It’s apparently one of those things white people like. Along similar lines you could also use a Hipster PDA, or in other words, a stack of index cards and a binder clip. Index cards have taken a central position in modern software development. I bet it’s inventor Carl Linneaus didn’t see that one coming.
+Another suggestion is to use a simple notebook/pen. Since maybe a year back I have been trying to always bring a small Moleskine whereever I go. It’s apparently one of those things [white people like][1]. Along similar lines you could also use a Hipster PDA, or in other words, a stack of index cards and a binder clip. Index cards have taken a central position in modern software development. I bet it’s inventor [Carl Linneaus][2] didn’t see that one coming.
 
 At work I noticed designers always bringing their gigantic sketchpads (and not their shiny Macs) to meetings. Many of them constantly doodling. Sketchpads are excellent tools both for relaxation and also when you need to make a nice mind map.
 
@@ -24,14 +24,14 @@ Manage Knowledge
 
 This carries naturally over to how to managing your knowledge. Where does all this stuff end up? You have to store and sort it in a way that is easy to access and flexible in the future. Hierarchical categories and boxes gets very limiting in the long run while hyperlinked and tagged content adepts. That was actually the reason why Carl Linneaus invented the index card.
 
-All the information you store outside of your brain become your exocortex. You want to read from and write to it fast. One way to achieving all this is to use a personal Wiki. I use Textmate and the Plain Text Wiki bundle. The wiki is stored in my Dropbox for access from anywhere. The simple interface is fast, distraction free and works offline.
+All the information you store outside of your brain become your exocortex. You want to read from and write to it fast. One way to achieving all this is to use a personal Wiki. I use Textmate and the [Plain Text Wiki bundle][3]. The wiki is stored in my Dropbox for access from anywhere. The simple interface is fast, distraction free and works offline.
 
 Then we have the Blog, my filtered and refined (that’s the idea anyhow) output for images and words. I write as much for myself as anyone else. To process it all a step further. Here I use both categories and tags. Categories sort on general interest (who’s reading, friend or a fellow software developer) and tags on specific topics (I want to find stuff on X).
 
 Manage focus
 ------------
 
-Found a related clip on the 37Signals blog of John Cleese doing a very excellent talk. It touches on the content of the book many times, it even ties in to the Dreyfus model. I think the idea of boundaries of space and time is very useful and I had made a setup based on similar thoughts.
+Found a related clip on the 37Signals [blog][4] of John Cleese doing a very excellent talk. It touches on the content of the book many times, it even ties in to the Dreyfus model. I think the idea of boundaries of space and time is very useful and I had made a setup based on similar thoughts.
 
 Context switching kills productivity. Expect about 30 min to get back on track if someone calls and you are forced to think about something completely different. This might also be true if you spend your compile time reading your favorite RSS feed.
 
@@ -45,5 +45,10 @@ I see the only solution here to communicate your boundaries in time to people mo
 
 But all this leaves me with the question: how do you balance between collaboration and interruption free creativity/learning? I mean living a hermit style life isn’t that hard. But it’s all about collaboration too, right? Isolation wont pay any bills. One way might be to allocate the hours from waking up to lunch as your own. Then open up the communication in the afternoon. Or view versa. Maybe software teams should divide their time like this too. But I suspect as I get into the flow of working up here on my own the problem to solve will shift from how to focus to how to collaborate.
 
-Some people try to explain the Agile Backlash with the theory of introvert developers getting there life ruined by the new idea of collaboration. It’s an activity that both require communication and unbroken focus. I think the solution is balance and mutual respect. If someone works best with their door closed give them the time. Give each other that time and time box the collaboration.
+Some people try to explain the [Agile Backlash][5] with the theory of introvert developers getting there life ruined by the new idea of collaboration. It’s an activity that both require communication and unbroken focus. I think the solution is balance and mutual respect. If someone works best with their door closed give them the time. Give each other that time and time box the collaboration.
 
+[1]:http://stuffwhitepeoplelike.com/2009/02/24/122-moleskine-notebooks/
+[2]:http://en.wikipedia.org/wiki/Carl_Linnaeus
+[3]:http://interconnected.org/home/more/2007/05/textmate-wiki/
+[4]:http://37signals.com/svn/posts/2539-the-amazing-john-cleese-shares-his-wisdom
+[5]:http://testobsessed.com/2010/09/08/agile-backlash/
