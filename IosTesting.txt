@@ -1,0 +1,13 @@
+iOS Testing
+===========
+
+Frameworks
+----------
+
+* [KIF][1] (Keep It Functional)
+* ~SenTestingKit ([OCUnit][2])
+* [OCMock][3] (Mock objects)
+
+[1]:https://github.com/square/KIF
+[2]:http://www.sente.ch/software/ocunit/
+[3]:https://github.com/erikdoe/ocmock
