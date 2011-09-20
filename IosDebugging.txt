@@ -1,0 +1,14 @@
+iOS Debugging
+=============
+
+GDB
+---
+
+Print variable:
+
+    p [variable name]
+
+Print Objective-C object referenced by variable:
+
+    po [variable name]
+
