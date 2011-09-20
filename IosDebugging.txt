@@ -1,6 +1,16 @@
 iOS Debugging
 =============
 
+~XCode Debugger
+---------------
+
+* Activate/deactivate breakpoints Command-y
+* Insert/remove breakpoint on current line Command-\
+* Step over F6
+* Step into F7
+* Step out F8
+* Pause/Continue Control-Command-y
+
 GDB
 ---
 
