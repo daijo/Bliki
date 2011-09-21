@@ -59,6 +59,10 @@ Without check, force delete:
 
     git branch -D [branch_name]
 
+Delete from remote:
+
+    git push origin :[branch_name]
+
 Add upstream and fetch from upstream
 ------------------------------------
     cd Spoon-Knife
@@ -67,7 +71,7 @@ Add upstream and fetch from upstream
 
 Fetch and merge
 ---------------
-    $ git fetch upstreamFetches any new changes from the original repo
+    $ git fetch upstream Fetches any new changes from the original repo
     $ git merge upstream/master
 
 Pull from repo
@@ -98,7 +102,7 @@ Push to repo
 ------------
     git push /Users/daijo/Dropbox/Patchwork/Projects/webpage.git/
 
-alt.
+alt. with remote
 
     git push
 
