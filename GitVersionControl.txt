@@ -83,6 +83,15 @@ Discard your changes
     git checkout master -f
     git clean -f
 
+Revert commit
+-------------
+
+    git reset HEAD^ --hard
+
+If already pushed
+
+    git push origin -f
+
 Example .gitignore
 ------------------
     bin/*
