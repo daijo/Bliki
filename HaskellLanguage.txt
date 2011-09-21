@@ -3,7 +3,15 @@
 
 A purely functional language.
 
+Books
+-----
+
 * <http://learnyouahaskell.com/>
+* <http://book.realworldhaskell.org/read/>
+
+Other
+-----
+
 * <http://www.haskell.org/haskellwiki/Haskell>
 * <http://hunit.sourceforge.net/>
 
