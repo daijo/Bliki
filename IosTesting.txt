@@ -22,10 +22,35 @@ Example project available [here](https://github.com/daijo/~PlainNote).
 
 A unit test framework part of OCUnit by Sen:te. Bundled with XCode 2.1 and newer.
 
+Apple [docs][4] on adding unit tests to iOS projects.
+
+Added as a special build target. Run tests with Command-u.
+
 Example project available [here](https://github.com/daijo/~TracksObjC) and [here](https://github.com/daijo/~StackOverflowObjC).
 
+OCMock
+------
+
+Mock object library for Objective-C. Distributed as framework and static library. The later neccesary for iOS application tests.
+
+Overview:
+
+1. Add test target
+2. Add OCMock static lib to target (.a file and headers)
+3. Change build settings of test target
+
+    HEADER_SEARCH_PATHS = $(PROJECT_DIR)/Libraries/Headers
+    LIBRARY_SEARCH_PATHS = $(inherited) "$(PROJECT_DIR)/Libraries"
+    OTHER_LDFLAGS = -ObjC -force_load $(PROJECT_DIR)/Libraries/libOCMock.a 
+
+The header search path should include OCMock/*.h and the library search path should contain libOCMock.a.
+
+4. Add header files to the 'Copy Bundle Resources' build step of the test target.
+
+Example project [here](https://github.com/daijo/~PlainNote) combining OCUnit and OCMock.
 
 
 [1]:https://github.com/square/KIF
 [2]:http://www.sente.ch/software/ocunit/
 [3]:https://github.com/erikdoe/ocmock
+[4]:http://developer.apple.com/library/ios/#documentation/Xcode/Conceptual/ios_development_workflow/135-Unit_Testing_Applications/unit_testing_applications.html    
