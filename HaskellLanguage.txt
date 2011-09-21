@@ -13,6 +13,11 @@ Other
 -----
 
 * <http://www.haskell.org/haskellwiki/Haskell>
+
+Testing
+-------
+
+* <http://www.cse.chalmers.se/~~rjmh/~QuickCheck/>
 * <http://hunit.sourceforge.net/>
 
 On Mac
