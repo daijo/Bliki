@@ -15,6 +15,10 @@ KIF
 
 A integration test framework developed by Square.
 
+The application is started as normal from a separate target (needed to separate the KIF code from the released app) and the tests launced in onApplicationDidFinishLaunching in a preprocessor ifdef block.
+
+KIF manipulate user controls by using private APIs and the Accessability framework, hence the need to make sure the code never is included in a release.
+
 Example project available [here](https://github.com/daijo/~PlainNote).
 
 ~SenTestingKit
@@ -24,7 +28,7 @@ A unit test framework part of OCUnit by Sen:te. Bundled with XCode 2.1 and newer
 
 Apple [docs][4] on adding unit tests to iOS projects.
 
-Added as a special build target. Run tests with Command-u.
+Added as a special build target. Run tests with Command-u. By default Logic Tests (Simulator only) not Application tests (run on device). Above Apple doc explain the difference and explain how to set up Application tests. 
 
 Example project available [here](https://github.com/daijo/~TracksObjC) and [here](https://github.com/daijo/~StackOverflowObjC).
 
@@ -33,7 +37,7 @@ OCMock
 
 Mock object library for Objective-C. Distributed as framework and static library. The later neccesary for iOS application tests.
 
-Overview:
+Overview how to set up unit tests (logic tests by default) with OCMock:
 
 1. Add test target
 2. Add OCMock static lib to target (.a file and headers)
@@ -46,6 +50,26 @@ Overview:
 The header search path should include OCMock/*.h and the library search path should contain libOCMock.a.
 
 4. Add header files to the 'Copy Bundle Resources' build step of the test target.
+
+Note: Remember that tested .m files must be included in the test target or the linking will fail.
+
+You can mock class methods like [this](http://thom.org.uk/2009/05/09/mocking-class-methods-in-objective-c/):
+
+    - (void)testDateSwizzling
+    {
+        Method originalDate = class_getClassMethod([NSDate class], @selector(date));
+        Method mockDate = class_getInstanceMethod([self class], @selector(mockDate));
+        method_exchangeImplementations(originalDate, mockDate);
+        ~STAssertEquals([NSDate date], [NSDate distantPast], @"Should have mocked method");
+        method_exchangeImplementations(mockDate, originalDate);
+    }
+
+    - (NSDate *)mockDate
+    {
+        return [NSDate distantPast];
+    }
+
+Note: After the implementations are exchanged they loose their original context (only rely on local variables in the method).
 
 Example project [here](https://github.com/daijo/~PlainNote) combining OCUnit and OCMock.
 
