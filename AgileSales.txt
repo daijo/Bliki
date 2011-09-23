@@ -1,0 +1,31 @@
+title: Agile Sales 
+author: Daniel Hjort 
+date: 2011/09/23
+location: Phnom Penh, Cambodia
+tags: agile, sales
+
+Agile start with the sale. Unfortunately this is not widely understod among sales people. You might call that a big problem. Software developers have spent the last 10-20 years improving how software is made without sales people reflecting on how that affects the way software is sold. This [blog][1] by Mathias Marschall describe the problem well.
+
+There are no new problems to solve here. You only need to follow the [agile principles][4] from the start.
+
+The problem with fixed-bids
+---------------------------
+
+> So, here’s the thing.
+> 
+> The only way to win on fixed-bid projects, is to bid low, and then rack up the change-requests. This is why people spend so much time documenting requirements, and then getting the client to sign off. It’s so they can prove that something is an actual change request, and thus they don’t have to do it. So, if the client wants to do whatever, they have to pay more money. [...][5] - [Udi Dahan][5]
+
+Instead work closely with the client to find out what they need. Involve sales people, developers and testers. The result is a prioritized backlog owned by the client. When it contains enough important stuff to kick of a month long mini fixed-bid project (by developers called iteration or sprint) then do it. Rinse-wash-repeat.
+
+Suggested reading
+-----------------
+
+* [10 Agile Contracts][2]
+* [Fixed Price Contracts and Agile][3]
+
+
+[1]: http://www.agileweboperations.com/how-non-negotiable-features-kill-software-products
+[2]: http://agilesoftwaredevelopment.com/blog/peterstev/10-agile-contracts
+[3]: http://www.richard-banks.org/2007/09/fixed-price-contracts-and-agile.html
+[4]: http://agilemanifesto.org/principles.html
+[5]: http://www.udidahan.com/2007/09/01/successfully-applying-agile-to-fixed-bid-projects/
