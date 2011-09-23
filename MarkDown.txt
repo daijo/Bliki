@@ -20,6 +20,15 @@ Implementations
 
     markdown_py file.txt > file.html
 
+~MarkDown in C
+--------------
+
+For PotBliki I started out with python-markdown but switched to [Sundown][4] since it carried no dependencies (except GCC to build it) and was a lot faster. The markdown phase of 'making' a PotBliki went from being a major part to being no time at all.
+
+~MarkDown in Objective-C
+------------------------
+
+This [gist](https://gist.github.com/1187781) show Upskirt added to a ~UIWebView as a category.
 
 Examples
 --------
