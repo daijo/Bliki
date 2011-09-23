@@ -1,9 +1,9 @@
 ~GoogleTest
 ===========
 
-<http://code.google.com/p/googletest/>
+Available at <http://code.google.com/p/googletest/>.
 
-[Example project](https://github.com/daijo/LearningTestsCC)
+[Example project](https://github.com/daijo/~LearningTestsCC)
 
 
 Macports
