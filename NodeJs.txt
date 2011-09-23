@@ -3,8 +3,8 @@
 
 Serverside runtime for V8 JavaScript. The next big thing?
 
-[Node Beginner Book][1]
-[v0.4.10 API docs][2]
+* [Node Beginner Book][1]
+* [v0.4.10 API docs][2]
 
 Execute shell script
 --------------------
@@ -24,10 +24,10 @@ Execute shell script
     });
 
 Node.js - Javascript Roundtrip
-==============================
+------------------------------
 
-[Article][3]
-[Code][4]
+* [Article][3]
+* [Code][4]
 
 
 [1]: http://www.nodebeginner.org/
