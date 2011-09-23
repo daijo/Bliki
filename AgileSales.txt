@@ -4,7 +4,7 @@ date: 2011/09/23
 location: Phnom Penh, Cambodia
 tags: agile, sales
 
-Agile start with the sale. Unfortunately this is not widely understod among sales people. You might call that a big problem. Software developers have spent the last 10-20 years improving how software is made without sales people reflecting on how that affects the way software is sold. This [blog][1] by Mathias Marschall describe the problem well.
+Agile software development start before the sale. Unfortunately this is not widely understood among sales people. You might call that a big problem. Software developers have spent the last 10-20 years improving how software is made without sales people reflecting on how that affects the way software is sold. This [blog][1] by Mathias Marschall describe the problem well.
 
 There are no new problems to solve here. You only need to follow the [agile principles][4] from the start.
 
@@ -15,11 +15,12 @@ The problem with fixed-bids
 > 
 > The only way to win on fixed-bid projects, is to bid low, and then rack up the change-requests. This is why people spend so much time documenting requirements, and then getting the client to sign off. It’s so they can prove that something is an actual change request, and thus they don’t have to do it. So, if the client wants to do whatever, they have to pay more money. [...][5] - [Udi Dahan][5]
 
-Instead work closely with the client to find out what they need. Involve sales people, developers and testers. The result is a prioritized backlog owned by the client. When it contains enough important stuff to kick of a month long mini fixed-bid project (by developers called iteration or sprint) then do it. Rinse-wash-repeat.
+Instead work closely with the client to find out what they need. Involve sales people, developers and testers. The result is a prioritized backlog owned by the client. When it contains enough important stuff to kick off a month long mini fixed-bid project (by developers called iteration or sprint) then do it. The difference is that you keep the scope flexible. Sometimes stuff take longer time todo than you think, sometimes shorter as well. That's life. What you don't finish go back to the backlog and are considered for the next iteration.  Rinse-wash-repeat. And really how much behind can you get in a month? Seldom more then a month so there you have the risk quantified.
 
 Suggested reading
 -----------------
 
+* [How non negotiable features kill software product][1]
 * [10 Agile Contracts][2]
 * [Fixed Price Contracts and Agile][3]
 
