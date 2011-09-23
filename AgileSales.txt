@@ -25,7 +25,7 @@ During the iteration the scope can shrink but not grow. Sometimes stuff take lon
 What has to be done
 -------------------
 
-* Sales people and management have to educate themselves on modern software development methodology. This is required of developers and that effort is largely wasted if this isn't seen as mandatory in the organization a a whole. 
+* Sales people and management have to educate themselves on modern software development methodology. This is required of developers and that effort is largely wasted if this isn't seen as mandatory in the organization as a whole. 
 
 * We as companies and suppliers of software must educate the clients on how to best buy software. We often get overrun by their internal process. We are the experts and have the responsibility towards our customers to not waste their money.
 
