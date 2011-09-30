@@ -3,6 +3,8 @@
 
 A purely functional language.
 
+Some example test cases can be found [here](https://github.com/daijo/~LearningTestsHaskell).
+
 Books
 -----
 
