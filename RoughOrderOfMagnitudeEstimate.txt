@@ -23,7 +23,15 @@ So he takes the above even further:
 > The experienced members of the team should be estimating feature sets of the order of person-weeks (or better yet, pair-weeks), not going down to the level of individual pair-days.
 
 More effort can/should instead be put into deliberate discovery of the project risks.
-  
+
+__Addendum (2001/09/30):__  
+
+Taking it yet another notch, Jørn Hunskaar, [claim][3] we should just give up on estimates:
+
+> Not giving any real value anymore, we decided to stop estimating stories. Later, when we applied Kanban, we removed the iterations as well. We’ve managed well without estimation for about eight months now, instead focusing on the flow and maximizing throughput.
+
+Very interesting idea.
 
 [1]: http://pragprog.com/magazines/2010-11/guru-meditation
 [2]: http://dannorth.net/2009/07/01/the-perils-of-estimation/
+[3]: http://hunskaar.com/estimating-software-projects/
