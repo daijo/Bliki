@@ -26,7 +26,7 @@ More effort can/should instead be put into deliberate discovery of the project r
 
 __Addendum (2011/09/30):__  
 
-Taking it yet another notch, Jørn Hunskaar, [claim][3] we should just give up on estimates:
+Taking it yet another notch, Jørn Hunskaar, [say][3] we could just give up on estimates:
 
 > Not giving any real value anymore, we decided to stop estimating stories. Later, when we applied Kanban, we removed the iterations as well. We’ve managed well without estimation for about eight months now, instead focusing on the flow and maximizing throughput.
 
