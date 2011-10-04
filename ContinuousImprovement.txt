@@ -16,8 +16,9 @@ A meeting with the people involved (project team) in the project looking back at
 
 Choose a limited improvment scope for the coming period of time and repeat the process.
 
-[Agile Retrospectives Resource Wiki][1]
-
+* [Agile Retrospectives Resource Wiki][1]
+* [Dialog sheets][2]
 
 [1]: http://agileretrospectivewiki.org/index.php?title=Main_Page
+[2]: http://www.softwarestrategy.co.uk/dlgsheets/index.html
 
