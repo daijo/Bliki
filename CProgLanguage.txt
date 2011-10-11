@@ -3,6 +3,11 @@ C
 
 The C programming language.
 
+FAQ
+---
+
+* [C-FAQ](http://c-faq.com/)
+
 Presentations
 -------------
 
