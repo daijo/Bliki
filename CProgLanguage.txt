@@ -1,0 +1,9 @@
+C
+=
+
+The C programming language.
+
+Presentations
+-------------
+
+* [Deep C](http://www.slideshare.net/olvemaudal/deep-c)
