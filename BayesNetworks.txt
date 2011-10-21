@@ -1,0 +1,4 @@
+Bayes Networks
+==============
+
+<http://people.cs.ubc.ca/~~murphyk/Bayes/bnintro.html>
