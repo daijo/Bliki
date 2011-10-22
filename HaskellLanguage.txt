@@ -16,6 +16,7 @@ Other
 
 * <http://www.haskell.org/haskellwiki/Haskell>
 * <http://ugcs.net/~~keegan/talks/why-learn-haskell/talk.pdf>
+* <http://www.ozonehouse.com/mark/haskell-amuse-bouche/slides.html>
 
 Testing
 -------
