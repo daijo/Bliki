@@ -1,0 +1,17 @@
+Lisp
+====
+
+Blogs
+-----
+
+* <http://carcaddar.blogspot.com/2011/10/common-lisp-is-best-language-to-learn.html>
+
+Reference
+---------
+
+* [~HyperSpec][1]
+* [Common Lisp The Language][2] 
+
+
+[1]:http://www.lispworks.com/documentation/~HyperSpec/Front/index.htm
+[2]:http://www.cs.cmu.edu/Groups/AI/html/cltl/clm/clm.html
