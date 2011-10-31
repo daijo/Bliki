@@ -7,6 +7,13 @@ Essays & Blogs
 * <http://www.paulgraham.com/rootsoflisp.html>
 * <http://carcaddar.blogspot.com/2011/10/common-lisp-is-best-language-to-learn.html>
 
+Common Lisp: A Gentle Introduction to Symbolic Computation
+----------------------------------------------------------
+
+by David S. Touretzky,  <http://www-2.cs.cmu.edu/~dst/~LispBook/>.
+
+[Code](https://github.com/deadcode/Learning-CL--David-Touretzky) available on Github.
+
 Reference
 ---------
 
