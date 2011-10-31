@@ -14,6 +14,11 @@ by David S. Touretzky,  <http://www-2.cs.cmu.edu/~dst/~LispBook/>.
 
 [Code](https://github.com/deadcode/Learning-CL--David-Touretzky) available on Github.
 
+Unit testing
+------------
+
+* <http://www.cs.northwestern.edu/academics/courses/325/readings/lisp-unit.html>
+
 Reference
 ---------
 
