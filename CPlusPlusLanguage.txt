@@ -1,5 +1,5 @@
-~CPlusPlusLanguage
-==================
+C++
+===
 
 Hello world
 -----------
