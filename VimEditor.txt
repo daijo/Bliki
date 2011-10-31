@@ -3,6 +3,8 @@ VimEditor
 
 Vi iMproved. A scriptable text editor available on most UNIX systems,
 
+It has two modes - "beep repeatedly" and "break everything".
+
 Quick Reference
 ---------------
 * b w word/token left, right.
