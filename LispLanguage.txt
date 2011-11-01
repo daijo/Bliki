@@ -1,6 +1,13 @@
 Lisp
 ====
 
+    > (DEFUN HELLO ()
+      "Hello world"
+    )
+    HELLO
+    > (HELLO)
+    "Hello world"
+
 Essays & Blogs
 --------------
 
@@ -18,6 +25,11 @@ Unit testing
 ------------
 
 * <http://www.cs.northwestern.edu/academics/courses/325/readings/lisp-unit.html>
+
+On Mac
+------
+
+* [RMCL](http://en.wikipedia.org/wiki/Macintosh_Common_Lisp)
 
 Reference
 ---------
