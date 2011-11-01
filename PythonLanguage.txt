@@ -1,0 +1,16 @@
+Python
+======
+
+Some example test cases can be found [here](https://github.com/daijo/~LearningTestsPython)
+
+Scientific
+----------
+
+* <http://pybrain.org/>
+* <http://www.nltk.org/>
+* <http://www.scipy.org/>
+
+Unit testing
+------------
+
+* <http://pyunit.sourceforge.net/> 
