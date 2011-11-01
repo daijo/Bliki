@@ -10,7 +10,7 @@ Scientific
 * <http://www.nltk.org/>
 * <http://www.scipy.org/>
 
-Unit testing
-------------
+Testing
+-------
 
 * <http://pyunit.sourceforge.net/> 
