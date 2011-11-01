@@ -1,6 +1,8 @@
 Python
 ======
 
+    print "Hello, World!"
+
 Some example test cases can be found [here](https://github.com/daijo/~LearningTestsPython)
 
 Scientific
