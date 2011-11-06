@@ -81,7 +81,7 @@ TBD
 Automated theorem provers
 -------------------------
 
-First order logic theorems can be proved automatically. Here's a [theorem prover][8] written in HaskellLanguage.
+First order logic theorems can be proved automatically. Here's a [theorem prover][8] written in HaskellLanguage. Mirrored on Github: <https://github.com/daijo/fol>
 
 
 [1]:https://secure.wikimedia.org/wikipedia/en/wiki/Propositional_calculus
