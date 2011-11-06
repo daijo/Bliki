@@ -73,11 +73,24 @@ Adds quantifers (there exist one x, for all y) and predicates (functions with bo
 
     ∃p(nameIs(p, "Daniel") ∧ isFrom(p, "Sweden"))
 
+Situation calculus
+------------------
+
+TBD
+
+Automated theorem provers
+-------------------------
+
+First order logic theorems can be proved automatically. Here's a [theorem prover][8] written in HaskellLanguage.
+
+
 [1]:https://secure.wikimedia.org/wikipedia/en/wiki/Propositional_calculus
 [2]:https://secure.wikimedia.org/wikipedia/en/wiki/Elementary_Boolean_algebra
 [3]:https://secure.wikimedia.org/wikipedia/en/wiki/List_of_logic_symbols
 [4]:https://secure.wikimedia.org/wikipedia/en/wiki/Karnaugh_map
 [5]:http://www.ee.surrey.ac.uk/Projects/Labview/minimisation/karrules.html
 [6]:https://secure.wikimedia.org/wikipedia/en/wiki/First-order_logic
+[7]:https://secure.wikimedia.org/wikipedia/en/wiki/Situation_calculus
+[8]:http://www.cs.yale.edu/homes/cc392/
 
 
