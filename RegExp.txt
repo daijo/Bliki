@@ -1,8 +1,45 @@
-~RegExp
-=======
+Regular Expressions
+===================
 
 * PythonLanguage [docs][1]
-* PerlLanguage [manul][2]
+* PerlLanguage [manual][2]
+
+Simple Implementation
+---------------------
+
+Found at <http://paste.lisp.org/display/24849>
+
+    def iconcat(xs, ys):
+        for x in xs: yield x
+        for y in ys: yield y
+
+    def nil(s):
+        yield s
+
+    def seq(l, r):
+        return lambda s: (sr for sl in l(s) for sr in r(sl))
+
+    def alt(l, r):
+        return lambda s: iconcat(l(s), r(s))
+
+    def star(e):
+        return lambda s: iconcat(nil(s), seq(e, star(e))(s))
+
+    def plus(e):
+        return seq(e, star(e))
+
+    def char(c):
+        def match(s):
+            if s and s[0] == c: yield s[1:]
+        return match
+
+    # c(a|d)+r
+    e = seq(char('c'), seq(plus(alt(char('a'), char('d'))), char('r')))
+
+    import sys
+    s = sys.stdin.readline()[:-1]
+    for r in e(s): print "Match with remainder:", r
+
 
 [1]: http://docs.python.org/library/re.html
 [2]: http://www.troubleshooters.com/codecorn/littperl/perlreg.htm
