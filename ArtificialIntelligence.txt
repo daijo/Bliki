@@ -1,0 +1,11 @@
+Artificial Intelligence
+=======================
+
+A collection of notes on artificial intelligence.
+
+* ProblemSolving
+* BayesNetworks
+* MachineLearning
+* LogicSystems
+
+
