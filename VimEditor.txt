@@ -29,6 +29,7 @@ Quick Reference
 * :sp filename Open in new window.
 * Ctrl-W + arrow direction Move to other window.
 * ~~ toggle capital letter.
+* [Number]gg Jump to line number.
 
 VimL
 ----
