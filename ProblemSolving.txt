@@ -1,0 +1,38 @@
+Problem Solving (in AI)
+=======================
+
+When talking about problem solving in AI it means searching a graph by algorithms like breadth-first, depth-frist or some heuritic guided search like A*.
+
+A* search
+---------
+
+Example (uncomplete) implementation in PythonLanguage.
+
+    def by_known_cost(self, list1, list2):
+        return list1[-1].cost - list2[-1].cost
+ 
+    def remove_choice(self, frontier):
+        frontier.sort(cmp=self.by_known_cost)
+        return frontier.pop(0) # return the lowest ranked
+
+    def search(self, start, goal):
+        frontier = [[start]]
+        explored = []
+        while True:
+            if len(frontier) == 0:
+                return None
+            path = self.remove_choice(frontier)
+            s = path[-1] # last state in path
+            s.display()
+            explored.append(s)
+            if s == goal:
+                return path
+            neighbours = s.get_neighbours()
+            if neighbours != None:
+                for a in neighbours:
+                    new_path = path + [a]
+                    if not a in explored and not self.is_in_frontier(frontier, a):
+                       frontier.append(new_path)
+
+[1]:http://www.cse.unsw.edu.au/~billw/cs9414/notes/mandc/mandc.html
+[2]:https://secure.wikimedia.org/wikipedia/en/wiki/A*_search_algorithm
