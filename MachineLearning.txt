@@ -18,3 +18,4 @@ Clustering, finding classes of data.
 * k-means clustering
 * Expectation-maximization algorithm (probabilistic generalization of k-means)
 * Linear dimensionality reduction
+* Spectral clustering
