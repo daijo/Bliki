@@ -1,0 +1,58 @@
+Linear Algebra
+==============
+
+In Haskell
+----------
+
+<http://perception.inf.um.es/hmatrix>
+
+Install on Mac using Macports:
+
+    $ sudo port install gsl-devel +universal
+    $ cabal install hmatrix
+
+### Matrix
+
+    ghci> let a = (2><2) [1..4] :: Matrix Double
+    ghci> a
+    (2><2)
+     [ 1.0, 2.0
+     , 3.0, 4.0 ]
+
+    ghci> let b = (2><2) (reverse [1..4]) :: Matrix Double
+    ghci> b
+    (2><2)
+     [ 4.0, 3.0
+     , 2.0, 1.0 ]
+
+
+We now have:
+
+        [ 1.0, 2.0
+    A = , 3.0, 4.0 ]
+
+        [ 4.0, 3.0
+    B = , 2.0, 1.0 ] 
+
+### Addition
+ 
+                    [ 5.0, 5,0           
+    A + B = B + A = , 5.0, 5,0 ]
+
+### Multiplication
+
+    ghci> a <> b
+    (2><2)
+     [  8.0,  5.0
+     , 20.0, 13.0 ]
+
+
+            [  8.0,  5.0
+    A x B = , 20.0, 13.0 ]
+
+Identity matrix
+Inverse
+Gauss-Jordan elimination
+Linear equations
+Singular matrices
+
