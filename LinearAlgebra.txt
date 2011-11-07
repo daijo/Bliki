@@ -1,32 +1,32 @@
 Linear Algebra
 ==============
 
-In Haskell
-----------
+Examples in Haskell
+-------------------
 
-<http://perception.inf.um.es/hmatrix>
+Using [hmatrix](http://perception.inf.um.es/hmatrix) to do matrix calculations.
 
 Install on Mac using Macports:
 
     $ sudo port install gsl-devel +universal
     $ cabal install hmatrix
 
+    ghci> import Numeric.LinearAlgebra
+
 ### Matrix
 
-    ghci> let a = (2><2) [1..4] :: Matrix Double
+    ghci> let a = (2><2) [1..4]
     ghci> a
     (2><2)
      [ 1.0, 2.0
      , 3.0, 4.0 ]
 
-    ghci> let b = (2><2) (reverse [1..4]) :: Matrix Double
+    ghci> let b = (2><2) (reverse [1..4])
     ghci> b
     (2><2)
      [ 4.0, 3.0
      , 2.0, 1.0 ]
 
-
-We now have:
 
         [ 1.0, 2.0
     A = , 3.0, 4.0 ]
@@ -35,6 +35,13 @@ We now have:
     B = , 2.0, 1.0 ] 
 
 ### Addition
+
+    ghci> add a b
+    (2><2)
+     [ 5.0, 5.0
+     , 5.0, 5.0 ]
+
+
  
                     [ 5.0, 5,0           
     A + B = B + A = , 5.0, 5,0 ]
@@ -46,13 +53,122 @@ We now have:
      [  8.0,  5.0
      , 20.0, 13.0 ]
 
+    ghci> b<>a
+    (2><2)
+     [ 13.0, 20.0
+     ,  5.0,  8.0 ]
+
 
             [  8.0,  5.0
     A x B = , 20.0, 13.0 ]
 
-Identity matrix
-Inverse
-Gauss-Jordan elimination
-Linear equations
-Singular matrices
+            [ 13.0, 20.0
+    B x A = ,  5.0,  8.0 ]
+
+### Identity matrix
+
+    ghci> let i = ident 2
+    ghci> i
+    (2><2)
+     [ 1.0, 0.0
+     , 0.0, 1.0 ]
+
+    ghci> i<>a
+    (2><2)
+     [ 1.0, 2.0
+     , 3.0, 4.0 ]
+    ghci> a<>i
+    (2><2)
+     [ 1.0, 2.0
+     , 3.0, 4.0 ]
+    
+
+        [ 1.0, 0.0
+    I = , 0.0, 1.0 ]
+ 
+    A x I = I x A = A
+
+### Inverse
+
+    ghci> let ai = inv a
+    ghci> ai
+    (2><2)
+     [ -1.9999999999999996,  0.9999999999999998
+     ,  1.4999999999999998, -0.4999999999999999 ]
+    ghci> a<>ai
+    (2><2)
+     [                   1.0,                0.0
+     , 8.881784197001252e-16, 0.9999999999999996 ]
+    ghci> ai<>a
+    (2><2)
+     [    0.9999999999999996, 0.0
+     , 2.220446049250313e-16, 1.0 ]
+
+Ideally:
+
+    A x A^-1 = A^-1 x A = I 
+
+### Linear equations
+
+Given linear equations:
+
+    3x + 5y = 3
+    2x + 2y = 5
+
+We can write:
+
+                 [ 3.0, 5.0     [ x     [ 3.0
+    A * X = B =  , 2.0, 2.0 ] * , y ] = , 5.0 ]
+
+    X = A^-1 * B
+
+In Haskell:
+
+    ghci> let a = (2><2) [3,5,2,2]
+    ghci> a
+    (2><2)
+     [ 3.0, 5.0
+     , 2.0, 2.0 ]
+    ghci> let b = (2><1) [3,5]
+    ghci> b
+    (2><1)
+     [ 3.0
+     , 5.0 ]
+
+    ghci> let i = inv a
+    ghci> i
+    (2><2)
+     [ -0.5000000000000001,  1.2500000000000002
+     ,  0.5000000000000001, -0.7500000000000002 ]
+    ghci> let x = i<>b
+    ghci> x
+    (2><1)
+     [                4.75
+     , -2.2500000000000004 ]
+
+The solution:
+
+        [ x     [ 4.75
+    X = , y ] = , -2.25 ]
+
+Solve the equations
+
+    3 * 4.75 + 5 * (-2.25) = 3
+    2 * 4.75 + 2 * (-2.25) = 5
+
+### Singular matrices
+
+In the 2x2 case the inverse of a matrix is expressed like this:
+
+        [ a, b ]
+    A = , c, d ]
+
+                          [  d, -b
+    A^-1 = (ad - bc)^-1 * , -c,  a ]
+
+The expression (ad - bc) is called the determinate of A, or |A|.
+
+It is clear that if |A| = 0 the inverse is undefined. A is then a singular matrix.
+
+In a equation system this mean that the lines won't intersect or they are the same line.
 
