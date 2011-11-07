@@ -29,7 +29,11 @@ Unit testing
 On Mac
 ------
 
-* [RMCL](http://en.wikipedia.org/wiki/Macintosh_Common_Lisp)
+Using  Macports: 
+
+    sudo port install clisp
+
+Or download and install  [RMCL](http://en.wikipedia.org/wiki/Macintosh_Common_Lisp).
 
 Reference
 ---------
