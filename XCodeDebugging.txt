@@ -1,0 +1,25 @@
+~XCode Debugging
+================
+
+~XCode Debugger
+---------------
+
+* Activate/deactivate breakpoints Command-y
+* Insert/remove breakpoint on current line Command-\
+* Step over F6
+* Step into F7
+* Step out F8
+* Pause/Continue Control-Command-y
+
+GDB
+---
+
+Print variable:
+
+    p [variable name]
+
+Print Objective-C object referenced by variable:
+
+    po [variable name]
+
+[Cheatsheat](http://users.ece.utexas.edu/~~adnan/gdb-refcard.pdf)
