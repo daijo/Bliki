@@ -209,6 +209,13 @@ Nothing surprising here, the result is a vector of same size.
               ...      ...      ...
     a + b = , an ] + , bn ] = , an + bn ]
 
+In Haskell:
+
+    ghci> let a = 4 |> [1..4] :: Vector Double
+    ghci> let b = 4 |> (reverse [1..4]) :: Vector Double
+    ghci> a + b
+    fromList [5.0,5.0,5.0,5.0]
+
 ### Vector dot product
 
 The result is a scalar.
@@ -218,9 +225,44 @@ The result is a scalar.
               ...      ...
     a ⋅ b = , an ] ⋅ , bn ] =  a1 * b1 + a2 * b2 + ... + an * bn 
 
-Vector length
-Angle between vectors
-Cross product
+In Haskell:
+
+    ghci> a <.> b
+    20.0
+
+### Vector length
+
+Like a more general form of Pythagoras the length of a vector is:
+
+||a|| = √(a1^2 + a2^2 + ... + an^2) 
+
+This is the same as
+
+||a||^2 = a ⋅ a
+
+    ghci> a <.> a
+    30.0
+
+### Angle between vectors
+
+Given a,b ∈ ℝ^n, both of non-zero length.
+
+Law of cosine give:
+
+a ⋅ b = ||a|| * ||b|| * cos v
+
+Unless any of the vectors are of zero length and a ⋅ b = 0 the vectors are perpendicular.
+
+If any the vectors have length 0 the angle is undefined. 
+
+In all cases a ⋅ b = 0 the vectors are orthogonal.
+
+### Cross product
+
+Only defined in ℝ^3.
+
+
+
 Matrix vector products
 Linear transformations
 
