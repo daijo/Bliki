@@ -172,3 +172,24 @@ It is clear that if |A| = 0 the inverse is undefined. A is then a singular matri
 
 In a equation system this mean that the lines won't intersect or they are the same line.
 
+    ghci> a
+    (2><2)
+     [ 1.0, 2.0
+     , 3.0, 4.0 ]
+    ghci> det a
+    -2.0
+
+Vectors
+Vector addition
+Vector dot product
+Vector length
+Angle between vectors
+Cross product
+Matrix vector products
+Linear transformations
+
+Scaling
+Reflection
+Rotation
+Projections
+
