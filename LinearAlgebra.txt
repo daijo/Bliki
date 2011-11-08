@@ -179,9 +179,45 @@ In a equation system this mean that the lines won't intersect or they are the sa
     ghci> det a
     -2.0
 
-Vectors
-Vector addition
-Vector dot product
+### Vectors
+
+ℝ the set of all real numbers.
+
+ℝ^n the set of all ordered n-tuples.
+
+A vector in ℝ^n is a ordered list of n real numbers.
+
+ℝ^n = {(x(1), x(2),...,x(n)) | x(i) ∈ ℝ, 1=<i<=n }
+
+    ghci> let v  = 4 |> [1..4] :: Vector Double
+    ghci> v
+    fromList [1.0,2.0,3.0,4.0]
+
+An individual number in a vector is called a component.
+
+        [ 1.0
+        , 2.0
+        , 3.0
+    v = , 4.0 ]
+
+### Vector addition
+
+Nothing surprising here, the result is a vector of same size.
+
+            [ a1     [ b1     [ a1 + b1
+            , a2     , b2     , a2 + b2
+              ...      ...      ...
+    a + b = , an ] + , bn ] = , an + bn ]
+
+### Vector dot product
+
+The result is a scalar.
+
+            [ a1     [ b1
+            , a2     , b2
+              ...      ...
+    a ⋅ b = , an ] ⋅ , bn ] =  a1 * b1 + a2 * b2 + ... + an * bn 
+
 Vector length
 Angle between vectors
 Cross product
