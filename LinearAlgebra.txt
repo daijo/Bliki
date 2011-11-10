@@ -295,14 +295,62 @@ Then the product is a 1 x m vector b.
 
 The product can be interpreted in two ways.
 
-1) The rows in the matrix act as transposed vectors and the components of the resulting vector are the dot products of the vectors and vector x.
+1) The rows in the matrix act as transposed vectors and the components of the resulting vector b are the dot products of the vectors and vector x.
 
     [ a1^T       [ a1 ⋅ x  
     , a2^T ] x = , a2 ⋅ x ] 
 
-Linear transformations
+2) The resulting vector b is the linear combination of the column vectors in A.
 
-Scaling
+    A = [v1 v2 ... vn]
+
+    Ax = x1*v1 + x2*v2 + ... + xn*vn
+
+### Linear transformations
+
+Linear transformations can be described by matrix vector products.
+
+n x n identity matrix I, x ∈ ℝ^n.
+
+    I * x = I 
+
+The columns in I are called the standard basis for ℝ^n and are linearly independent of each other.
+
+    I = [e1 e1 ... en]
+
+Any linear transformation:
+
+    T(x) = T(x1e1 + x2e2 + ... xnen) =
+    = T(x1e1) + T(x2e2) + ... T(xnen) =
+    = x1*T(e1) + x2*T(x2) + ... + xn*T(en)
+
+    T(x) = [T(e1) T(e2) ... T(en)]
+
+All linear transformations can be a matrix vector product.
+
+### Scaling
+
+Say we want to scale a vector in ℝ^2 called x, 100% in the y-axis and 50% in the x-axis.
+
+The transformation would look like this:
+
+        [ x     [ 0.5x
+    T ( , y ] = , 2y   ]
+
+We apply it to all the column vectors in I.
+
+            [ 1      [ 0        [ 0.5 0
+    A = [ T(, 0 ]) T(, 1 ]) ] = , 0   2 ]
+
+Now:
+
+             [ x           [ 0.5 0     [ x
+    T(x) = T(, y ]) = Ax = , 0   2 ] * , y ]
+
+Example using Haskell:
+
+TBD
+
 Reflection
 Rotation
 Projections
