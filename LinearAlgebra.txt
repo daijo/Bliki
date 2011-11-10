@@ -295,7 +295,7 @@ Then the product is a 1 x m vector b.
 
 The product can be interpreted in two ways.
 
-1) The rows in the matrix act as transposed vectors and the components of the resulting vector are the dot products of the vectors.
+1) The rows in the matrix act as transposed vectors and the components of the resulting vector are the dot products of the vectors and vector x.
 
     [ a1^T       [ a1 ⋅ x  
     , a2^T ] x = , a2 ⋅ x ] 
