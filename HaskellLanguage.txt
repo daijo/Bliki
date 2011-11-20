@@ -18,6 +18,7 @@ Other
 * <http://ugcs.net/~~keegan/talks/why-learn-haskell/talk.pdf>
 * <http://www.ozonehouse.com/mark/haskell-amuse-bouche/slides.html>
 * <http://stackoverflow.com/questions/1983047/good-haskell-coding-standards>
+* <http://www.willamette.edu/~fruehr/haskell/evolution.html>
 
 Testing
 -------

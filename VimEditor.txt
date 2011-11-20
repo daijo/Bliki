@@ -30,6 +30,9 @@ Quick Reference
 * Ctrl-W + arrow direction Move to other window.
 * ~~ toggle capital letter.
 * [Number]gg Jump to line number.
+* :s/foo/bar/g Change each 'foo' to 'bar' in the current line.
+* :%s/foo/bar/g Change each 'foo' to 'bar' in all lines. 
+
 
 VimL
 ----
