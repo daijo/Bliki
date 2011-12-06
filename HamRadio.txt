@@ -9,8 +9,17 @@ Current/future build projects.
 Frequency Counter
 -----------------
 
+<http://pa2ohh.com/sfreq.htm>
+
 CW/SSB Regenerative Receiver
 ----------------------------
+
+<http://pa2ohh.com/03rega.htm>
+
+20m Direct Conversion Receiver
+------------------------------
+
+<http://www.qsl.net/vu2upx/Projects/dc_rx.htm>
 
 20m CW/SSB Transceiver
 ----------------------
