@@ -31,6 +31,10 @@ On Mac
 
 Using  Macports: 
 
+    sudo port install sbcl
+
+or
+
     sudo port install clisp
 
 Or download and install  [RMCL](http://en.wikipedia.org/wiki/Macintosh_Common_Lisp).
