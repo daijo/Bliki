@@ -7,6 +7,7 @@ Current/future build projects.
 --------------------------
 
 Parts:
+
 * 555 timer
 * 0.02μF capacitor
 * 25μF 16V capacitor
