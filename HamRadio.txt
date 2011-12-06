@@ -6,6 +6,15 @@ Current/future build projects.
 555 CW Practise Oscillator
 --------------------------
 
+Parts:
+555 timer
+0.02μF capacitor
+25μF 16V capacitor
+100K potentiometer
+10K potentiometer
+2k2 resistor
+2 3.5mm phone plugs
+
 Frequency Counter
 -----------------
 
