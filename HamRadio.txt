@@ -6,6 +6,10 @@ Current/future build projects.
 555 CW Practise Oscillator
 --------------------------
 
+Design:
+
+<https://github.com/daijo/~FritzingSketchbook/blob/master/~CWPractiseOscillator.fz>
+
 Parts:
 
 * 555 timer
