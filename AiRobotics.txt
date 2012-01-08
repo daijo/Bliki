@@ -1,6 +1,21 @@
 Robotics and Artificial Intelligence
 ====================================
 
+Perception
+----------
+
+### Particle filters
+
+Planning
+--------
+
+### MDP
+
+### A*
+
+With continous world adaption.
+
+
 Courses
 -------
 
