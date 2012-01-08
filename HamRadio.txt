@@ -25,16 +25,42 @@ Frequency Counter
 
 <http://pa2ohh.com/sfreq.htm>
 
-CW/SSB Regenerative Receiver
-----------------------------
+* 6,4 MHz crystal HC49
+* HEF40374BP Octal DType FF DIL20
+* CD4040BE
+* CD4060BCN 14Bit Binary Driver DIL16
+* 1M resistor
+* 2 2.2k resistors
+* 10k resistor
+* 22k resistor
+* 820 resistor
 
-<http://pa2ohh.com/03rega.htm>
+Direct Digital Synthesis (DDS)
+------------------------------
+
+<http://www.theladderline.com/book/export/html/5>
+<http://midnightdesignsolutions.com/dds60/index.html>
+
+DDS Direct Conversion QRP CW Tranceiver
+---------------------------------------
+
+<http://www.theladderline.com/qrp-40-meter-cw-transceiver>
+
+
+
+Software Defined Radio
+----------------------
+
+Some resources:
+
+* <http://www.flex-radio.com/Data/Doc/qex1.pdf>
+* <http://hackaday.com/2011/07/19/jeri-ellsworth-builds-a-software-radio/>
+* <http://nbitwonder.com/forum/viewtopic.php?f=20&t=52>
+* <http://nbitwonder.com/blog/2011/10/30/nbw-sdr-pcb-assembled/>
+* <https://github.com/~NBitWonder/SDR>
 
 20m Direct Conversion Receiver
 ------------------------------
 
 <http://www.qsl.net/vu2upx/Projects/dc_rx.htm>
-
-20m CW/SSB Transceiver
-----------------------
 
