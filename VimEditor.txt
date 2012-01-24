@@ -41,6 +41,16 @@ Call a movement command in a script:
 
     exe "normal! gg"
 
+Toggle mode using Caps-Lock
+---------------------------
+
+* Use the program [~PCKeyboardHack](http://pqrs.org/macosx/keyremap4macbook/extra.html) to map Caps-Lock to F12 (disable any shortcuts and set function keys to work as functions keys).
+* Add lines below to .vimrc to use F12 to toggle between Command mode and Insert mode.
+
+
+        nnoremap <F12> i
+        imap <F12> <Esc>
+
 Some links
 ----------
 * <http://tnerual.eriogerg.free.fr/vimqrc.html>
