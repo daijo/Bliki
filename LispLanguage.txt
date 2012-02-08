@@ -44,6 +44,11 @@ or
 
 Or download and install  [RMCL](http://en.wikipedia.org/wiki/Macintosh_Common_Lisp).
 
+Eclipse and Cusp
+----------------
+
+<http://www.sergeykolos.com/cusp/intro/>
+
 Emacs and SLIME
 ---------------
 
