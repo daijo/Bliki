@@ -8,6 +8,11 @@ Lisp
     > (HELLO)
     "Hello world"
 
+Tutorials
+---------
+
+* <http://www2.cs.sfu.ca/~CourseCentral/310/pwfong/Lisp>
+
 Essays & Blogs
 --------------
 
