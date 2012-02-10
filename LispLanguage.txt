@@ -11,7 +11,7 @@ Lisp
 Specification
 -------------
 
-<http://www.lispworks.com/documentation/~HyperSpec/Front/index.htm>
+* [~HyperSpec][1]
 
 Tutorials
 ---------
@@ -29,12 +29,12 @@ Common Lisp: A Gentle Introduction to Symbolic Computation
 
 by David S. Touretzky,  <http://www-2.cs.cmu.edu/~dst/~LispBook/>.
 
+[Code](https://github.com/deadcode/Learning-CL--David-Touretzky) available on Github.
+
 Common Lisp the Language, 2nd Edition
 -------------------------------------
 
-<http://www.cs.cmu.edu/Groups/AI/html/cltl/clm/clm.html>
-
-[Code](https://github.com/deadcode/Learning-CL--David-Touretzky) available on Github.
+* [Common Lisp The Language][2] 
 
 Unit testing
 ------------
@@ -90,12 +90,6 @@ VIM and SLIME
 -------------
 
 <http://www.vim.org/scripts/script.php?script_id=2531>
-
-Reference
----------
-
-* [~HyperSpec][1]
-* [Common Lisp The Language][2] 
 
 
 [1]:http://www.lispworks.com/documentation/~HyperSpec/Front/index.htm
