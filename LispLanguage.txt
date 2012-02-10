@@ -90,6 +90,7 @@ VIM and SLIME
 -------------
 
 <http://www.vim.org/scripts/script.php?script_id=2531>
+<http://kovisoft.bitbucket.org/tutorial.html>
 
 
 [1]:http://www.lispworks.com/documentation/~HyperSpec/Front/index.htm
