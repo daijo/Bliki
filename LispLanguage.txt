@@ -12,6 +12,7 @@ Specification
 -------------
 
 * [~HyperSpec][1]
+* <http://dreamsongs.com/CLOS.html>
 
 Tutorials
 ---------
