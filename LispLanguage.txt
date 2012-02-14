@@ -31,6 +31,11 @@ Essays & Blogs
 * <http://www.paulgraham.com/rootsoflisp.html>
 * <http://carcaddar.blogspot.com/2011/10/common-lisp-is-best-language-to-learn.html>
 
+Practical Common Lisp
+---------------------
+
+* <http://www.gigamonkeys.com/book/>
+
 Common Lisp: A Gentle Introduction to Symbolic Computation
 ----------------------------------------------------------
 
