@@ -20,11 +20,6 @@ Tutorials
 * <http://www2.cs.sfu.ca/~CourseCentral/310/pwfong/Lisp>
 * <http://cl-cookbook.sourceforge.net/clos-tutorial/index.html>
 
-Videos
-------
-
-* <http://www.youtube.com/watch?v=~VeAdryYZ7ak>
-
 Essays & Blogs
 --------------
 
