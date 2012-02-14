@@ -60,6 +60,12 @@ or
 
 Or download and install  [RMCL](http://en.wikipedia.org/wiki/Macintosh_Common_Lisp).
 
+Clozure CL
+----------
+
+* <http://ccl.clozure.com/>
+* <http://itunes.apple.com/us/app/clozure-cl/id489900618?ls=1&mt=12>
+
 Eclipse and Cusp
 ----------------
 
