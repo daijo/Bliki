@@ -1,0 +1,282 @@
+title: Git Tutorial
+author: Hjort Daniel
+date: 2012/02/21
+location: Phnom Penh, Cambodia
+tags: git, tutorial
+
+I wrote this tutorial as a basis for a TechTalk at GoldenGekkoLtd. You are probably better of at <http://git-scm.com/documentation>.
+
+History
+-------
+
+
+
+Performance & Benefits
+----------------------
+
+In his famous talk at Google Linus Torvalds called people who prefer other version control systems as "Ugly and stupid". A gittish thing to say, he named Git after himself after all, but there are a lot of good reasons to use Git.
+
+* Fast
+* Distributed
+* Secure
+
+It's also becoming de facto standard in open source projects (much thanks to GitHub).
+
+Basics
+------
+
+Create a git.
+
+    daijo@maggie:Code$ mkdir -p git_tech_talk/hello
+    daijo@maggie:Code$ cd git_tech_talk/hello/
+    daijo@maggie:hello$ git init
+    Initialized empty Git repository in /Users/daijo/Code/git_tech_talk/hello/.git/
+    daijo@maggie:hello$ git status
+    # On branch master
+    #
+    # Initial commit
+    #
+    nothing to commit (create/copy files and use "git add" to track)
+
+    Lets create a simple program.
+
+    daijo@maggie:hello$ echo 'print "Hello world!"' > hello.py
+    daijo@maggie:hello$ python ./hello.py 
+    Hello world!
+
+Lets check the status again.
+
+    daijo@maggie:hello$ git status
+    # On branch master
+    #
+    # Initial commit
+    #
+    # Untracked files:
+    #   (use "git add <file>..." to include in what will be committed)
+    #
+    #	hello.py
+    nothing added to commit but untracked files present (use "git add" to track)
+
+Ok, so we add the new file and check status again.
+
+    daijo@maggie:hello$ git add hello.py 
+    daijo@maggie:hello$ git status
+    # On branch master
+    #
+    # Initial commit
+    #
+    # Changes to be committed:
+    #   (use "git rm --cached <file>..." to unstage)
+    #
+    #	new file:   hello.py
+    #
+
+Ok lets just commit this with a message.
+
+    daijo@maggie:hello$ git commit -m "Initial commit"
+    [master (root-commit) 8126c63] Initial commit
+     1 files changed, 1 insertions(+), 0 deletions(-)
+     create mode 100644 hello.py
+    daijo@maggie:hello [master]$ git status
+    # On branch master
+    nothing to commit (working directory clean)
+
+Sweet! But we have really only checked-in this to our own local repository. Let share it!
+
+Clone, push and pull
+--------------------
+
+This is when we discover the distributed aspects of Git. We're going to clone the repository to another location. In everyday use it's probably to a server at your workplace or to a place like GitHub. But it might as well just be somewhere else on the file system and to keep this tutotial simple that's what we are going todo. Lets create make beleive home directories of two hypothetical developer called Alice and Bob.
+
+    daijo@maggie:hello [master]$ cd ..
+    daijo@maggie:git_tech_talk$ mkdir ./alice ./bob
+    daijo@maggie:git_tech_talk$ ls
+    alice	bob	hello
+    daijo@maggie:git_tech_talk$ mv hello/ alice/
+    daijo@maggie:git_tech_talk$ cd alice/hello
+    daijo@maggie:hello [master]$ git status
+    # On branch master
+    nothing to commit (working directory clean)
+
+The repository is still there. So now let Alice clone it to a location where Bob can find it.
+
+    daijo@maggie:hello [master]$ git clone --bare . ../../main_repo
+    Cloning into bare repository ../../main_repo...
+    done.
+
+So lets turn in to Bob.
+
+    daijo@maggie:hello [master]$ cd ../../bob/
+    daijo@maggie:bob$
+
+Now Bob performs the first action you always perform when you are going to use an existing git repository. He clones it to where he want to work on it.
+
+    daijo@maggie:bob$ git clone ../main_repo/ hello
+    Cloning into hello...
+    done.
+
+Lets do some sanity checks.
+
+    daijo@maggie:bob$ ls
+    hello
+    daijo@maggie:bob$ cd hello/
+    daijo@maggie:hello [master]$ git status
+    # On branch master
+    nothing to commit (working directory clean)
+    daijo@maggie:hello [master]$ ls
+    hello.py
+    daijo@maggie:hello [master]$ python hello.py 
+    Hello world! 
+
+Wohoo! Looks great! But Bob thinks "world" is a bit generic. It should say "Alice". Being a master Unix programmer he doesn't even need to open his favorite text editor.
+
+    daijo@maggie:hello [master]$ cat hello.py | sed 's/world/Alice/g' > hello.py_ && mv hello.py_ hello.py 
+    daijo@maggie:hello [master]$ cat hello.py 
+    print "Hello Alice!"
+    daijo@maggie:hello [master]$ python hello.py 
+    Hello Alice!
+
+Looks good! Bob is happy and wants to commit this. He first checks the status.
+
+    daijo@maggie:hello [master]$ git status
+    # On branch master
+    # Changes not staged for commit:
+    #   (use "git add <file>..." to update what will be committed)
+    #   (use "git checkout -- <file>..." to discard changes in working directory)
+    #
+    #	modified:   hello.py
+    #
+    no changes added to commit (use "git add" and/or "git commit -a")
+
+Looks like there are some good tips in those messages. Lets just commit all and also add a comit message.
+
+    daijo@maggie:hello [master]$  git commit -a -m "For Alice."
+    [master bb7a493] For Alice.
+     1 files changed, 1 insertions(+), 1 deletions(-)
+    daijo@maggie:hello [master]$ git log
+    commit bb7a49376317895b6647edb0968e02d960bd28e7
+    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Date:   Tue Feb 21 18:21:17 2012 +0700
+    
+        For Alice.
+    
+    commit 8126c633fd71c9ddf83db52321552e69222e9930
+    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Date:   Tue Feb 21 16:33:28 2012 +0700
+    
+        Initial commit
+
+He takes the opportinity to check the commit log as well. Now we need to push the changes to the main repository so Alice can see them.
+
+    daijo@maggie:hello [master]$ git push ../../main_repo/ master
+    Counting objects: 5, done.
+    Writing objects: 100% (3/3), 264 bytes, done.
+    Total 3 (delta 0), reused 0 (delta 0)
+    Unpacking objects: 100% (3/3), done.
+    To ../../main_repo/
+       8126c63..bb7a493  master -> master
+
+Since Bob did a clone from the main repository he could also have written:
+
+    git push origin master
+
+A cloned git remembers where it came from.
+
+Note: If we Alice hadn't cloned the main_repo as bare Bob would now have gotten this horrible message:
+
+    daijo@maggie:hello [master]$ git push ../../main_repo/ master
+    Counting objects: 5, done.
+    Writing objects: 100% (3/3), 265 bytes, done.
+    Total 3 (delta 0), reused 0 (delta 0)
+    Unpacking objects: 100% (3/3), done.
+    remote: error: refusing to update checked out branch: refs/heads/master
+    remote: error: By default, updating the current branch in a non-bare repository
+    remote: error: is denied, because it will make the index and work tree inconsistent
+    remote: error: with what you pushed, and will require 'git reset --hard' to match
+    remote: error: the work tree to HEAD.
+    remote: error: 
+    remote: error: You can set 'receive.denyCurrentBranch' configuration variable to
+    remote: error: 'ignore' or 'warn' in the remote repository to allow pushing into
+    remote: error: its current branch; however, this is not recommended unless you
+    remote: error: arranged to update its work tree to match what you pushed in some
+    remote: error: other way.
+    remote: error: 
+    remote: error: To squelch this message and still keep the default behaviour, set
+    remote: error: 'receive.denyCurrentBranch' configuration variable to 'refuse'.
+    To ../../main_repo/
+     ! [remote rejected] master -> master (branch is currently checked out)
+    error: failed to push some refs to '../../main_repo/'
+
+Remember all repositories are equal (but some are bare).
+
+Bob shouts over the cubicle wall, "Just pushed a change!". If you are used to inferior, eh I mean, if you are used to centralized version control systems you see that pushing is somewhat similar to comitting. But a developer using Git probably commits a lot more often. She might even work on a handful of branches locally. From my experince when using Subversion I count commits per day but using Git I count commits per hour. And having different branches in Subversion keep you awake at night.
+
+Also note that a central repository in Git is central becasue you decided it to be not becasue it really is. You can adopt a centralized way of working (with some benefits like resiliance to network problems) within a distributed version control system. You can't do the opposite. 
+
+Alice, hearing Bob's announcement, decides to pull his changes from the central repository. First we get into the role of Alice.
+
+daijo@maggie:hello [master]$ cd ../../alice/hello/
+
+Then pull the changes.
+
+    daijo@maggie:hello [master]$ git pull ../../main_repo/ master
+    remote: Counting objects: 5, done.
+    remote: Total 3 (delta 0), reused 0 (delta 0)
+    Unpacking objects: 100% (3/3), done.
+    From ../../main_repo
+     * branch            master     -> FETCH_HEAD
+    Updating 8126c63..bb7a493
+    Fast-forward
+     hello.py |    2 +-
+     1 files changed, 1 insertions(+), 1 deletions(-)
+    daijo@maggie:hello [master]$ git log
+    commit bb7a49376317895b6647edb0968e02d960bd28e7
+    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Date:   Tue Feb 21 18:21:17 2012 +0700
+    
+        For Alice.
+
+    commit 8126c633fd71c9ddf83db52321552e69222e9930
+    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Date:   Tue Feb 21 16:33:28 2012 +0700
+    
+        Initial commit
+    daijo@maggie:hello [master]$ python hello.py 
+    Hello Alice!
+
+Aww. Since Alice don't want to refer to the actuall location of the main repository everytime she adds it as the origin (even if she was the real origin).
+
+    daijo@maggie:hello [master]$ git remote add origin ../../main_repo/
+    daijo@maggie:hello [master]$ git pull origin master
+    From ../../main_repo
+     * branch            master     -> FETCH_HEAD
+    Already up-to-date.
+
+Worked like a charm.
+
+Branches
+--------
+
+When working on separate branches is when Git really shines.
+
+TBD
+
+Submodules
+----------
+
+TBD
+
+~SourceTree
+-----------
+
+In the beginning the CLI was the only way t interact with git. It's still good to use, especially in the beginning, to get an understanding of what you are doing. You shouldn't use a GUI unless you understand what it does. That said, SourceTree is a excellent one and at the moment it's free! Get it in the Mac App Store.
+
+Xcode integration
+-----------------
+
+TBD
+
+Static libs and submodules
+--------------------------
+
+TBD
