@@ -4,7 +4,7 @@ date: 2012/02/21
 location: Phnom Penh, Cambodia
 tags: git, tutorial
 
-I wrote this tutorial as a basis for a TechTalk at GoldenGekkoLtd. You are probably better of at <http://git-scm.com/documentation>.
+I wrote this tutorial as a basis for a TechTalk at GoldenGekkoLtd. You are probably better off at <http://git-scm.com/documentation>.
 
 History
 -------
