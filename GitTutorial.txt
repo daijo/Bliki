@@ -285,16 +285,16 @@ A quick test.
 
 Done! Now she wants to go back the master branch. First we checkin the change.
 
-daijo@maggie:hello [CR-1234]$ git commit -a -m "New feature."
-[CR-1234 0c29a14] New feature.
- 1 files changed, 2 insertions(+), 1 deletions(-)
+    daijo@maggie:hello [CR-1234]$ git commit -a -m "New feature."
+    [CR-1234 0c29a14] New feature.
+     1 files changed, 2 insertions(+), 1 deletions(-)
 
 Then switch back. Run the program again to see we are back to the original version.
 
-daijo@maggie:hello [CR-1234]$ git checkout master
-Switched to branch 'master'
-daijo@maggie:hello [master]$ python hello.py 
-Hello Alice!
+    daijo@maggie:hello [CR-1234]$ git checkout master
+    Switched to branch 'master'
+    daijo@maggie:hello [master]$ python hello.py 
+    Hello Alice!
 
 A few days later the CR gets accapted and Alice need to merge it to master (which she is currently on).
 
@@ -341,7 +341,7 @@ Submodules
 ~SourceTree
 -----------
 
-In the beginning the CLI was the only way t interact with git. It's still good to use, especially in the beginning, to get an understanding of what you are doing. You shouldn't use a GUI unless you understand what it does. That said, SourceTree is a excellent one and at the moment it's free! Get it in the Mac App Store.
+In the beginning the CLI was the only way to interact with git. It's still good to use, especially in the beginning to get an understanding of what you are doing. You shouldn't use a GUI unless you understand what it does. That said, ~SourceTree is a excellent one and at the moment it's free! Get it in the Mac App Store.
 
 Xcode integration
 -----------------
