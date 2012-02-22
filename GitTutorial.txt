@@ -34,11 +34,11 @@ Create a git.
     daijo@maggie:hello$ git init
     Initialized empty Git repository in /Users/daijo/Code/git_tech_talk/hello/.git/
     daijo@maggie:hello$ git status
-    # On branch master
-    #
-    # Initial commit
-    #
-    nothing to commit (create/copy files and use "git add" to track)
+     On branch master
+    
+     Initial commit
+    
+     nothing to commit (create/copy files and use "git add" to track)
 
     Lets create a simple program.
 
@@ -49,29 +49,29 @@ Create a git.
 Lets check the status again.
 
     daijo@maggie:hello$ git status
-    # On branch master
-    #
-    # Initial commit
-    #
-    # Untracked files:
-    #   (use "git add <file>..." to include in what will be committed)
-    #
-    #	hello.py
+    On branch master
+    
+     Initial commit
+    
+     Untracked files:
+       (use "git add <file>..." to include in what will be committed)
+    
+    	hello.py
     nothing added to commit but untracked files present (use "git add" to track)
 
 Ok, so we add the new file and check status again.
 
     daijo@maggie:hello$ git add hello.py 
     daijo@maggie:hello$ git status
-    # On branch master
-    #
-    # Initial commit
-    #
-    # Changes to be committed:
-    #   (use "git rm --cached <file>..." to unstage)
-    #
-    #	new file:   hello.py
-    #
+     On branch master
+    
+     Initial commit
+    
+     Changes to be committed:
+       (use "git rm --cached <file>..." to unstage)
+    
+    	new file:   hello.py
+    
 
 Ok lets just commit this with a message.
 
@@ -80,7 +80,7 @@ Ok lets just commit this with a message.
      1 files changed, 1 insertions(+), 0 deletions(-)
      create mode 100644 hello.py
     daijo@maggie:hello [master]$ git status
-    # On branch master
+     On branch master
     nothing to commit (working directory clean)
 
 Sweet! But we have really only checked-in this to our own local repository. Let share it!
@@ -88,7 +88,7 @@ Sweet! But we have really only checked-in this to our own local repository. Let 
 Clone, push and pull
 --------------------
 
-This is when we discover the distributed aspects of Git. We're going to clone the repository to another location. In everyday use it's probably to a server at your workplace or to a place like GitHub. But it might as well just be somewhere else on the file system and to keep this tutotial simple that's what we are going todo. Lets create make beleive home directories of two hypothetical developer called Alice and Bob.
+This is when we discover the distributed aspects of Git. We're going to clone the repository to another location. In everyday use it's probably to a server at your workplace or to a place like GitHub. But it might as well just be somewhere else on the file system and to keep this tutorial simple that's what we are going todo. Lets create make believe home directories of two hypothetical developer called Alice and Bob.
 
     daijo@maggie:hello [master]$ cd ..
     daijo@maggie:git_tech_talk$ mkdir ./alice ./bob
@@ -97,7 +97,7 @@ This is when we discover the distributed aspects of Git. We're going to clone th
     daijo@maggie:git_tech_talk$ mv hello/ alice/
     daijo@maggie:git_tech_talk$ cd alice/hello
     daijo@maggie:hello [master]$ git status
-    # On branch master
+     On branch master
     nothing to commit (working directory clean)
 
 The repository is still there. So now let Alice clone it to a location where Bob can find it.
@@ -141,13 +141,13 @@ Wohoo! Looks great! But Bob thinks "world" is a bit generic. It should say "Alic
 Looks good! Bob is happy and wants to commit this. He first checks the status.
 
     daijo@maggie:hello [master]$ git status
-    # On branch master
-    # Changes not staged for commit:
-    #   (use "git add <file>..." to update what will be committed)
-    #   (use "git checkout -- <file>..." to discard changes in working directory)
-    #
-    #	modified:   hello.py
-    #
+     On branch master
+     Changes not staged for commit:
+       (use "git add <file>..." to update what will be committed)
+       (use "git checkout -- <file>..." to discard changes in working directory)
+    
+    	modified:   hello.py
+    
     no changes added to commit (use "git add" and/or "git commit -a")
 
 Looks like there are some good tips in those messages. Lets just commit all and also add a comit message.
@@ -307,7 +307,7 @@ A few days later the CR gets accapted and Alice need to merge it to master (whic
     What is your name? Alice
     Hello Alice!
     daijo@maggie:hello [master]$ git status
-    # On branch master
+     On branch master
     nothing to commit (working directory clean)
 
 We see the change is all ready commited after the merge. Lets have a look at the log.
