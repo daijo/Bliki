@@ -123,7 +123,7 @@ Lets do some sanity checks.
     hello
     daijo@maggie:bob$ cd hello/
     daijo@maggie:hello [master]$ git status
-    # On branch master
+     On branch master
     nothing to commit (working directory clean)
     daijo@maggie:hello [master]$ ls
     hello.py
