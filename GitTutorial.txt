@@ -9,6 +9,7 @@ I wrote this tutorial as a basis for a TechTalk at GoldenGekkoLtd. You are proba
 History
 -------
 
+Git was originaly written by Linus Torvalds to be used in the Linux Kernel development. During the first 10 years of the Linux project patches and tarballs was used. A lot of mails were sent. Then they started to use the commercial software ~BitKeeper. It was distributed, safe, fast and the commercial developer allowed the Linux project to use it freely. All was good until someone decided to start reverse engineer the software. The relationship with ~BitKeeper's developer soured and the use for free agreement was canceled. A new solution was needed and Git was born.
 
 
 Performance & Benefits
@@ -19,8 +20,9 @@ In his famous talk at Google Linus Torvalds called people who prefer other versi
 * Fast
 * Distributed
 * Secure
+* Not CVS/SVN
 
-It's also becoming de facto standard in open source projects (much thanks to GitHub).
+It's also becoming de facto standard in open source projects (much thanks to GitHub <http://www.wired.com/wiredenterprise/2012/02/github/>).
 
 Basics
 ------
@@ -155,13 +157,13 @@ Looks like there are some good tips in those messages. Lets just commit all and 
      1 files changed, 1 insertions(+), 1 deletions(-)
     daijo@maggie:hello [master]$ git log
     commit bb7a49376317895b6647edb0968e02d960bd28e7
-    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Author: Daniel Hjort <daniel.hjort@email.com>
     Date:   Tue Feb 21 18:21:17 2012 +0700
     
         For Alice.
     
     commit 8126c633fd71c9ddf83db52321552e69222e9930
-    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Author: Daniel Hjort <daniel.hjort@email.com>
     Date:   Tue Feb 21 16:33:28 2012 +0700
     
         Initial commit
@@ -231,13 +233,13 @@ Then pull the changes.
      1 files changed, 1 insertions(+), 1 deletions(-)
     daijo@maggie:hello [master]$ git log
     commit bb7a49376317895b6647edb0968e02d960bd28e7
-    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Author: Daniel Hjort <daniel.hjort@email.com>
     Date:   Tue Feb 21 18:21:17 2012 +0700
     
         For Alice.
 
     commit 8126c633fd71c9ddf83db52321552e69222e9930
-    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Author: Daniel Hjort <daniel.hjort@email.com>
     Date:   Tue Feb 21 16:33:28 2012 +0700
     
         Initial commit
@@ -257,14 +259,84 @@ Worked like a charm.
 Branches
 --------
 
-When working on separate branches is when Git really shines.
+When working on separate branches is when Git really shines. Say Alice get wind of a change request that's not fully approved yet. But she want prepare and start doing some work on it in isolation. This is a good time to create a branch.
 
-TBD
+    daijo@maggie:hello [master]$ git branch CR-1234
+    daijo@maggie:hello [master]$ git branch
+      CR-1234
+    * master
+
+We see we now have two different branches. The * infront of master indicate we are on the master branch. Lets change to the new one.
+
+    daijo@maggie:hello [master]$ git checkout CR-1234
+    Switched to branch 'CR-1234'
+
+All changes done now will happen on the new branch. Notice we can keep working in the same directory.
+Now Alice makes the change for the new requirement. She edits the file to:
+
+    name = raw_input('What is your name? ')
+    print "Hello " + name + "!"
+
+A quick test.
+
+    daijo@maggie:hello [CR-1234]$ python hello.py 
+    What is your name? Alice
+    Hello Alice!
+
+Done! Now she wants to go back the master branch. First we checkin the change.
+
+daijo@maggie:hello [CR-1234]$ git commit -a -m "New feature."
+[CR-1234 0c29a14] New feature.
+ 1 files changed, 2 insertions(+), 1 deletions(-)
+
+Then switch back. Run the program again to see we are back to the original version.
+
+daijo@maggie:hello [CR-1234]$ git checkout master
+Switched to branch 'master'
+daijo@maggie:hello [master]$ python hello.py 
+Hello Alice!
+
+A few days later the CR gets accapted and Alice need to merge it to master (which she is currently on).
+
+    daijo@maggie:hello [master]$ git merge CR-1234
+    Updating bb7a493..0c29a14
+    Fast-forward
+     hello.py |    3 ++-
+     1 files changed, 2 insertions(+), 1 deletions(-)
+    daijo@maggie:hello [master]$ python hello.py
+    What is your name? Alice
+    Hello Alice!
+    daijo@maggie:hello [master]$ git status
+    # On branch master
+    nothing to commit (working directory clean)
+
+We see the change is all ready commited after the merge. Lets have a look at the log.
+
+    daijo@maggie:hello [master]$ git log
+    commit 0c29a14b301183d9f6bfbabaa70abacfd75efdf5
+    Author: Daniel Hjort <daniel.hjort@email.com>
+    Date:   Wed Feb 22 18:08:48 2012 +0700
+    
+        New feature.
+    
+    commit bb7a49376317895b6647edb0968e02d960bd28e7
+    Author: Daniel Hjort <daniel.hjort@email.com>
+    Date:   Tue Feb 21 18:21:17 2012 +0700
+    
+        For Alice.
+    
+    commit 8126c633fd71c9ddf83db52321552e69222e9930
+    Author: Daniel Hjort <daniel.hjort@email.com>
+    Date:   Tue Feb 21 16:33:28 2012 +0700
+    
+        Initial commit
+
+It looks like we should expect.
 
 Submodules
 ----------
 
-TBD
+
 
 ~SourceTree
 -----------
