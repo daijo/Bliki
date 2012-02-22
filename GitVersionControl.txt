@@ -6,6 +6,17 @@ Git Usage
 [Git reference][3]
 [Git book][4]
 
+Apply pull request as patch
+---------------------------
+
+    daijo@dhmbp:facebook-ios-sdk [master]$ curl https://github.com/facebook/facebook-ios-sdk/pull/436.patch | git am
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+    100  1039  100  1039    0     0    496      0  0:00:02  0:00:02 --:--:--   760
+    Applying: Fixed feed dialog disappearing immediately after returning from FB app SSO
+    daijo@dhmbp:facebook-ios-sdk [master]$ git push origin master
+
+
 Add git submodule
 -----------------
     cd project
