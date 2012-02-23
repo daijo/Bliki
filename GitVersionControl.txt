@@ -1,10 +1,26 @@
 Git Usage
 =========
 
+A random collection of git commands. See GitTutorial for a start with the basics.
+
+Reference
+---------
+
 [Docs][1]  
 [Git tips][2]  
 [Git reference][3]
 [Git book][4]
+
+Using the stash
+---------------
+
+    git stash save "work in progress"
+
+Do other work.
+
+    git stash apply
+
+Continue where you left off.
 
 Apply pull request as patch
 ---------------------------
