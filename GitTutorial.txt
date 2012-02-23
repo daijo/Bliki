@@ -336,6 +336,55 @@ It looks like we should expect.
 Submodules
 ----------
 
+Now the team receive a new request from the customer. The application must take a number as input and print put n! (factorial). The schedule is tight. No way they can implement the factorial function before the deadline. Time to stand on the shoulders of giants. Alice know of a open-sourceproject hosted on GitHub <https://github.com/daijo/factorial>. She decides to add it as a git submodule to the project.
+
+    daijo@maggie:hello [master]$ git submodule add git@github.com:daijo/factorial.git factorial
+    Cloning into factorial...
+    remote: Counting objects: 5, done.
+    remote: Compressing objects: 100% (4/4), done.
+    remote: Total 5 (delta 0), reused 5 (delta 0)
+    Receiving objects: 100% (5/5), done.
+    daijo@maggie:hello [master]$ ls factorial/
+    README		factorial.py
+    daijo@maggie:hello [master]$ git submodule init
+    Submodule 'factorial' (git@github.com:daijo/factorial.git) registered for path 'factorial'
+    daijo@maggie:hello [master]$ git submodule update
+
+Awesome! Lets push it.
+
+    daijo@maggie:hello [master]$ git push origin master
+    Counting objects: 8, done.
+    Delta compression using up to 4 threads.
+    Compressing objects: 100% (5/5), done.
+    Writing objects: 100% (6/6), 674 bytes, done.
+    Total 6 (delta 0), reused 0 (delta 0)
+    Unpacking objects: 100% (6/6), done.
+    To ../../main_repo/
+       bb7a493..ab503fb  master -> master
+    daijo@maggie:hello [master]$ git log
+    commit ab503fbef103ace69a752266deb6feaa7b7097b1
+    Author: Daniel Hjort <daniel.hjort@email.com>
+    Date:   Thu Feb 23 08:19:55 2012 +0700
+    
+        Adding factorial submodule.
+    
+    commit 0c29a14b301183d9f6bfbabaa70abacfd75efdf5
+    Author: Daniel Hjort <daniel.hjort@email.com>
+    Date:   Wed Feb 22 18:08:48 2012 +0700
+    
+        New feature.
+    
+    commit bb7a49376317895b6647edb0968e02d960bd28e7
+    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Date:   Tue Feb 21 18:21:17 2012 +0700
+    
+        For Alice.
+    
+    commit 8126c633fd71c9ddf83db52321552e69222e9930
+    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Date:   Tue Feb 21 16:33:28 2012 +0700
+    
+        Initial commit
 
 
 ~SourceTree
