@@ -375,13 +375,13 @@ Awesome! Lets push it.
         New feature.
     
     commit bb7a49376317895b6647edb0968e02d960bd28e7
-    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Author: Daniel Hjort <daniel.hjort@email.com>
     Date:   Tue Feb 21 18:21:17 2012 +0700
     
         For Alice.
     
     commit 8126c633fd71c9ddf83db52321552e69222e9930
-    Author: Daniel Hjort <daniel.hjort@gmail.com>
+    Author: Daniel Hjort <daniel.hjort@email.com>
     Date:   Tue Feb 21 16:33:28 2012 +0700
     
         Initial commit
