@@ -3,6 +3,11 @@ C
 
 The C programming language.
 
+Books
+-----
+
+* [Learn C the hard way](http://c.learncodethehardway.org/book/)
+
 FAQ
 ---
 
