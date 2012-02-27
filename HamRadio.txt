@@ -49,12 +49,15 @@ Frequency mixer
 Own design QRP CW Tranceiver
 ----------------------------
 
-        <------ Feedback --------+ 
-                                 |
-Arduino DDS -> Mixer -> Frequency counter ->
-                 ^
-                 |
-         Crystal oscillator
+VFO:
+
+        +-------- Feedback -------+ 
+        |                         |
+        v                         |
+    Arduino DDS -> Mixer -> Frequency counter ->
+                     ^
+                     |
+             Crystal oscillator
 
 DDS Direct Conversion QRP CW Tranceiver
 ---------------------------------------
