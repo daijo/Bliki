@@ -41,6 +41,21 @@ Direct Digital Synthesis (DDS)
 <http://www.theladderline.com/book/export/html/5>
 <http://midnightdesignsolutions.com/dds60/index.html>
 
+Frequency mixer
+---------------
+
+<https://en.wikipedia.org/wiki/Frequency_mixer>
+
+Own design QRP CW Tranceiver
+----------------------------
+
+        <------ Feedback --------+ 
+                                 |
+Arduino DDS -> Mixer -> Frequency counter ->
+                 ^
+                 |
+         Crystal oscillator
+
 DDS Direct Conversion QRP CW Tranceiver
 ---------------------------------------
 
