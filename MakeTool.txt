@@ -1,0 +1,37 @@
+Make
+====
+
+Makefile Syntax
+---------------
+
+    target [target ...]: [component ...]
+    [<TAB>command 1]
+           .
+           .
+           .
+    [<TAB>command n]
+
+
+    MACRO = definition
+
+    NEW_MACRO = $(MACRO)-$(MACRO2)
+
+    YYYYMMDD  = ` date `
+
+From command line
+-----------------
+
+    make MACRO="value" [MACRO="value" ...] TARGET [TARGET ...]
+
+Internal macros
+---------------
+
+    $?
+    $@
+    $<
+    $^
+
+Makefile vizualizer
+-------------------
+
+* <https://github.com/vak/makefile2dot>
