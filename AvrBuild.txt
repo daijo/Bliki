@@ -1,0 +1,9 @@
+AVR Cross Compile
+=================
+
+Tools
+-----
+
+    sudo port install avr-libc avr-gcc avr-binutils avrdude
+
+
