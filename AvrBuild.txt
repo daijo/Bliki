@@ -6,4 +6,7 @@ Tools
 
     sudo port install avr-libc avr-gcc avr-binutils avrdude
 
+Reference
+---------
 
+* <http://tuxgraphics.org/electronics/200904/avr-c-programming.shtml>
