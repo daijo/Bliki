@@ -9,4 +9,5 @@ Tools
 Reference
 ---------
 
+* <http://www.nongnu.org/avr-libc/user-manual/index.html>
 * <http://tuxgraphics.org/electronics/200904/avr-c-programming.shtml>
