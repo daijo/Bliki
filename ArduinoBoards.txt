@@ -8,6 +8,7 @@ Seeeduino V2.21 Atmega 328P
 
 <http://www.seeedstudio.com/wiki/Seeeduino_v2.21>
 
+Board tag: atmega328
 Arduino IDE name: Arduino Dueminalove 328
 Running @ 16MHz
 
@@ -18,6 +19,7 @@ No built in USB.
 
 <http://arduino.cc/en/Main/~ArduinoBoardEthernet>
 
+Board tag: ethernet
 Arduino IDE name: Arduino Ethernet
 Running @ 16 MHz
 No ~PoE

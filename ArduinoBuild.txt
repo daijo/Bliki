@@ -1,0 +1,12 @@
+Arduino Build
+=============
+
+<http://mjo.tc/atelier/2009/02/arduino-cli.html>
+
+Prerequisites
+-------------
+
+* The AVR tool chain. See AvrBuild.
+* Perl YAML module <http://search.cpan.org/~ingy/YAML-0.80/lib/YAML.pm>.
+* The Ardunio IDE.
+* The Arduino Makefile <https://github.com/mjoldfield/Arduino-Makefile>.
