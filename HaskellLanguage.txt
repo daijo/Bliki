@@ -29,4 +29,7 @@ Testing
 On Mac
 ------
 
-<http://www.haskell.org/haskellwiki/Mac_OS_X>
+The MacPorts package seem out of date and broken (2012-03-11).
+
+* <http://hackage.haskell.org/platform/>
+* <http://www.haskell.org/haskellwiki/Mac_OS_X>
