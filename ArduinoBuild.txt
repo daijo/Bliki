@@ -1,7 +1,7 @@
 Arduino Build
 =============
 
-To build Arduino using make while still using the Arduino libraries etc. 
+To build Arduino using MakeTool while still using the Arduino libraries etc. 
 
 [Docs](http://mjo.tc/atelier/2009/02/arduino-cli.html)
 
@@ -10,7 +10,7 @@ Prerequisites
 
 * The AVR tool chain. See AvrBuild.
 * Perl YAML module (to parse boards.txt).
-* The [Ardunio IDE](http://arduino.cc/en/Main/Software).
+* The [Ardunio environment](http://arduino.cc/en/Main/Software).
 * The [Makefile](https://github.com/mjoldfield/Arduino-Makefile).
 
 Libraries
@@ -18,4 +18,4 @@ Libraries
 
 Put extra libs in /Applications/Arduino.app/Contents/Resources/Java/libraries.
 
-I have added MsTimer2, ProtoThreads, HCSR04Ultrasonic and SerialLCD.
+I have added the libraries I use (MsTimer2, ProtoThreads, HCSR04Ultrasonic and SerialLCD) to a GitVersionControl [repository](https://github.com/daijo/~ArduinoLibraries) that I can sync with the Arduino enviromment. Hopefully this will be redundant in the future with a more centralized and automated apporach to libraries in the Arduino world.
