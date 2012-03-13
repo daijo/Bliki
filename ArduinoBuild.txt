@@ -18,4 +18,6 @@ Libraries
 
 Put extra libs in /Applications/Arduino.app/Contents/Resources/Java/libraries.
 
-I have added the libraries I use (MsTimer2, ProtoThreads, HCSR04Ultrasonic and SerialLCD) to a GitVersionControl [repository](https://github.com/daijo/~ArduinoLibraries) that I can sync with the Arduino enviromment. Hopefully this will be redundant in the future with a more centralized and automated apporach to libraries in the Arduino world.
+I have added the libraries I use (MsTimer2, ProtoThreads, HCSR04Ultrasonic and SerialLCD) to a GitVersionControl [repository](https://github.com/daijo/~ArduinoLibraries) that I can sync with the Arduino enviromment. Hopefully this will be redundant in the future with a more centralized and automated approach to libraries in the Arduino world.
+
+
