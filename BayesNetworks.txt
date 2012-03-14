@@ -1,10 +1,20 @@
 Bayes Networks
 ==============
 
+A type of ProbabilisticGraphicalModels.
+
+Defines a network of random variables based on their dependencies.
+
+Every node has a conditional probability distribution (some unconditioned).
+
+
+
+
+
 <http://people.cs.ubc.ca/~~murphyk/Bayes/bnintro.html>
 
-Bayesian Filtering (Classification)
------------------------------------
+Filtering (Classification)
+--------------------------
 
 * [Better Bayesian Filtering][1] - Paul Graham
 

@@ -1,0 +1,53 @@
+Probabilistic Graphical Models
+==============================
+
+* BayesNetworks
+* MarkovNetworks
+
+Distributions
+-------------
+
+Random variables:
+
+Raining(R)
+r0(no), r1(yes)
+2 parameters
+
+Temperature(T)
+t0(cold), t1(medium), t2(hot)
+3 parameters
+
+Joint distribution:
+
+P(R, T)
+
+2*3 parameters
+5 independent parameters
+
+Conditioning-Reduction:
+
+Conditioning on a parameter p (stating the parameter as given) casue reduction of the joint distribution to a unnormalized measure that can be normalized to a new distribution given p.
+
+Marginalization:
+
+Takes a probability distribution over a larger set of variables and rpoduces a probability distribution over a subset of variables.
+
+Marginalize R means sum P(R, T) over R to produce P(T).
+
+Factors
+-------
+
+A factor is a function Val(X1, ... Xk) -> ℝ.
+
+The scope (X1, ... Xk).
+
+For instance a joint distribuion, an unnormalized factor or a conditional probability distribution is a factor.
+
+General factors
+---------------
+
+Factor product:
+
+F(A, B) x F(B, C) -> F(A, B ,C)
+
+F(a1, b1, c1) = F(a1, b1) * F(b1, c1) ...
