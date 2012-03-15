@@ -126,4 +126,83 @@ Bug: In my distribution hist() doesn't work.
     
     >> det(eye(3))
     ans =  1
+    >> size(eye(3))
+    ans =
+    
+       3   3
+
+    >> size(A)
+    ans =
+
+       3   2
+
+    >> size(A,1)
+    ans =  3
+    >> size(A,2)
+    ans =  2
+    >> length(A)
+    ans =  3
+
+Manage Data
+-----------
+
+    >> pwd
+    ans = /Users/daijo
+    >> cd /Users/daijo/Data
+    >> ls
+    iris.data
+    >> load iris.data
+    >> who
+    Variables in the current scope:
+
+    A     ans   iris
+    
+    >> whos
+    Variables in the current scope:
+
+      Attr Name        Size                     Bytes  Class
+      ==== ====        ====                     =====  ===== 
+           A           3x2                         48  double
+           ans         1x2                         16  double
+           iris      150x5                       6000  double
+
+    Total is 758 elements using 6064 bytes
+
+    >> clear A
+    >> v = iris(1:10)
+    v =
+    
+     Columns 1 through 8:
+    
+       5.1000   4.9000   4.7000   4.6000   5.0000   5.4000   4.6000   5.0000
+    
+     Columns 9 and 10:
+    
+       4.4000   4.9000
+
+Save in binary format:
+
+    >> save subset.mat v;
+    >> ls
+    iris.data   subset.mat
+    >> clear
+    >> who
+    >> load subset.mat
+    >> v
+    v =
+    
+     Columns 1 through 8:
+    
+       5.1000   4.9000   4.7000   4.6000   5.0000   5.4000   4.6000   5.0000
+    
+     Columns 9 and 10:
+    
+       4.4000   4.9000
+
+Save in text file:
+
+    >> save subset.txt v -ascii
+    >> ls
+    iris.data   subset.mat	subset.txt
+
 
