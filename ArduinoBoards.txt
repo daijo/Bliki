@@ -24,3 +24,20 @@ Arduino IDE name: Arduino Ethernet
 Running @ 16 MHz
 No ~PoE
 
+Adafruit USB Boarduino
+----------------------
+
+<http://www.ladyada.net/products/usbboarduino/>
+
+EMS/Adafruit Barebones AVR dev. board
+-------------------------------------
+
+* <http://www.adafruit.com/images/large/atmegaxx8targetclose_LRG.jpg>
+* <http://todbot.com/blog/wp-content/uploads/2009/05/minimal-arduino.png>
+
+Single Sided PCB Design
+-----------------------
+
+For reference.
+
+<http://arduino.cc/en/Main/~ArduinoBoardSerialSingleSided3>
