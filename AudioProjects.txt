@@ -1,0 +1,31 @@
+Audio Projects
+==============
+
+18V Rechargeable Battery Pack
+-----------------------------
+
+Built to power my ~CMoy with 18V. ~NiMH constant current charging using LM317. Needs a 24V supply to charge.
+
+![Battery pack](https://farm8.staticflickr.com/7101/7273069136_0627f22cc8_z.jpg)
+
+![The internals](https://farm8.staticflickr.com/7211/7273068364_d9af3e738f_z.jpg)
+
+~CMoy Headphone Amplifier
+------------------------
+
+Work and commute headphone system.
+
+12AU7 + Mosfet Headphone Amplifier
+----------------------------------
+
+Home headphone system.
+
+Elekit PS-3238 powered by Airport Express 
+-----------------------------------------
+
+Bathroom stereo :)
+
+![Completed board](https://farm8.staticflickr.com/7228/7261845812_cf03693cdf_z.jpg)
+
+How will it run on the 5V/100mA from the Airport Express?
+
