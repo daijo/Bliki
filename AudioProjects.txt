@@ -1,24 +1,119 @@
 Audio Projects
 ==============
 
+Few small audio related projects and some notes on their components and their application.
+
 18V Rechargeable Battery Pack
 -----------------------------
 
 Built to power my ~CMoy with 18V. ~NiMH constant current charging using LM317. Needs a 24V supply to charge.
 
 ![Battery pack](https://farm8.staticflickr.com/7101/7273069136_0627f22cc8_z.jpg)
+![Internals](https://farm8.staticflickr.com/7211/7273068364_7982f73796_z.jpg)
 
-![The internals](https://farm8.staticflickr.com/7211/7273068364_d9af3e738f_z.jpg)
+### LM317 Linear Voltage Regulator
+
+The LM317 is a variable voltage regulator. In this device it's setup as a constant current regulator. The regulator have three pins, in, out and adjust. The regulator holds 1.25 V between the out and adjust pin. This is used to get the constant current.
+
+
+          _______    out
+    in --| LM317 |--------\
+          ---|---         |
+             | adjust     -
+             |           | |
+             |           | | R
+             |           | |
+             |            -
+             |            |
+             +------------/
+             |
+             v i
+             |
+
+
+     Constant current i = 1.25 / R
+
+There is a ~3V voltage drop over the regulator (we'll some heat here, P = 3V * i). That's why we need some extra voltage on the supply compared to the batteries to charge.
+
+I set R to charge the battery in 10 hours (C/10) which is a fairly moderate rate that doesn't require anything more advanced. I usually let it charge over night after a day of use. Seems to work well.
+
 
 ~CMoy Headphone Amplifier
 ------------------------
 
-Work and commute headphone system.
+Wanted an easy project to build an also had a need for a small headphone amp to use at work.
+
+![CMoy + Battery pack + Trends USB DAC + AKG K404](https://farm8.staticflickr.com/7229/7325781898_0aa2e4212e_z.jpg)
+![Internals](https://farm9.staticflickr.com/8014/7325782558_d1225b2974_z.jpg)
+
+### OPA2132PA Operational Amplifier (~OpAmp)
+
+An op-amp sets it's output voltage to the voltage difference between the inputs times a open-loop gain A. This gain is very large so even small difference between the inputs make the op-amp deliver the supply voltage to the output.
+            
+          Vs+ 
+           |
+           \
+    V+ ---| \
+          |  \____ out
+    V- ---|  /
+          | /
+           /
+           |
+          Vs-
+
+To reduce the gain a negative feedback loop. That is portion of the output voltage is then led back to the inverting input (V-).
+
+This is how it's set up in the CMoy and the inout is put on the non inverting inout pin (V+) making this a non-inverting amplifier.
+
+           Vs+ 
+            |
+            \
+    V+  ---| \
+           |  \____ out----+--
+    V- +---|  /            |
+       |   | /             |
+       |    /              |
+       |   | Vs-           |
+       |             Rf    |
+       +-----------|====|--/
+       |
+       -
+      | |
+      | | Rg
+      | |
+       -
+       |
+      GND
+
+
+The gain of this amplifier is then G = 1 + Rf/Rg.
+
+### Power supply
+
+Decoupling capacitors, voltage devider.
+
+Virtual ground, why, why not.
+
+
+Reference:
+
+[Original article by Chu Moy](http://gilmore2.chem.northwestern.edu/projects/showfile.php?file=cmoy2_prj.htm)
+[Tutorial by Tangent](http://tangentsoft.net/audio/cmoy-tutorial/)
+
 
 12AU7 + Mosfet Headphone Amplifier
 ----------------------------------
 
-Home headphone system.
+After the ~CMoy I wanted to build something with a few more parts and also have a look at vacuum tubes and discrete transistors. I found a simple design using a 12AU7 tube and mosfets at [DIY Audio Projects](http://diyaudioprojects.com/Solid/12AU7-IRF510-LM317-Headamp/).
+
+### 12AU7 (ECC82)
+
+This is a twin triode vaccum tube. Triode means it has a cathode, andode and a grid. Twin just mean that there are two in one, i.e. two channels, so only one tube is needed for stereo.
+
+### Mosfet IRF510
+
+LM317 as constant current source (see the battery pack).
+
 
 Elekit PS-3238 powered by Airport Express 
 -----------------------------------------
@@ -29,3 +124,12 @@ Bathroom stereo :)
 
 How will it run on the 5V/100mA from the Airport Express?
 
+LM3875 GAINCLONE
+----------------
+
+TBD
+
+S/PDIF DAC
+----------
+
+TBD
