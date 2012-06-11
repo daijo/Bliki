@@ -90,10 +90,11 @@ The gain of this amplifier is then G = 1 + Rf/Rg.
 
 ### Power supply
 
-Decoupling capacitors, voltage devider.
+To get the supply voltage rails there is a simple voltage divider with a pair of filtering capacitors. The virtual ground is tapped between the two resistors and capacitors.
 
-Virtual ground, why, why not.
+There are more advanced designs using active components to make a virtual ground that is always exactly between the postive and negative rail. More info about this [here](http://tangentsoft.net/elec/vgrounds.html).
 
+This simple one works well for me. If you want to use a single 9V battery to drive the amp and/or use low impedans headphones you should look further.
 
 Reference:
 
