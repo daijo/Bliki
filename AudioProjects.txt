@@ -119,13 +119,23 @@ BOM:
 * 2 x Fostex P800-E speaker cabinets 2800 JPY / pair
 * 2 x Fostex FF85WK full fange drivers 5600 JPY / pair
 * Some connectors and a volume knob ~<1000 JPY
-* 1 Altoid can bought in Cambodia $2
+* 1 Altoid tin bought in Cambodia $2 incl. mints
 
 Total: ~12000 JPY (mainly for the speakers)
 
 ![Testing](https://farm8.staticflickr.com/7253/7476399276_9b0bcac757_z.jpg)
 
-It works very well. Better on the 9V battery than the 12V wall wart in fact. The wall wart I got produced a lot of hum. With the battery the amp was very quiet except some noise when I maxed the volume with no input.
+Worked well. Unless you're throwing a party or is in a big room it's powerful enough with these speakers. Audio quality it seem to sound best at about 1/3 of max volume with a 9V battery. Data below on the TEA2025B chip supports that.
+
+![Mounted in Altoid tin](https://farm9.staticflickr.com/8144/7486536968_8a686e11bd_z.jpg)
+
+With the screw terminals on the board the final assembly was a breeze.
+
+### Power supply
+
+The 12V wall wart I got didnt work well. I'm not sure about it's specs. I verified it's isolated but might be unregulated and maybe a switcher. Anyway it makes the amp hum. Will try and make some measurements on it later.
+
+Result was a lot better with a single 9V battery.
 
 ### TEA2025B
 
@@ -138,7 +148,6 @@ So not exactly a Hi-Fi amp perhaps.
 The power output is a function of speaker impedans and input voltage. In 8 ohm 9V give a maximum of ~1.4W and 12V give 2.4W.
 
 In 8 ohm the THD (Total Harmonic Distortion) take a big jump above 0.4W in output power.
-
 
 
 12AU7 + Mosfet Headphone Amplifier
