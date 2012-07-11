@@ -20,6 +20,35 @@ Parts:
 * 2k2 resistor
 * 2 3.5mm phone plugs
 
+NT7S Code Practice Oscillator
+-----------------------------
+
+<http://www.nt7s.com/blog/2008/11/nt7s-code-practice-oscillator/>
+
+Dummy load
+----------
+
+Linear Lab Power Supply
+-----------------------
+
+LM317
+
+30V 1.5A
+
+Constant current control
+
+U and I meters
+
+
+
+
+Switch Mode Power Supply
+------------------------
+
+MC 34063
+
+<http://dics.voicecontrol.ro/tutorials/mc34063/>
+
 Frequency Counter
 -----------------
 

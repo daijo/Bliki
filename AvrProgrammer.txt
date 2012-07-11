@@ -1,0 +1,97 @@
+Avr Programmer
+==============
+
+Used to program a AVR without a bootloader (or to program the boatloader) via the boards ISP port.
+
+ISP port
+--------
+
+10 and 6 pin connectors.
+
+    MOSI 1 - 2 VCC
+         3 - 4
+    RST  5 - 6 GND
+    SCK  7 - 8
+    MISO 9 - 10
+
+    MISO 1 - 2 VCC
+    SCK  3 - 4 MOSI
+    RST  5 - 6 GND
+
+
+~USBtinyISP Kit 2.0
+-------------------
+
+<http://www.ladyada.net/make/usbtinyisp/index.html>
+
+AVRDUDE
+-------
+
+See version and config info:
+
+    $ avrdude -v
+    
+    avrdude: Version 5.11.1, compiled on Mar  1 2012 at 20:58:56
+             Copyright (c) 2000-2005 Brian Dean, http://www.bdmicro.com/
+             Copyright (c) 2007-2009 Joerg Wunsch
+    
+             System wide configuration file is "/opt/local/etc/avrdude.conf"
+             User configuration file is "/Users/daijo/.avrduderc"
+             User configuration file does not exist or is not a regular file, skipping
+    
+    
+    avrdude: no programmer has been specified on the command line or the config file
+             Specify a programmer using the -c option and try again
+
+Test the programmer:
+
+    avrdude -c usbtiny -p m8
+    
+    avrdude: initialization failed, rc=-1
+             Double check connections and try again, or use -F to override
+             this check.
+    
+    
+    avrdude done.  Thank you.
+
+Wazup..
+
+    $ avrdude -c usbtiny -p m8 -F
+    
+    avrdude: initialization failed, rc=-1
+    avrdude: AVR device initialized and ready to accept instructions
+    avrdude: Device signature = 0x000000
+    avrdude: Yikes!  Invalid device signature.
+    avrdude: Expected signature for ATMEGA8 is 1E 93 07
+    
+    avrdude done.  Thank you.
+
+This means AVRDUDE is talking to the programmer but the programmer can't reach the chip. Check the connections to the board. Is the connector orientated correctly? Indeed the connection was at fault, we try again.
+
+    $ avrdude -c usbtiny -p m8
+    
+    avrdude: AVR device initialized and ready to accept instructions
+    
+    Reading | ################################################## | 100% 0.01s
+
+    avrdude: Device signature = 0x1e950f
+    avrdude: Expected signature for ATMEGA8 is 1E 93 07
+             Double check chip, or use -F to override this check.
+
+    avrdude done.  Thank you.
+
+Now it looks better but still not A-ok. Seems like we identify the chip to be programmed incorrectly. The board I used was a Seeeduino V2.21 Atmega 328P which is a atmega328.
+
+    $ avrdude -c usbtiny -p m328p
+    
+    avrdude: AVR device initialized and ready to accept instructions
+    
+    Reading | ################################################## | 100% 0.01s
+
+    avrdude: Device signature = 0x1e950f
+
+    avrdude: safemode: Fuses OK
+
+    avrdude done.  Thank you.
+
+Perfect! Lets program!

@@ -24,10 +24,17 @@ Arduino IDE name: Arduino Ethernet
 Running @ 16 MHz
 No ~PoE
 
-Adafruit USB Boarduino
+Adafruit DC Boarduino
 ----------------------
 
+<http://www.ladyada.net/make/boarduino/>
 <http://www.ladyada.net/products/usbboarduino/>
+
+Board tag: atmega328
+Arduino IDE name: Arduino Dueminalove 328?
+Running @ 16MHz (oscillator)
+Power: 7-17V DC 2.1mm DC jack or 5V via 6 pin serial connector.
+
 
 EMS/Adafruit Barebones AVR dev. board
 -------------------------------------
