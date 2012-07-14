@@ -32,7 +32,7 @@ Basic Makefile
 
     PORT=/dev/cuaU0
     BAUD=19200
-    PROTOCOL=stk500v1
+    PROTOCOL=usbtiny
     PART=$(MCU)
     AVRDUDE=avrdude -F -V
 

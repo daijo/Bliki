@@ -24,8 +24,8 @@ ISP port
 
 <http://www.ladyada.net/make/usbtinyisp/index.html>
 
-AVRDUDE
--------
+Testing with AVRDUDE 
+--------------------
 
 See version and config info:
 
@@ -95,3 +95,28 @@ Now it looks better but still not A-ok. Seems like we identify the chip to be pr
     avrdude done.  Thank you.
 
 Perfect! Lets program!
+
+Fuses
+-----
+
+3 bytes of permanent memory determening how the MCU will act. They can only be changed with a programmer (bootloader can't touch them).
+
+<http://www.ladyada.net/learn/avr/fuses.html>
+<http://www.engbedded.com/fusecalc/>
+
+Programming with AVRDUDE
+------------------------
+
+TBD
+
+Programming the Arduino bootloader
+----------------------------------
+
+Using the programmer and the Arduino IDE you can burn the boatloader to a fresh AVR.
+
+Tools -> Burn Bootloader
+
+<http://arduino.cc/en/Hacking/Bootloader?from=Main.Bootloader>
+
+Afterwards you can program the chip using AVRDUDE without the programmer via the serial interface.
+

@@ -1,0 +1,30 @@
+4000 Series CMOS Logic
+======================
+
+A series of CMOS (Complementary Metal–Oxide–Semiconductor) ~ICs manufactured since 1968.
+
+Lower power and easier to use than 7400 series TTL logic. Very sensitive to ESD (electrostatic discharge).
+
+4001 Quad 2-input NOR gate
+--------------------------
+
+4011 Quad 2-Input NAND gate
+---------------------------
+
+4027 Dual JK flip-flop
+----------------------
+
+4040 12-stage binary ripple counter
+-----------------------------------
+
+4049 Hex inverter/buffer (NOT gate)
+-----------------------------------
+
+4093 Quad 2-input Schmitt trigger NAND gate
+-------------------------------------------
+
+40374 Octal D-type flip-flop; positive-edge trigger (tristate)
+--------------------------------------------------------------
+
+
+
