@@ -10,7 +10,7 @@ Quick Reference
 * b w word/token left, right.
 * { } beginning of previous, next paragraph.
 * ( ) beginning of previous, next sentence.
-* ^ $ first, last character of line.
+* 0 ^ $ first, first non-white, last character of line.
 * i a insert before, after cursor.
 * ctrl-o ctrl-i move forward/backward in edit location history.
 * o O open a new line below, above the current line.
@@ -18,6 +18,13 @@ Quick Reference
 * dd D delete current line, to the end of line.
 * yy Y yank current line into register.
 * p P put register after, before cursor position.
+* v visual mode (use movements to mark).
+* qq start to record macro.
+* q stop to record macro.
+* @q repeat macro.
+* @: repeat command.
+* . repeat edit.
+* @@ repeat repeat
 * :e filename Open a new file.
 * :bd Close the current buffer.
 * :ls List buffers.

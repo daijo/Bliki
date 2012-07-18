@@ -1,6 +1,8 @@
 Arduino Build
 =============
 
+Todo: update with the makefile at <http://ed.am/dev/make/arduino-mk>
+
 To build Arduino using MakeTool while still using the Arduino libraries etc. 
 
 [Docs](http://mjo.tc/atelier/2009/02/arduino-cli.html)

@@ -60,3 +60,5 @@ Basic Makefile
     %.s: %.c ; $(CC) $(CFLAGS) -S -o $@ $<
 
     %.hex: %.elf ; $(OBJCOPY) -O $(BIN_FORMAT) -R .eeprom $< $@
+
+[ AvrChips | AvrProgrammer ]
