@@ -1,4 +1,0 @@
-Making PCB
-==========
-
-* [Tutorial](http://www.makehackvoid.com/projects/pc-pcb-under-30-minutes-quick-n-easy-pcb-fabrication)

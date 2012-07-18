@@ -1,4 +1,0 @@
-Markov Networks
-===============
-
-A type of ProbabilisticGraphicalModels.
