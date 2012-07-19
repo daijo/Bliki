@@ -65,6 +65,7 @@ Some links
 * <http://vim.wikia.com/wiki/~Vim_Tips_Wiki>
 * <http://video.google.com/videoplay?docid=2538831956647446078>
 * <http://vim.runpaint.org/>
+* <http://stevelosh.com/blog/2010/09/coming-home-to-vim/>
 
 Plugins
 -------
