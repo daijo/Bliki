@@ -22,6 +22,8 @@ ISP port
 ~USBtinyISP Kit 2.0
 -------------------
 
+![~USBtinyISP](https://farm8.staticflickr.com/7133/7549986764_909f6a5d17.jpg)
+
 <http://www.ladyada.net/make/usbtinyisp/index.html>
 
 Testing with AVRDUDE 
@@ -42,6 +44,8 @@ See version and config info:
     
     avrdude: no programmer has been specified on the command line or the config file
              Specify a programmer using the -c option and try again
+
+Add image...
 
 Test the programmer:
 
@@ -95,6 +99,8 @@ Now it looks better but still not A-ok. Seems like we identify the chip to be pr
     avrdude done.  Thank you.
 
 Perfect! Lets program!
+
+![USBtinyISP + Seeeduino](https://farm8.staticflickr.com/7118/7550142892_26a90d14d1.jpg)
 
 Fuses
 -----
