@@ -1,8 +1,9 @@
 Avr And Arduino Stuff
 =====================
 
-* AvrChips
+* AvrMicros
 * AvrBuild
 * AvrProgrammer
+* AvrAssembly
 * ArduinoBoards
 * ArduinoBuild

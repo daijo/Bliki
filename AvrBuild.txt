@@ -61,4 +61,6 @@ Basic Makefile
 
     %.hex: %.elf ; $(OBJCOPY) -O $(BIN_FORMAT) -R .eeprom $< $@
 
-[ AvrChips | AvrProgrammer ]
+---
+
+[ AvrIndex | AvrMicros | AvrProgrammer | AvrAssembly ]

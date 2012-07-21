@@ -1,0 +1,20 @@
+Avr Assembly Language
+---------------------
+
+Why?
+----
+
+>There might be several reasons to write code for AVR microcontrollers using plain assembler source code. Among them are:
+>
+>    * Code for devices that do not have RAM and are thus not supported by the C compiler.
+>    * Code for very time-critical applications.
+>    * Special tweaks that cannot be done in C.
+> <http://www.nongnu.org/avr-libc/user-manual/assembler.html>
+
+Links
+-----
+
+* <http://www.atmel.com/Images/doc0856.pdf>
+* <http://www.avr-asm-tutorial.net/avr_en/>
+* <http://www.nongnu.org/avr-libc/user-manual/assembler.html>
+* <http://www.nongnu.org/avr-libc/user-manual/inline_asm.html>

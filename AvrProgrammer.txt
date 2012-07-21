@@ -120,4 +120,6 @@ Tools -> Burn Bootloader
 
 Afterwards you can program the chip using AVRDUDE without the programmer via the serial interface.
 
-[ AvrBuild | AvrChips ]
+---
+
+[ AvrIndex | AvrBuild | AvrMicros | AvrAssembly ]

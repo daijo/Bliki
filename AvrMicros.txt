@@ -1,0 +1,108 @@
+Avr Microcontrollers
+====================
+
+A series of 8-bit RISC microcontrollers (MCUs or micros) from Atmel. The MCU used on ArduinoBoards. Supported by an open toolchain, see AvrBuild and AvrProgrammer.
+
+~ATtiny series
+--------------
+
+Small packages and less I/O.
+
+### ~ATtiny24/44/84
+
+                   o
+             VCC 1 - 14 GND
+    D0/XTAL1/PB0 2 - 13 PA0/AREF/D10(A0)
+    D1/XTAL2/PB1 3 - 12 PA1/AIN0/D9/A1
+    RESET/PB3    4 - 11 PA2/AIN1/D8/A2
+    D2/PB2       5 - 10 PA3/T0/D7/A3
+    D3/A7/PA7    6 - 9 PA4/USCK/SCL/D6/A4
+    D4/A6/PA6    7 - 8 PA5/DO/MISO/D5/A5
+
+* PWM pins: 4 (PA5-7, PB2)
+* Cost ~$2
+* Datasheet: <http://www.atmel.com/Images/doc8006.pdf>
+
+### ~ATtiny25/45/85
+
+                           o
+    D5/A0/RESET/ADCO/PB5 1 - 8 VCC
+    D3/A3/XTAL1/ADC3/PB3 2 - 7 PB2/SCL/SCK/D2/A1
+    D4/A2/XTAL2/ADC2/PB4 3 - 6 PB1/MISO/D1
+    GND                  4 - 5 PB0/MOSI/SDA/AREF/D0
+
+* PWM pins: 4 (PB0-1, PB3-4)
+* Cost: ~~$1
+* Datasheet: <http://www.atmel.com/Images/doc2586.pdf>
+
+### ~ATtiny2313/4313
+
+                   o
+    RESET/PA2    1 - 20 VCC
+    D0/RXD/PD0   2 - 19 PB7/SCL/SCK/D16
+    D1/TXD/PD1   3 - 18 PB6/MISO/D15
+    D2/XTAL2/PA1 4 - 17 PB5/MOSI/SDA/D14
+    D3/XTAL1/PA0 5 - 16 PB4/D13
+    D4/PD2       6 - 15 PB3/D12
+    D5/PD3       7 - 14 PB2/D11
+    D6/PD4       8 - 13 PB1/AIN1/D10
+    D7/PD5       9 - 12 PB0/AIN0/D9
+    GND         10 - 11 PD6/D8
+
+* PWM pins: 4 (PB2-4, PD5)
+* Cost: ~~$2
+* Datasheet: <http://www.atmel.com/Images/8246s.pdf>
+
+~ATmega series
+--------------
+
+Bigger package and more I/O.
+
+### ~ATmega48/88/168/328
+
+Used in most ArduinoBoards.
+
+       o
+     1 - 28
+     2 - 27
+     3 - 26
+     4 - 25
+     5 - 24
+     6 - 23
+     7 - 22
+     8 - 21
+     9 - 20
+    10 - 19
+    11 - 18
+    12 - 17
+    13 - 16
+    14 - 15
+
+* PWM pins: 6 (PB1-3, PD3, PD5-6)
+* Datasheet: <http://www.atmel.com/Images/8271s.pdf>
+
+### ~ATmega1280
+
+* JTAG interface
+* Cost: ~~$10
+
+Ports and Registers
+-------------------
+
+In the pinout diagrams above Ax and Dx represent Arduino analog and digital pins respectivly in case it is used. Arduino on ~ATtiny is a separate project and not included in the official Arduino release. How to control the pins via Arduino won't be discussed here. It is well documented in <http://arduino.cc/en/Reference/HomePage>.
+
+All else is AVR pin names as in the datasheets. AVR pins are organized in ports named A to D. Which ports/pins actually exist depend on the type of AVR in use.
+
+Every port has 3 registers associated with it, DDRx, PINx, PORTx. Substitute x with A through D. These are used to control the pins.
+
+<http://www.embedds.com/controlling-avr-io-ports-with-avr-gcc/>
+
+PWM Pins
+--------
+
+<http://aquaticus.info/pwm-configuration>
+
+---
+
+[ AvrIndex | AvrBuild | AvrProgrammer | AvrAssembly ]
+

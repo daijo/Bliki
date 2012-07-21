@@ -26,6 +26,7 @@ Quick Reference
 * . repeat edit.
 * @@ repeat repeat
 * :e filename Open a new file.
+* zo zc zd fold open, close, delete
 * :bd Close the current buffer.
 * :ls List buffers.
 * :w filename	Save changes to a file.
