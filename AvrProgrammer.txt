@@ -45,8 +45,6 @@ See version and config info:
     avrdude: no programmer has been specified on the command line or the config file
              Specify a programmer using the -c option and try again
 
-Add image...
-
 Test the programmer:
 
     avrdude -c usbtiny -p m8
