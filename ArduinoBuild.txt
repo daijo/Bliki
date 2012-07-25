@@ -3,22 +3,22 @@ Arduino Build
 
 The Arduino enviroment consist of a few different parts:
 
-1) The Arduino IDE
-2) The Arduino libraries
-3) The Arduino bootloader
+* 1) The Arduino IDE
+* 2) The Arduino libraries
+* 3) The Arduino bootloader
 
 It uses the same tool chain as described in AvrBuild. Focus here will mostly be on part 2) and 3).\
 The IDE can be replace with your favorite editor and a Makefile.
 
-Arduino on ATtiny
+Arduino on ~ATtiny
 -----------------
 
-Officially Arduino only supports ATmega devices but it is possible to run on ATtiny.\
+Officially Arduino only supports ~ATmega devices but it is possible to run on ~ATtiny.\
 It might be a good idea to prototype on a full Arduino board and later move to a small\
-custom board with a ATtiny if the number of required I/O pins permit.
+custom board with a ~ATtiny if the number of required I/O pins permit.
 
-<http://hlt.media.mit.edu/?p=1695>
-<https://github.com/damellis/attiny/tree/Arduino1>
+* <http://hlt.media.mit.edu/?p=1695>
+* <https://github.com/damellis/attiny/tree/Arduino1>
 
 Arduino Makefile
 ----------------
