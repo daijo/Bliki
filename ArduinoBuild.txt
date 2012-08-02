@@ -17,6 +17,11 @@ Officially Arduino only supports ~ATmega devices but it is possible to run on ~A
 It might be a good idea to prototype on a full Arduino board and later move to a small\
 custom board with a ~ATtiny if the number of required I/O pins permit.
 
+One port is the [arduino-tiny](https://code.google.com/p/arduino-tiny/) project. \
+Download and put in your Arduino environments hardware directory (like Arduino/hardware/tiny/). I had to rebuild my IDE \
+to make it show up in the Tools -> Board menu. If you use a Arduino Makefile it will most likely need to be modified.
+
+* <https://code.google.com/p/arduino-tiny/>
 * <http://hlt.media.mit.edu/?p=1695>
 * <https://github.com/damellis/attiny/tree/Arduino1>
 
