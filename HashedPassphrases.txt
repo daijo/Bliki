@@ -20,13 +20,13 @@ Ars Technica published an excellent [article][1] a while back on this topic. Let
 Passwords vs. Pass-phrases
 --------------------------
 
-A passwords [strength][2] is measured in bits of entropy. We need to come up with a password that contain enough bits of entropy and still is easy to remember. We will see that pass-phrases like 'altar tomato fever wishbone' are superior to passwords like '2jSDJ&f8'.
+A passwords [strength][2] is measured in bits of entropy. We need to come up with a password that contain enough bits of entropy and still is easy to remember. We will see that pass-phrases like _'altar tomato fever wishbone'_ are superior to passwords like _'2jSDJ&f8'_.
 
-Given that the dictionary and pass-phrase composition rule (4 randomly selected words separated by spaces) is known by the attacker the pass-phrase above from a ~~27000 word dictionary have 58 bits (4 * log_2(27000)) of entropy.
+Given that the dictionary and pass-phrase composition rule (4 randomly selected words separated by spaces) is known by the attacker the pass-phrase above from a ~~27000 word dictionary have 58 bits _(4 * log_2(27000))_ of entropy.
 
-A password like our example '2jS}J&f8' which is 8 characters from the ASCII set has 53 bits (8 * log_2(96)) of entropy but only if it is randomly chosen. That's a big but because a random 8 character ASCII password is very hard to remember. People usually use substitutions to make common and rememberable words 'harder' but these tricks follow simple rules that are easy to incorporate in a brute force attach on your hash. Seriously, using a 4 instead of an A etc. wont help you wont help you.
+A password like our example _'2jS}J&f8'_ which is 8 characters from the ASCII set has 53 bits _(8 * log_2(96))_ of entropy but only if it is randomly chosen. That's a big but because a random 8 character ASCII password is very hard to remember. People usually use substitutions to make common and rememberable words 'harder' but these tricks follow simple rules that are easy to incorporate in a brute force attach on your hash. Seriously, using a 4 instead of an A etc. wont help you wont help you.
 
-So how big difference is it between these two? Well in terms of learning and remembering I can only speak for my self but I prefer the pass-phrase. When it comes to how hard it would be to brute force guess the password vs the pass-phrasse it's not up for debate. It would take 9*10^15 guesses to be sure to crack the password against 2.9*10^17 guesses for the pass-phrase. The pass-phrase is two order of magnitudes stronger but still easier (IMHO) to remember.
+So how big difference is it between these two? Well in terms of learning and remembering I can only speak for my self but I prefer the pass-phrase. When it comes to how hard it would be to brute force guess the password vs the pass-phrasse it's not up for debate. It would take _9*10^15_ guesses to be sure to crack the password against _2.9*10^17_ guesses for the pass-phrase. The pass-phrase is two order of magnitudes stronger but still easier (IMHO) to remember.
 
 Instead of all this I could just as well have just shown you this [picture][3] by XKCD: 
 
