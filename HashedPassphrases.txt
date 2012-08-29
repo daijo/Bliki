@@ -37,7 +37,7 @@ So pass-phrases are the way to go. Remember they should still be randomly select
 One pass-phrase to rule them
 ----------------------------
 
-We are done with the first aspect of password strength. The second problem is the domino effect of one breached site if you use the same password over and over at different sites. It would be hard to remember a strong pass-phrase for each site you use. But we could use hashing again here. The [Stanford ~PwdHash](5) takes your password and the domain, concatenates them and runs it through the MD5 hashing function to produce a site specific password to use.
+We are done with the first aspect of password strength. The second problem is the domino effect of one breached site if you use the same password over and over at different sites. It would be hard to remember a strong pass-phrase for each site you use. But we could use hashing again here. The [Stanford ~PwdHash][5] takes your password and the domain, concatenates them and runs it through the MD5 hashing function to produce a site specific password to use.
 
     md5_hash(password + domain1) -> hashed_password1
     md5_hash(password + domain2) -> hashed_password2
@@ -51,7 +51,7 @@ If someone wants to crack your hash for a given site they can guess you used the
 Bcrypt ~PwdHash
 ---------------
 
-However there is a hashing function that is made to be slow called [Bcrypt](6). This solves both our problems from above.
+However there is a hashing function that is made to be slow called [Bcrypt][6]. This solves both our problems from above.
 
     bcrypt_generate_salt(rounds) -> salt (keep the salt somewhere safe)
     bcrypt_hash(password + domain1, salt) -> hashed_password1
