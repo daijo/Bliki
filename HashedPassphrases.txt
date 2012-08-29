@@ -1,0 +1,85 @@
+title: Hashed Pass-phrases
+author: Daniel Hjort
+date: 2012/08/29
+location: Tokyo, Japan
+tags: security, password, pass-phrase, hash
+
+I'm a paranoid guy with bad memory so I've had a problem for the last couple of years with website logins. There are two main aspects to my problem. First to create a strong enough password that is easy enough to remember. The second aspect is to have different passwords for every site in case the site gets hacked and all the hashed passwords end up on Pastebin.
+
+What is hashing?
+---------------
+
+Lets first talk about what a hashed password is. Websites doesn't store your password in plain text. They use a hashing function to transform the password you enter to a string of characters which it then stores and uses for future authentication. The reversal of this funtion should be undefined which means there is no way to get your password back from the hashed password. In other words there is a hashing function but no unhashing function.
+
+    hashing_function(password) -> hashed_password
+    
+    unhashing_function(hashed_password) -> password (hopefully no such thing exist)
+
+Ars Technica published an excellent [article][1] a while back on this topic. Lets just face it - sites will be hacked. Your hashed password might as well be public. So lets make the attack on it as hard as possible.
+
+Passwords vs. Pass-phrases
+--------------------------
+
+A passwords [strength][2] is measured in bits of entropy. We need to come up with a password that contain enough bits of entropy and still is easy to remember. We will see that pass-phrases like 'altar tomato fever wishbone' are superior to passwords like '2jSDJ&f8'.
+
+Given that the dictionary and pass-phrase composition rule (4 randomly selected words separated by spaces) is known by the attacker the pass-phrase above from a ~~27000 word dictionary have 58 bits (4 * log_2(27000)) of entropy.
+
+A password like our example '2jS}J&f8' which is 8 characters from the ASCII set has 53 bits (8 * log_2(96)) of entropy but only if it is randomly chosen. That's a big but because a random 8 character ASCII password is very hard to remember. People usually use substitutions to make common and rememberable words 'harder' but these tricks follow simple rules that are easy to incorporate in a brute force attach on your hash. Seriously, using a 4 instead of an A etc. wont help you wont help you.
+
+So how big difference is it between these two? Well in terms of learning and remembering I can only speak for my self but I prefer the pass-phrase. When it comes to how hard it would be to brute force guess the password vs the pass-phrasse it's not up for debate. It would take 9*10^15 guesses to be sure to crack the password against 2.9*10^17 guesses for the pass-phrase. The pass-phrase is two order of magnitudes stronger but still easier (IMHO) to remember.
+
+Instead of all this I could just as well have just shown you this [picture][3] by XKCD: 
+
+![XKCD Password Strength](http://imgs.xkcd.com/comics/password_strength.png)
+
+So pass-phrases are the way to go. Remember they should still be randomly selected from a reasonably big dictionary. Since we humans suck at choosing things randomly we might as well use a tool tha generates truly random pass-phrases. This [Pass Phrase Generator][4] is such a tool. I used it to generate the pass-phrase above. You can even choose how many bits of entropy you want then get a random pass-phrase of suitable length.
+
+One pass-phrase to rule them
+----------------------------
+
+We are done with the first aspect of password strength. The second problem is the domino effect of one breached site if you use the same password over and over at different sites. It would be hard to remember a strong pass-phrase for each site you use. But we could use hashing again here. The [Stanford ~PwdHash](5) takes your password and the domain, concatenates them and runs it through the MD5 hashing function to produce a site specific password to use.
+
+    md5_hash(password + domain1) -> hashed_password1
+    md5_hash(password + domain2) -> hashed_password2
+
+This is all good but there are a couple of significant weaknesses here. The used hash is MD5 fast and the formula is well known with no unknown elements. So while getting to _hashed_password1_ by attaching the _site_hash(hashed_password1)_ value leaked from _domain1_ wouldn't let the attacker access to _domain2_ it is feasable to attack the master password directly.
+
+    site_hash(md5_hash(password_candidate + domain)) -> hashed_password_candidate
+
+If someone wants to crack your hash for a given site they can guess you used the Stanford ~PwdHash and everything in equation above would be known. And since the MD5 hash is fast the extra hashing step wouldn't make the brute force effort signifiantly harder.
+
+Bcrypt ~PwdHash
+---------------
+
+However there is a hashing function that is made to be slow called [Bcrypt](6). This solves both our problems from above.
+
+    bcrypt_generate_salt(rounds) -> salt (keep the salt somewhere safe)
+    bcrypt_hash(password + domain1, salt) -> hashed_password1
+    bcrypt_hash(password + domain2, salt) -> hashed_password2
+
+Now it's harder for an attacker.
+
+    site_hash(bcrypt_hash(password_candidate + domain, salt_candidate)) -> hashed_password_candidate
+
+The hash is designed to be slow. It's actually as slow as you want. Choosing a bigger _rounds_ value make it go slower. Just making the hashing process one second would make a brute force attack untractable. The random salt is also unknown unless the attacker have compromised your home or system in addition to the breached site.
+
+I found a Javascript library implementing Bcrypt and modified the Stanford ~PwdHash to use Bcrypt instead. Try it [here][7]. 
+
+Two-factor authentication
+-------------------------
+
+This has nothing to do with cryptography but is probably the most efficient way to keep your accounts safe. If someone after all your effort above still get a hold of your password two-factor authentication puts a final road block on the way to owning you. Your mail accounts should have this. Remember they are often the way into other accounts via password reset. Consider using a special mail account for site registration that you never use out in the wild. All these should make you reasonably safe.
+
+Stay safe out there!
+
+[1]: http://arstechnica.com/security/2012/08/passwords-under-assault/
+[2]: http://en.wikipedia.org/wiki/Password_strength
+[3]: http://xkcd.com/936/
+[4]: http://www.fourmilab.ch/javascrypt/pass_phrase.html
+[5]: http://pwdhash.com
+[6]: https://en.wikipedia.org/wiki/Bcrypt
+[7]: http://danielhjort.net/~BcryptPwdHash
+
+
+
+
