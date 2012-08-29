@@ -24,7 +24,7 @@ A passwords [strength][2] is measured in bits of entropy. We need to come up wit
 
 Given that the dictionary and pass-phrase composition rule (4 randomly selected words separated by spaces) is known by the attacker the pass-phrase above from a ~~27000 word dictionary have 58 bits _(4 * log_2(27000))_ of entropy.
 
-A password like our example _'2jS}J&f8'_ which is 8 characters from the ASCII set has 53 bits _(8 * log_2(96))_ of entropy but only if it is randomly chosen. That's a big but because a random 8 character ASCII password is very hard to remember. People usually use substitutions to make common and rememberable words 'harder' but these tricks follow simple rules that are easy to incorporate in a brute force attach on your hash. Seriously, using a 4 instead of an A etc. wont help you wont help you.
+A password like our example _'2jS}J&f8'_ which is 8 characters from the ASCII set has 53 bits _(8 * log_2(96))_ of entropy but only if it is randomly chosen. That's a big but because a random 8 character ASCII password is very hard to remember. People usually use substitutions to make common and rememberable words 'harder' but these tricks follow simple rules that are easy to incorporate in a brute force attach on your hash. Seriously, using a 4 instead of an A etc. wont help you.
 
 So how big difference is it between these two? Well in terms of learning and remembering I can only speak for my self but I prefer the pass-phrase. When it comes to how hard it would be to brute force guess the password vs the pass-phrasse it's not up for debate. It would take _9*10^15_ guesses to be sure to crack the password against _2.9*10^17_ guesses for the pass-phrase. The pass-phrase is two order of magnitudes stronger but still easier (IMHO) to remember.
 
@@ -68,7 +68,7 @@ I found a Javascript library implementing Bcrypt and modified the Stanford ~PwdH
 Two-factor authentication
 -------------------------
 
-This has nothing to do with cryptography but is probably the most efficient way to keep your accounts safe. If someone after all your effort above still get a hold of your password two-factor authentication puts a final road block on the way to owning you. Your mail accounts should have this. Remember they are often the way into other accounts via password reset. Consider using a special mail account for site registration that you never use out in the wild. All these should make you reasonably safe.
+This has nothing to do with cryptography but is probably the most efficient way to keep your accounts safe. If someone after all your effort above still get a hold of your password two-factor authentication puts a final road block on the way to owning you. Your mail accounts should have this. Remember they are often the way into other accounts via password reset. Consider using a special mail account for site registration that you never use out in the wild. All these things should make you reasonably safe.
 
 Stay safe out there!
 
