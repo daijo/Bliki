@@ -2,7 +2,10 @@ title: Hashed Pass-phrases
 author: Daniel Hjort
 date: 2012/08/29
 location: Tokyo, Japan
-tags: security, password, pass-phrase, hash
+tags: security, password, pass-phrase, hash, bcrypt, pwdhash
+
+> TL;DR Random pass-phrases are better than passwords. Stanford PwdHash is a good idea but with Bcrypt it's better.
+> Try [Bcrypt PwdHash][7]. Also at least use two-factor authentication for your mail accounts.
 
 I'm a paranoid guy with bad memory so I've had a problem for the last couple of years with website logins. There are two main aspects to my problem. First to create a strong enough password that is easy enough to remember. The second aspect is to have different passwords for every site in case the site gets hacked and all the hashed passwords end up on Pastebin.
 
