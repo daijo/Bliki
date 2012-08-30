@@ -5,17 +5,20 @@ Part of IEEE Std 1003.1-2008
 ----------------------------
 
 * awk
-* sed SedTool
-* ls
+* chmod
+* chown
 * cp
+* echo
+* find
+* grep
+* head
+* ls
 * mv
 * mkdir
 * rm
-* chmod
-* chown
-* head
+* sed SedTool
 * tail
-* echo
+* xargs
 
 [Complete list][1]
 
@@ -24,5 +27,17 @@ Other
 * bash
 * screen
 * ssh
+
+One-liners
+----------
+
+### Find a file
+
+    find . -name file_name
+
+### Search files for pattern
+
+    find . | xargs grep "PATTERN" -sl
+
 
 [1]: http://en.wikipedia.org/wiki/List_of_Unix_utilities
