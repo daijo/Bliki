@@ -61,7 +61,7 @@ Now it's harder for an attacker.
 
     site_hash(bcrypt_hash(password_candidate + domain, salt_candidate)) -> hashed_password_candidate
 
-The hash is designed to be slow. It's actually as slow as you want. Choosing a bigger _rounds_ value make it go slower. Just making the hashing process one second would make a brute force attack untractable. The random salt is also unknown unless the attacker have compromised your home or system in addition to the breached site.
+The hash is designed to be slow. It's actually as slow as you want. Choosing a bigger _rounds_ value make it go slower. Just making the hashing process one second would make a brute force attack untractable. The random salt is also unknown unless the attacker have compromised your home or system in addition to the breached site. Even with the salt known it's impossible to use [rainbow tables][8] to make precomputation attacks. The salt is assuring that the attacker have to make a focused effort on your account instead of carpet bombing the whole set of leaked hashes.
 
 I found a Javascript library implementing Bcrypt and modified the Stanford ~PwdHash to use Bcrypt instead. Try it [here][7]. 
 
@@ -79,6 +79,7 @@ Stay safe out there!
 [5]: http://pwdhash.com
 [6]: https://en.wikipedia.org/wiki/Bcrypt
 [7]: http://danielhjort.net/~BcryptPwdHash
+[8]: http://en.wikipedia.org/wiki/Rainbow_table
 
 
 
