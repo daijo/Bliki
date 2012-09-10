@@ -106,5 +106,5 @@ Roadmap
 [2]: http://www.vim.org/scripts/script.php?script_id=1018
 [3]: http://interconnected.org/home/2007/05/20/plain_text_wiki
 [4]: http://cloudhead.io/toto
-[5]: https://github.com/tanoku/sundown
+[5]: https://github.com/vmg/sundown
 [6]: https://github.com/daijo/~PotBliki
