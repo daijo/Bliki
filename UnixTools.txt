@@ -27,6 +27,7 @@ Other
 * bash
 * screen
 * ssh
+* tmux
 
 Searching
 ---------
