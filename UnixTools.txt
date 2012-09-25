@@ -25,4 +25,10 @@ Other
 * screen
 * ssh
 
+Books
+-----
+
+* [The Art of Unix Programming][2] by Eric S. Raymond
+
 [1]: http://en.wikipedia.org/wiki/List_of_Unix_utilities
+[2]: http://www.faqs.org/docs/artu/
