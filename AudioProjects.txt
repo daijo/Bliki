@@ -149,6 +149,23 @@ The power output is a function of speaker impedans and input voltage. In 8 ohm 9
 
 In 8 ohm the THD (Total Harmonic Distortion) take a big jump above 0.4W in output power.
 
+LM1875 based 2x25W stereo ampifier
+----------------------------------
+
+Building a small amplifier for the livingroom. Using two K50 PCB kits.
+
+Similar build:
+
+http://www.frontiernet.net/~jff/lm1875/25W_Stereo_Amp_using_LM1875.html
+
+### Powersupply
+
+The amps need a dual power supply (+/- 24V). My first AC to DC power supply build.
+
+### LM1875
+
+http://www.ti.com/product/LM1875
+
 
 12AU7 + Mosfet Headphone Amplifier
 ----------------------------------
