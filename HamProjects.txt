@@ -8,6 +8,8 @@ Arduino sidetone generator - CWSoftie
 
 Raised cosine enveloped sine wave.
 
+![CWSoftie prototype](https://farm9.staticflickr.com/8332/8375597913_f57e401473_z.jpg)
+
 Prototyped on an Arduino.
 
 DDS-60 VFO
