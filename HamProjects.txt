@@ -6,11 +6,11 @@ Current/future build projects.
 Arduino sidetone generator - CWSoftie
 -------------------------------------
 
-Raised cosine enveloped sine wave.
+Raised cosine enveloped sine wave with variable frequency.
 
 ![CWSoftie prototype](https://farm9.staticflickr.com/8332/8375597913_f57e401473_z.jpg)
 
-Prototyped on an Arduino.
+Prototyped on an Arduino. Code [here](https://github.com/daijo/CWSoftie).
 
 DDS-60 VFO
 ----------
