@@ -3,8 +3,8 @@ Ham Projects
 
 Current/future build projects.
 
-AVR sideband generator - CWSoftie
----------------------------------
+Arduino sidetone generator - CWSoftie
+-------------------------------------
 
 Raised cosine enveloped sine wave.
 
