@@ -149,6 +149,11 @@ The power output is a function of speaker impedans and input voltage. In 8 ohm 9
 
 In 8 ohm the THD (Total Harmonic Distortion) take a big jump above 0.4W in output power.
 
+In planning stage
+-----------------
+
+Below are some projects I'm currently planning to build in the future.
+
 LM1875 based 2x25W stereo ampifier
 ----------------------------------
 
@@ -160,7 +165,7 @@ http://www.frontiernet.net/~jff/lm1875/25W_Stereo_Amp_using_LM1875.html
 
 ### Powersupply
 
-The amps need a dual power supply (+/- 24V). My first AC to DC power supply build.
+The amps need a dual power supply (+/- 24V).
 
 Block RKD 80/2x18 80 VA toroidal isolation transformer 2 x 115 V to 2 x 18 V
 
@@ -181,7 +186,6 @@ Input selector
 
 http://www.ti.com/product/LM1875
 
-
 12AU7 + Mosfet Headphone Amplifier
 ----------------------------------
 
@@ -195,23 +199,3 @@ This is a twin triode vaccum tube. Triode means it has a cathode, andode and a g
 
 LM317 as constant current source (see the battery pack).
 
-
-Elekit PS-3238 powered by Airport Express 
------------------------------------------
-
-Bathroom stereo :)
-
-![Completed board](https://farm8.staticflickr.com/7228/7261845812_cf03693cdf_z.jpg)
-
-How will it run on the 5V/100mA from the Airport Express?
-
-LM3875 GAINCLONE
-----------------
-
-<http://diyaudioprojects.com/Chip/Nanoo/>
-<http://www.ti.com/product/lm3875#feature>
-
-S/PDIF DAC
-----------
-
-<http://electronics-diy.com/electronic_schematic.php?id=806>
