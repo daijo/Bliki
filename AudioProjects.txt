@@ -162,6 +162,21 @@ http://www.frontiernet.net/~jff/lm1875/25W_Stereo_Amp_using_LM1875.html
 
 The amps need a dual power supply (+/- 24V). My first AC to DC power supply build.
 
+Block RKD 80/2x18 80 VA toroidal isolation transformer 2 x 115 V to 2 x 18 V
+
+230/115V selector?
+
+IEC connector with switch and fuse holder. Grounded chassi. Bleeder resistor across filter caps (4 fold the supply power).
+
+In a separate case connected with 3-pin DIN plug.
+
+Attenuator
+----------
+
+http://www.8audio-mall.com/servlet/the-382/100K-24-Step-Ladder/Detail
+
+Input selector
+
 ### LM1875
 
 http://www.ti.com/product/LM1875

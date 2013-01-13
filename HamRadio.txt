@@ -1,53 +1,37 @@
 Ham Radio
 =========
 
-Current/future build projects.  
+Current/future build projects.
 
-555 CW Practise Oscillator
---------------------------
+AVR sideband generator - CWSoftie
+---------------------------------
 
-Design:
+Raised cosine enveloped sine wave.
 
-<https://github.com/daijo/~FritzingSketchbook/blob/master/~CWPractiseOscillator.fz>
+Prototyped on an Arduino.
 
-Parts:
-
-* 555 timer
-* 0.02μF capacitor
-* 25μF 16V capacitor
-* 100K potentiometer
-* 10K potentiometer
-* 2k2 resistor
-* 2 3.5mm phone plugs
-
-NT7S Code Practice Oscillator
------------------------------
-
-<http://www.nt7s.com/blog/2008/11/nt7s-code-practice-oscillator/>
-
-Dummy load
+DDS-60 VFO
 ----------
 
-Linear Lab Power Supply
------------------------
+A simple external VFO.
 
-LM317
+* LCD frequency display. 
+* Rotary encoder.
+* AVR MCU
+* 8-12V in
+* BNC RF out
 
-30V 1.5A
+<http://www.theladderline.com/book/export/html/5>
+<http://midnightdesignsolutions.com/dds60/index.html>
 
-Constant current control
+Linear Power Supply
+-------------------
+
+12V 7812
+
+3A
 
 U and I meters
-
-
-
-
-Switch Mode Power Supply
-------------------------
-
-MC 34063
-
-<http://dics.voicecontrol.ro/tutorials/mc34063/>
 
 Frequency Counter
 -----------------
@@ -64,36 +48,11 @@ Frequency Counter
 * 22k resistor
 * 820 resistor
 
-Direct Digital Synthesis (DDS)
-------------------------------
 
-<http://www.theladderline.com/book/export/html/5>
-<http://midnightdesignsolutions.com/dds60/index.html>
+Dummy load
+----------
 
-Frequency mixer
----------------
-
-<https://en.wikipedia.org/wiki/Frequency_mixer>
-
-Own design QRP CW Tranceiver
-----------------------------
-
-VFO:
-
-        +-------- Feedback -------+ 
-        |                         |
-        v                         |
-    Arduino DDS -> Mixer -> Frequency counter ->
-                     ^
-                     |
-             Crystal oscillator
-
-DDS Direct Conversion QRP CW Tranceiver
----------------------------------------
-
-<http://www.theladderline.com/qrp-40-meter-cw-transceiver>
-
-
+50ohm 10W
 
 Software Defined Radio
 ----------------------
@@ -105,9 +64,3 @@ Some resources:
 * <http://nbitwonder.com/forum/viewtopic.php?f=20&t=52>
 * <http://nbitwonder.com/blog/2011/10/30/nbw-sdr-pcb-assembled/>
 * <https://github.com/~NBitWonder/SDR>
-
-20m Direct Conversion Receiver
-------------------------------
-
-<http://www.qsl.net/vu2upx/Projects/dc_rx.htm>
-
