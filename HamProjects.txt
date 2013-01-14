@@ -50,7 +50,6 @@ Frequency Counter
 * 22k resistor
 * 820 resistor
 
-
 Dummy load
 ----------
 
@@ -59,10 +58,11 @@ Dummy load
 Software Defined Radio
 ----------------------
 
+A RX SDR front-end.
+
 Some resources:
 
-* <http://www.flex-radio.com/Data/Doc/qex1.pdf>
-* <http://hackaday.com/2011/07/19/jeri-ellsworth-builds-a-software-radio/>
-* <http://nbitwonder.com/forum/viewtopic.php?f=20&t=52>
-* <http://nbitwonder.com/blog/2011/10/30/nbw-sdr-pcb-assembled/>
-* <https://github.com/~NBitWonder/SDR>
+* <http://www.arrl.org/files/file/Technology/tis/info/pdf/020708qex013.pdf>
+* <http://www.arrl.org/files/file/Technology/tis/info/pdf/020910qex010.pdf>
+* <http://www.arrl.org/files/file/Technology/tis/info/pdf/021112qex027.pdf>
+* <http://www.arrl.org/files/file/Technology/tis/info/pdf/030304qex020.pdf>
