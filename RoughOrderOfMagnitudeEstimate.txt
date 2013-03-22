@@ -32,6 +32,13 @@ Taking it yet another notch, Jørn Hunskaar, [say][3] we could just give up on e
 
 Very interesting idea.
 
+__Addendum (2013/03/22):__
+
+Joshua Kerievsky [writes][4] about the perils of story points and the waste of overdone estimations.
+
+He has been using variable length sprints and estimates on 'team week' level focusing more on the flow.
+
 [1]: http://pragprog.com/magazines/2010-11/guru-meditation
 [2]: http://dannorth.net/2009/07/01/the-perils-of-estimation/
 [3]: http://hunskaar.com/estimating-software-projects/
+[4]: http://www.industriallogic.com/blog/stop-using-story-points/
