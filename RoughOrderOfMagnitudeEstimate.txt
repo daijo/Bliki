@@ -38,7 +38,20 @@ Joshua Kerievsky [writes][4] about the perils of story points and the waste of o
 
 He has been using variable length sprints and estimates on 'team week' level focusing more on the flow.
 
+__Addendum (2013/04/08):__
+
+In a tweet Jason Yip writes:
+
+"If you say you "can't possibly estimate", I'd suggest looking up ['Fermi estimate'][5] and read [How to Measure Anything][6]."
+
+__Addendum (2013/05/15):__
+
+Woody Zuill wrote a [blog][7] on how some software companies perhaps can use customers need for estimates as a filter when taking on work. If the customer need an estimate they most likely also have a Waterfall mentality and might not be a good fit for an Agile shop.
+
 [1]: http://pragprog.com/magazines/2010-11/guru-meditation
 [2]: http://dannorth.net/2009/07/01/the-perils-of-estimation/
 [3]: http://hunskaar.com/estimating-software-projects/
 [4]: http://www.industriallogic.com/blog/stop-using-story-points/
+[5]: https://en.wikipedia.org/wiki/Fermi_problem
+[6]: http://www.amazon.com/How-Measure-Anything-Intangibles-Business/dp/0470539399
+[7]: http://zuill.us/~WoodyZuill/2013/05/13/my-customers-need-estimates-what-do-i-do/
