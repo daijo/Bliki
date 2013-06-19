@@ -149,12 +149,35 @@ The power output is a function of speaker impedans and input voltage. In 8 ohm 9
 
 In 8 ohm the THD (Total Harmonic Distortion) take a big jump above 0.4W in output power.
 
+12AU7 + Mosfet Headphone Amplifier
+----------------------------------
+
+After the ~CMoy I wanted to build something with a few more parts and also have a look at vacuum tubes and discrete transistors. I found a simple design using a 12AU7 tube and mosfets at [DIY Audio Projects](http://diyaudioprojects.com/Solid/12AU7-IRF510-LM317-Headamp/).
+
+### 12AU7 (ECC82)
+
+This is a twin triode vaccum tube. Triode means it has a cathode (filament), andode (plate) and a grid. Twin just mean that there are two in one, i.e. two channels, so only one tube is needed for stereo.
+
+The tube is set up as a inverting amplifier. The voltage supplied to the grid of the tube controlls the current flowing through it. Since a resistor is connected between the plate and voltage source the potential at the plate varies with the current flowing through the tube. The resistor in this case is a trim potentiometer so you can adjust the plate voltage to be between the supply voltage and ground. Then the output can make the biggest swing peak to peak and we get a maximum of voltage gain without clipping.
+
+![Clipping](https://farm4.staticflickr.com/3666/9084571386_5c779426a7_o.jpg)
+
+If the plate is biased to close to the voltage source we get clipping very fast like above.
+
+![No Clipping](https://farm6.staticflickr.com/5518/9082352847_ae5d88e5c3_o.jpg)
+
+Correctly biased we can get more than 5x voltage gain.
+
+### Mosfet IRF510
+
+The plate of the tube is connected to the gate of a Mosfet configured as a source follower with LM317 as constant current source (see the battery pack). We loose a little voltage in this stgae (maybe 0.9x) but it can supply a lot more current than the tube.
+
 In planning stage
 -----------------
 
 Below are some projects I'm currently planning to build in the future.
 
-LM1875 based 2x25W stereo ampifier
+LM1875 based 2x25W stereo amplifier
 ----------------------------------
 
 Building a small amplifier for the livingroom. Using two K50 PCB kits.
@@ -186,16 +209,5 @@ Input selector
 
 http://www.ti.com/product/LM1875
 
-12AU7 + Mosfet Headphone Amplifier
-----------------------------------
 
-After the ~CMoy I wanted to build something with a few more parts and also have a look at vacuum tubes and discrete transistors. I found a simple design using a 12AU7 tube and mosfets at [DIY Audio Projects](http://diyaudioprojects.com/Solid/12AU7-IRF510-LM317-Headamp/).
-
-### 12AU7 (ECC82)
-
-This is a twin triode vaccum tube. Triode means it has a cathode, andode and a grid. Twin just mean that there are two in one, i.e. two channels, so only one tube is needed for stereo.
-
-### Mosfet IRF510
-
-LM317 as constant current source (see the battery pack).
 
