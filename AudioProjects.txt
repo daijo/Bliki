@@ -1,7 +1,7 @@
 Audio Projects
 ==============
 
-Few small audio related projects and some notes on their components and their application.
+Few small audio related projects and some notes about them.
 
 18V Rechargeable Battery Pack
 -----------------------------
@@ -154,11 +154,15 @@ In 8 ohm the THD (Total Harmonic Distortion) take a big jump above 0.4W in outpu
 
 After the ~CMoy I wanted to build something with a few more parts and also have a look at vacuum tubes and discrete transistors. I found a simple design using a 12AU7 tube and mosfets at [DIY Audio Projects](http://diyaudioprojects.com/Solid/12AU7-IRF510-LM317-Headamp/).
 
+![Bento amp](https://farm8.staticflickr.com/7402/9094131910_90d464f814_z.jpg)
+
+I built it point-to-point in a plastic bento box for extra frugality points.
+
 ### 12AU7 (ECC82)
 
 This is a twin triode vaccum tube. Triode means it has a cathode (filament), andode (plate) and a grid. Twin just mean that there are two in one, i.e. two channels, so only one tube is needed for stereo.
 
-The tube is set up as a inverting amplifier. The voltage supplied to the grid of the tube controlls the current flowing through it. Since a resistor is connected between the plate and voltage source the potential at the plate varies with the current flowing through the tube. The resistor in this case is a trim potentiometer so you can adjust the plate voltage to be between the supply voltage and ground. Then the output can make the biggest swing peak to peak and we get a maximum of voltage gain without clipping.
+The tube is set up as a inverting amplifier. The voltage supplied to the grid of the tube controls the current flowing through it. Since a resistor is connected between the plate and voltage source the potential at the plate varies with the current flowing through the tube. The resistor in this case is a trim potentiometer so you can adjust the plate voltage to be between the supply voltage and ground. Then the output can make the biggest swing peak to peak and we get a maximum of voltage gain without clipping.
 
 ![Clipping](https://farm4.staticflickr.com/3666/9084571386_5c779426a7_o.jpg)
 
@@ -170,7 +174,7 @@ Correctly biased we can get more than 5x voltage gain.
 
 ### Mosfet IRF510
 
-The plate of the tube is connected to the gate of a Mosfet configured as a source follower with LM317 as constant current source (see the battery pack). We loose a little voltage in this stgae (maybe 0.9x) but it can supply a lot more current than the tube.
+The plate of the tube is connected to the gate of a Mosfet configured as a source follower with LM317 as constant current source (see the battery pack). We loose a little voltage in this stgae (maybe 5%) but it can supply a lot more current than the tube.
 
 In planning stage
 -----------------
