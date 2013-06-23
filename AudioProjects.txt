@@ -1,43 +1,6 @@
 Audio Projects
 ==============
 
-Few small audio related projects and some notes about them.
-
-18V Rechargeable Battery Pack
------------------------------
-
-Built to power my ~CMoy with 18V. ~NiMH constant current charging using LM317. Needs a 24V supply to charge.
-
-![Battery pack](https://farm8.staticflickr.com/7101/7273069136_0627f22cc8_z.jpg)
-![Internals](https://farm8.staticflickr.com/7211/7273068364_7982f73796_z.jpg)
-
-### LM317 Linear Voltage Regulator
-
-The LM317 is a variable voltage regulator. In this device it's setup as a constant current regulator. The regulator have three pins, in, out and adjust. The regulator holds 1.25 V between the out and adjust pin. This is used to get the constant current.
-
-
-          _______    out
-    in --| LM317 |--------\
-          ---|---         |
-             | adjust     -
-             |           | |
-             |           | | R
-             |           | |
-             |            -
-             |            |
-             +------------/
-             |
-             v i
-             |
-
-
-     Constant current i = 1.25 / R
-
-There is a ~3V voltage drop over the regulator (we'll some heat here, P = 3V * i). That's why we need some extra voltage on the supply compared to the batteries to charge.
-
-I set R to charge the battery in 10 hours (C/10) which is a fairly moderate rate that doesn't require anything more advanced. I usually let it charge over night after a day of use. Seems to work well.
-
-
 ~CMoy Headphone Amplifier
 ------------------------
 
@@ -95,6 +58,37 @@ To get the supply voltage rails there is a simple voltage divider with a pair of
 There are more advanced designs using active components to make a virtual ground that is always exactly between the postive and negative rail. More info about this [here](http://tangentsoft.net/elec/vgrounds.html).
 
 This simple one works well for me. If you want to use a single 9V battery to drive the amp and/or use low impedans headphones you should look further.
+
+To power the amp with 18V I built a small rechargeable battery pack. It contains 2 ~NiMH 9V batteries and is constant current charging using LM317. Needs a 24V supply to charge.
+
+![Battery pack](https://farm8.staticflickr.com/7101/7273069136_0627f22cc8_z.jpg)
+![Internals](https://farm8.staticflickr.com/7211/7273068364_7982f73796_z.jpg)
+
+### LM317 Linear Voltage Regulator
+
+The LM317 is a variable voltage regulator. In this device it's setup as a constant current regulator. The regulator have three pins, in, out and adjust. The regulator holds 1.25 V between the out and adjust pin. This is used to get the constant current.
+
+
+          _______    out
+    in --| LM317 |--------\
+          ---|---         |
+             | adjust     -
+             |           | |
+             |           | | R
+             |           | |
+             |            -
+             |            |
+             +------------/
+             |
+             v i
+             |
+
+
+     Constant current i = 1.25 / R
+
+There is a ~3V voltage drop over the regulator (we'll some heat here, P = 3V * i). That's why we need some extra voltage on the supply compared to the batteries to charge.
+
+I set R to charge the battery in 10 hours (C/10) which is a fairly moderate rate that doesn't require anything more advanced. I usually let it charge over night after a day of use. Seems to work well.
 
 Reference:
 
@@ -188,17 +182,15 @@ Building a small amplifier for the livingroom. Using two K50 PCB kits.
 
 Similar build:
 
-http://www.frontiernet.net/~jff/lm1875/25W_Stereo_Amp_using_LM1875.html
+http://www.frontiernet.net/~~jff/lm1875/25W_Stereo_Amp_using_LM1875.html
 
 ### Powersupply
 
-The amps need a dual power supply (+/- 24V).
+The amps need a dual power supply (+/- 25V).
 
-Block RKD 80/2x18 80 VA toroidal isolation transformer 2 x 115 V to 2 x 18 V
+80VA 35V center tapped secondary.
 
-230/115V selector?
-
-IEC connector with switch and fuse holder. Grounded chassi. Bleeder resistor across filter caps (4 fold the supply power).
+IEC connector with switch and fuse holder. Grounded chassi.
 
 In a separate case connected with 3-pin DIN plug.
 

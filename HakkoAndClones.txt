@@ -1,0 +1,39 @@
+Hakko 936 Soldering Stations and Clones
+=======================================
+
+The Hakko 936 was and still is a very popular soldering station. It was preceeded by Hakko 926 and succeeded by Hakko FX-888. Even if out of production the quality of the originals and the low-price and availability of it's clones this will probably be a DIY standard for a long while.
+
+Hakko 936
+---------
+
+The original.
+
+If buying from China it's most likely a copy.
+
+Hakko 907 and Tips
+------------------
+
+The soldering pencil.
+
+Some people build DIY controllers for this pencil.
+
+Atten/Yihua/Quick 936
+---------------------
+
+Chinese manufactured clones. There might even be clones of clones in the market. Very variable quality. Everything from lethal to very good so buyer beware. Good ones should offer great value though and it's easy and cheap to get spare parts.
+
+88-250RMB (Taobao)
+
+Hakko FX-888
+------------
+
+Manufactured in Malaysia.
+
+### Digital
+
+
+### Analog (China)
+
+There seem to be a different model on sale in China using an analog controller. It's not necessarily a copy but a Chinese market low-cost version. Build quality is reported to be excellent.
+
+~500RMB (Taobao)
