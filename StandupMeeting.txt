@@ -1,9 +1,0 @@
-Standup Meeting
-===============
-
-> A stand-up meeting (or simply stand-up) is a daily team meeting held to provide a status update to the team members. The 'semi-real-time' status allows participants to know about potential challenges as well as coordinate efforts to resolve difficult and/or time-consuming issues. It has particular value in Agile software development processes, such as Scrum, but can be utilized in any development methodology. - [Wikipedia][1]
-
-Great [article][2] by Jason Yip.
-
-[1]: http://en.wikipedia.org/wiki/Stand-up_meeting
-[2]: http://martinfowler.com/articles/its~NotJustStandingUp.html

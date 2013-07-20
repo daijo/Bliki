@@ -1,6 +1,0 @@
-~CamelCase
-==========
-
-See title.
-
-Found by Perl RegExp /\b([A-Z][a-z]*)+[A-Z][a-z]+([A-Z][a-z]*)*\b/

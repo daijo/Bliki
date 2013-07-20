@@ -175,10 +175,15 @@ In planning stage
 
 Below are some projects I'm currently planning to build in the future.
 
-LM1875 based 2x25W stereo amplifier
-----------------------------------
+T-Class 2x15W with balanced/unbalanced input
+--------------------------------------------
 
-Building a small amplifier for the livingroom. Using two K50 PCB kits.
+For desk/workbench and initial testing of balanced DAC and speaker builds.
+
+LM1875 based 25W mono blocks with balanced input
+------------------------------------------------
+
+For the livingroom. Using two K50 PCB kits.
 
 Similar build:
 
@@ -188,11 +193,12 @@ http://www.frontiernet.net/~~jff/lm1875/25W_Stereo_Amp_using_LM1875.html
 
 The amps need a dual power supply (+/- 25V).
 
-80VA 35V center tapped secondary.
+2x 60VA 35V center tapped secondary.
 
 IEC connector with switch and fuse holder. Grounded chassi.
 
-In a separate case connected with 3-pin DIN plug.
+Balanced tube preamp/buffer amplifier
+-------------------------------------
 
 Attenuator
 ----------
