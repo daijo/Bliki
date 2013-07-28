@@ -1,0 +1,43 @@
+title: Sheet Metal Enclosure Work
+author: Daniel Hjort
+date: 2013/07/28
+location: Tokyo, Japan
+tags: metal, sheet, enclosure, holepunch, nibbler
+
+When doing electronics work the hardest part for me has always being making holes in enclosures. I never had much of a mechanical work shop and don't have a drill press etc. It was problematic until I found a couple of tools that make this a lot easier.
+
+I will show how to make a hole for a IEC socket in the enclosure for a power supply.
+
+Hole Punch
+----------
+
+I never liked drilling in sheet metal, mostly becasue I never had any proper equipment todo it, but even if I had I can just see it going horribly wrong. With a hole punch it's a much more controlled process.
+
+![Hole Punch](https://farm6.staticflickr.com/5340/9380905451_92f15e138c_z.jpg)
+
+This hole punch is a model very easy to get hold of on Amazon or Ebay. It can handle sheet metal up to 2 mm thick.
+
+![Punched holes](https://farm4.staticflickr.com/3674/9380906183_626f9c470f_z.jpg)
+
+The biggest hole it can make is 9/32" which translates to 7.14 mm. Sometimes you need bigger holes but is faily easy to make by making more holes close to each other and then use a round file to make it round. As you can see in the above picture I needed to take away a little of the enclosure first to be able to get hole punch in position.
+
+Nibbler
+-------
+
+Sometimes the hole need to be even bigger and maybe even square. Then punch a small hole first then cut the rest with a sheet metal nibbler like the one below.
+
+![Nibbler](https://farm4.staticflickr.com/3772/9383689196_b74bff06d6_z.jpg)
+
+IEC sockets for instance are a bit tricky to make holes for. First use the hole punch to make holes for the extruding part on the back of the socket. The socket can then be placed against the enclosure so you can mark out its outline.
+
+![IEC Socket](https://farm3.staticflickr.com/2819/9383688848_f7616c0185_z.jpg)
+
+Once that is done just nibble away. In the end you need to go pretty slow to not risk making the hole too big. It might be better to use a file for the last part.
+
+![Nibbling](https://farm4.staticflickr.com/3778/9383688524_7cd8cda855_z.jpg)
+
+Voila!
+
+![IEC Socket Done](https://farm4.staticflickr.com/3704/9383688452_7838f529d2_z.jpg)
+
+As you see there might be a follow up post on tools and techniques to make safe high voltage connections.
