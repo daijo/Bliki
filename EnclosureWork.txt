@@ -11,7 +11,7 @@ I will show how to make a hole for a IEC socket in the enclosure for a power sup
 Hole Punch
 ----------
 
-I never liked drilling in sheet metal, mostly becasue I never had any proper equipment todo it, but even if I had I can just see it going horribly wrong. With a hole punch it's a much more controlled process.
+I never liked drilling in sheet metal, mostly becasue I never had any proper equipment to do it, but even if I had I can just see it going horribly wrong. With a hole punch it's a much more controlled process.
 
 ![Hole Punch](https://farm6.staticflickr.com/5340/9380905451_92f15e138c_z.jpg)
 
