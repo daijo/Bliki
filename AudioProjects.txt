@@ -175,6 +175,13 @@ In planning stage
 
 Below are some projects I'm currently planning to build in the future.
 
+CS8416 + AK4396 + NE5532 2496 DAC
+---------------------------------
+
+### Toshiba RX178B Receiver
+
+[RX178B Kit](https://farm4.staticflickr.com/3772/9428263520_f739e270dd_z.jpg)
+
 T-Class 2x15W with balanced/unbalanced input
 --------------------------------------------
 
