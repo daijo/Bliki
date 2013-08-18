@@ -1,0 +1,99 @@
+Amplifier Projects
+===================
+
+Elekit PS-3239
+--------------
+
+A small amp kit using the TEA2025B chip. Looks pretty much like the design in the datasheet.
+
+The screw terminals wasn't included in the kit but it felt like a good idea adding them. Lesson learned from my CMoy that is basically soldered into its Altoid box never to be moved. Nice with some extra flexibility.
+
+![Completed board](https://farm8.staticflickr.com/7246/7476398620_c69cedf9fd_z.jpg)
+
+Put together as a small and cheap and battery operable stereo system. I got a pair of Fostex full range speakers to use for this purpose. These are good quality drivers so should be able to keep them if I build better amps in the future.
+
+BOM:
+
+* 1 x Elekit PS-3239 stereo amplifier kit (2 x 2.4W into 8 ohm) 1340 JPY
+* 1 x 12V/2A wall wart 1200 JPY
+* 2 x Fostex P800-E speaker cabinets 2800 JPY / pair
+* 2 x Fostex FF85WK full fange drivers 5600 JPY / pair
+* Some connectors and a volume knob ~<1000 JPY
+* 1 Altoid tin bought in Cambodia $2 incl. mints
+
+Total: ~12000 JPY (mainly for the speakers)
+
+![Testing](https://farm8.staticflickr.com/7253/7476399276_9b0bcac757_z.jpg)
+
+Worked well. Unless you're throwing a party or is in a big room it's powerful enough with these speakers. Audio quality it seem to sound best at about 1/3 of max volume with a 9V battery. Data below on the TEA2025B chip supports that.
+
+![Mounted in Altoid tin](https://farm9.staticflickr.com/8144/7486536968_8a686e11bd_z.jpg)
+
+With the screw terminals on the board the final assembly was a breeze.
+
+### Power supply
+
+The 12V wall wart I got didnt work well. I'm not sure about it's specs. I verified it's isolated but might be unregulated and maybe a switcher. Anyway it makes the amp hum. Will try and make some measurements on it later.
+
+Result was a lot better with a single 9V battery.
+
+### TEA2025B
+
+From data sheet:
+
+> The TEA2025B/D is a monolithic integrated circuit intended for use as dual or bridge power audio amplifier portable radio cassette players.
+
+So not exactly a Hi-Fi amp perhaps.
+
+The power output is a function of speaker impedans and input voltage. In 8 ohm 9V give a maximum of ~1.4W and 12V give 2.4W.
+
+In 8 ohm the THD (Total Harmonic Distortion) take a big jump above 0.4W in output power.
+
+Stepped Attenuator
+-------------------
+
+A stepped stereo attenuator in a separate enclosure. So you don't have to put a high quality volume control pot in every single amplifier build.
+
+![Inside Stepped Attenuator](https://farm8.staticflickr.com/7283/9536286680_e660de6300_z.jpg)
+
+BOM:
+
+* 1 x Stepped attenuator 1000 JPY
+* 4 x RCA sockets 500 JPY
+* 1 x Volume knob ??? JPY
+* 1 x Small project enclosure ??? JPY
+
+T-Class 2x15W with balanced/unbalanced input
+--------------------------------------------
+
+For desk/workbench and initial testing of balanced DAC and speaker builds.
+
+LM1875 based 25W mono blocks with balanced input
+------------------------------------------------
+
+For the livingroom. Using two K50 PCB kits.
+
+Similar build:
+
+http://www.frontiernet.net/~~jff/lm1875/25W_Stereo_Amp_using_LM1875.html
+
+### LM1875
+
+http://www.ti.com/product/LM1875
+
+### Powersupply
+
+The amps need a dual power supply (+/- 25V).
+
+2x 60VA 35V center tapped secondary.
+
+IEC connector with switch and fuse holder. Grounded chassi.
+
+Balanced tube preamp/buffer amplifier
+-------------------------------------
+
+
+
+
+
+
