@@ -63,10 +63,24 @@ BOM:
 * 1 x Volume knob ??? JPY
 * 1 x Small project enclosure ??? JPY
 
-T-Class 2x15W with balanced/unbalanced input
---------------------------------------------
+T-Class 2x15W
+-------------
 
-For desk/workbench and initial testing of balanced DAC and speaker builds.
+Decided I needed a small amplifier on my desk/workbench for testing DAC and speaker builds.
+
+![Mounted in enclosure](https://farm4.staticflickr.com/3751/9770790956_11a22228d8_z.jpg)
+
+Here shown with a Airport Express as a source and the stepped attenuator.
+
+![T-class + stepped attenuator + Airport Express](https://farm3.staticflickr.com/2880/9770861393_75237e913f_z.jpg)
+
+BOM:
+
+* 1 x Sure Electronics 2*15W amplifier module 2000 JPY
+* 2 x RCA sockets 250 JPY
+* 4 x Speaker connectors 400 JPY
+* 1 x Small project enclosure 1200 JPY
+
 
 LM1875 based 25W mono blocks with balanced input
 ------------------------------------------------
