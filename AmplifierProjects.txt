@@ -66,7 +66,9 @@ BOM:
 T-Class 2x15W
 -------------
 
-Decided I needed a small amplifier on my desk/workbench for testing DAC and speaker builds.
+Decided I needed a small amplifier on my desk/workbench for listening to music while working, testing DACs and speaker builds. The amplifier chip used is the Tripath TA2024.
+
+The enclosure is a bit on the big side but it's nice not to be cramped and I expect to reuse the enclosure for other modules when this one gets dated.
 
 ![Mounted in enclosure](https://farm4.staticflickr.com/3751/9770790956_11a22228d8_z.jpg)
 

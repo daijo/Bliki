@@ -1,12 +1,47 @@
 Speaker Projects
 ================
 
-FF85WK + P800-E
----------------
+Fostex FF85WK + P800-E
+----------------------
 
-Fostex full range drivers in small enclosure built by Fostex.
+Fostex full range drivers in small enclosure built by Fostex. Not much DIY but got my feets wet.
 
 ![FF85WK + P800-E pair](https://farm9.staticflickr.com/8027/7472276044_148339beae_z.jpg)
+
+I have used these speakers with both my mini amp and 2*15W T-class with great result. Nice desktop speaker for a low price.
+
+Fostex FE-103En + Nagaoka BS-10
+-------------------------------
+
+Something slightly bigger and a cabinet built from "scratch". I didn't have the actual plans for the BS-10 but used some build photos, the thickness of the MDF and outer dimensions to estimate the measurements I was missing.
+
+![Bits and pieces](https://farm6.staticflickr.com/5334/9642427249_d69292943a_z.jpg)
+
+I picked up the speakers and damping material in a speaker speciality shop in Akihabara. The connectors I got from Taobao.
+
+![Pre cut MDF](https://farm3.staticflickr.com/2886/9645663258_88b0f5d401_z.jpg)
+
+I listed the different sizes of MDF I needed and went to Tokyo Hands. The clerk helped to figure out what I needed to buy and how to cut it. I was ready for pickup a few days later. The pieces was cut with perfect precision.
+
+![Glueing in progress 1](https://farm4.staticflickr.com/3730/9645661444_75a7effcc2_z.jpg)
+
+![Glueing in progress 2](https://farm8.staticflickr.com/7351/9642424081_f949b6c65e_z.jpg)
+
+
+
+Cutting the holes.
+
+More glueing.
+
+Inner walls damping.
+
+Speaker in place.
+
+Soldering.
+
+Final glueing.
+
+Final result!
 
 The Zigmahornet
 ---------------
