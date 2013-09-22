@@ -21,27 +21,37 @@ I picked up the speakers and damping material in a speaker speciality shop in Ak
 
 ![Pre cut MDF](https://farm3.staticflickr.com/2886/9645663258_88b0f5d401_z.jpg)
 
-I listed the different sizes of MDF I needed and went to Tokyo Hands. The clerk helped to figure out what I needed to buy and how to cut it. I was ready for pickup a few days later. The pieces was cut with perfect precision.
+I listed the different sizes of MDF I needed and went to Tokyo Hands. The clerk helped to figure out what I needed to buy and how to cut it. It was ready for pickup a few days later. The pieces was cut with perfect precision.
 
 ![Glueing in progress 1](https://farm4.staticflickr.com/3730/9645661444_75a7effcc2_z.jpg)
 
+I first glued the back, front and bottom pieces using one side and some small extra pieces of MDF as a makeshift fixture.
+
 ![Glueing in progress 2](https://farm8.staticflickr.com/7351/9642424081_f949b6c65e_z.jpg)
 
+The side piece was then glued in place.
 
+![Cutting holes](https://farm8.staticflickr.com/7427/9867900245_9e2a110fc3_z.jpg)
 
-Cutting the holes.
+Next step was to cut the holes for the speakers. After locating the center a divider caliper was used to make a circular path to be sawed out. After sawing the hole use a coarse file to widen the inside of the hole. Put the speaker in and check that the ports on the back of it are unobstructed.
 
-More glueing.
+![Gluing front and inner walls](https://farm6.staticflickr.com/5479/9867898264_a9f0980031_z.jpg)
 
-Inner walls damping.
+The front and inner walls were glued separately.
 
-Speaker in place.
+![Inner damping](https://farm4.staticflickr.com/3714/9867897425_ee454b3c18_z.jpg)
 
-Soldering.
+Once they where glued in place the inner walls damping was fitted.
 
-Final glueing.
+![Speaker in place](https://farm8.staticflickr.com/7395/9867896624_ce02c820f3_z.jpg)
 
-Final result!
+Then it was time to put the speaker in place and to do the soldering. Remember to leave enough extra wire so the speakers can be removed when the box is glued shut.
+
+![Final front](https://farm4.staticflickr.com/3709/9867999453_9b89fe78fb_z.jpg)
+
+Finished!
+
+![Final back](https://farm6.staticflickr.com/5530/9867892214_68e38b655f_z.jpg)
 
 The Zigmahornet
 ---------------
@@ -52,6 +62,11 @@ http://fullrangedriver.com/singledriver/DIYTQ12.html
 
 Fostex FE-103En Backhorn
 ------------------------
+
+TBD
+
+Fostex FE-166En BIB
+-------------------
 
 TBD
 
