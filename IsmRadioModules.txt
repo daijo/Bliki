@@ -1,0 +1,31 @@
+ISM Band Radio Modules
+======================
+
+Modules for communication between embedded systems on the [ISM-bands][1].
+
+Nordic Semiconductor NRF24L01
+-----------------------------
+
+[Product page][2]
+
+[Arduino library][3]
+
+Manicbug's [Arduino library][4] and [mesh][5] [net][6]. Described in a [blog][7].
+
+Mattibal's [mesh net][8].
+
+Texas Instruments CC2500
+------------------------
+
+[Datasheet][9]
+
+[1]:https://en.wikipedia.org/wiki/ISM_band
+[2]:http://www.nordicsemi.com/eng/Products/2.4GHz-RF/nRF24L01
+[3]:http://airspayce.com/mikem/arduino/NRF24/
+[4]:https://github.com/maniacbug/RF24
+[5]:http://maniacbug.github.io/RF24Network/
+[6]:https://github.com/maniacbug/RF24Network
+[7]:http://maniacbug.wordpress.com/2012/03/30/rf24network/
+[8]:https://github.com/mattibal/meshnet
+[9]:http://www.ti.com/lit/ds/swrs040c/swrs040c.pdf
+
