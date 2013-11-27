@@ -6,6 +6,8 @@ Modules for communication between embedded systems on the [ISM-bands][1].
 Nordic Semiconductor NRF24L01
 -----------------------------
 
+![nRF24L01+ module](https://farm6.staticflickr.com/5522/11083342085_8c95212c1d_z.jpg)
+
 [Product page][2]
 
 [Arduino library][3]
