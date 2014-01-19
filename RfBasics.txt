@@ -4,7 +4,7 @@ date: 2014/01/19
 location: Tokyo, Japan
 tags: rf, radio, power, termination, impedans, scope, modules, attenuator, returnloss, vswr
 
-Here are some techniques for working with RF. Most of it I have picked up reading [The Popcorn Site][1]. The RF Workbench pages there are a very good resource to learn about this stuff.
+Here are some basic theory and techniques you need to know when starting with RF experimantation. Most of it I have picked up reading [The Popcorn Site][1]. The RF Workbench pages there are a very good resource to learn about this stuff.
 
 Power Level
 -----------
