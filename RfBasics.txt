@@ -98,7 +98,7 @@ To measure return loss everything is connected up like this.
 
 Fire up the signal generator on a desired frequency and note the signals power on the scope with the mystery load disconnected. Then connect the mystery load and again note the signals power on the scope. The return loss is the ratio of these numbers. The ratio in dB between two measured values in dBm is the difference between the two measured values.
 
-Return loss is related to the Voltage Stading Wave Ratio [VSWR][5]. When a part or all of the signal is reflected back a standing wave is created. The voltage at the resulting standing wave's peaks and troughs is measured and the ratio is calculated so it is a number between 1 and infinity (or strictly undefined). An open ended coax give a infinite impedans so all power is reflected back. The trough voltage of the standing wave is 0 and the peak is double the peak voltage of the incident signal. The VSWR is also the same as the ratio between the impedans of the line and the load.
+Return loss is related to the Voltage Standing Wave Ratio [VSWR][5]. When a part or all of the signal is reflected back a standing wave is created. The voltage at the resulting standing wave's peaks and troughs is measured and the ratio is calculated so it is a number between 1 and infinity (or strictly undefined). An open ended coax give a infinite impedans so all power is reflected back. The trough voltage of the standing wave is 0 and the peak is double the peak voltage of the incident signal. This is the worst case and the VSWR is "infinite". The VSWR is also the same as the ratio between the impedans of the line and the load.
 
     VSWR = if Zload > Zline Zload/Zline
            if Zline < Zload Zline/Zload
