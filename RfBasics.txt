@@ -69,7 +69,7 @@ As an example say we have a signal that is 3 dBm (2 mW) and feed it through a -6
 Impedans Matching
 -----------------
 
-We have seen that [impedans matching][3] (and a 50 ohm standard) make power calculations and measurements easier. Another reason the strife for impedans matching is that it maximises the transfered power. If there is a impedans mismatch some of the signal power will be reflected back to the source.
+We have seen that [impedans matching][3] (and a 50 ohm standard) make power calculations and measurements easier. Another reason the strife for impedans matching is that it maximises the transfered power. If there is a impedans mismatch some of the signal power will be [reflected][6] back to the source.
 
 PI-network attenuators can be designed to have different input an output impedans and can be used for matching. Even simpler 2 resistor L-pads can be used as well. Of course this approach will also cause big power losses.
 
@@ -98,7 +98,14 @@ To measure return loss everything is connected up like this.
 
 Fire up the signal generator on a desired frequency and note the signals power on the scope with the mystery load disconnected. Then connect the mystery load and again note the signals power on the scope. The return loss is the ratio of these numbers. The ratio in dB between two measured values in dBm is the difference between the two measured values.
 
-Return loss to [VSWR][5].
+Return loss is related to the Voltage Stading Wave Ratio [VSWR][5]. When a part or all of the signal is reflected back a standing wave is created. The voltage at the resulting standing wave's peaks and troughs is measured and the ratio is calculated so it is a number between 1 and infinity (or strictly undefined). An open ended coax give a infinite impedans so all power is reflected back. The trough voltage of the standing wave is 0 and the peak is double the peak voltage of the incident signal. The VSWR is also the same as the ratio between the impedans of the line and the load.
+
+    VSWR = if Zload > Zline Zload/Zline
+           if Zline < Zload Zline/Zload
+           else 1
+    
+    VSWR = [10^(RL/20) + 1] / [10^(RL/20) - 1]
+    
 
 Filters
 -------
@@ -132,5 +139,6 @@ TBD
 [3]: https://en.wikipedia.org/wiki/Impedance_matching
 [4]: http://www.sp5ddj.pl/transformatory%20szerokopasmowe.pdf
 [5]: http://www.wenzel.com/documents/swr.html
+[6]: https://en.wikipedia.org/wiki/Reflections_of_signals_on_conducting_lines
 
 
