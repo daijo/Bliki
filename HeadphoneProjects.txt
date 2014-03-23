@@ -128,5 +128,5 @@ Correctly biased we can get more than 5x voltage gain.
 
 ### Mosfet IRF510
 
-The plate of the tube is connected to the gate of a Mosfet configured as a source follower with LM317 as constant current source (see the battery pack). We loose a little voltage in this stgae (maybe 5%) but it can supply a lot more current than the tube.
+The plate of the tube is connected to the gate of a Mosfet configured as a source follower with LM317 as constant current source (see the battery pack). We lose a little voltage in this stage (maybe 5%) but it can supply a lot more current than the tube.
 
