@@ -1,0 +1,80 @@
+Handheld Tranceivers
+====================
+
+Baofeng BF-888S
+---------------
+
+![BF-888S Pic](http://ecx.images-amazon.com/images/I/3113TE-~VgqL._SY300_.jpg)
+
+* 16 channels
+* UHF 400-470Mhz
+
+[Reviews][1], [info][2] and [manual][8].
+
+Baofeng UV-B5
+-------------
+
+![UV-B5](http://i.ebayimg.com/t/2pcs-Radio-BF-UVB5-5W-99CH-UHF-VHF-Dual-Frequency-Display-Walkie-Talkie-FM-/00/s/~NTU1WDYwMA==/z/~W10AAMXQs6FRJBV2/$(~KGrHqN,!jEFDsM1GGE(BRJBV2MCqg~~60_12.JPG)
+
+* 99 channels
+* VHF 136-174 MHz
+* UHF 400-470 MHz
+
+[Reviews][3], [info][4] and [manual][9].
+
+Programming
+-----------
+
+The devices are programmed via the Kenwood 2-plug connected as this:
+
+* 2.5 mm sleeve - GND
+* 2.5 mm ring - TX Data
+* 3.5 mm sleeve - RX Data
+* 3.5 mm tip - V+
+
+[Chirp][5] can be used as programming software. I found a problem programming the BF-888S described in this [issue][6].
+
+Audio Interface
+---------------
+
+RX and TX audio and PTT is wired up as this:
+
+* 2.5 mm sleeve - Speaker-
+* 2.5 mm tip - Speaker+
+* 3.5 mm sleeve - Mic-
+* 3.5 mm ring - Mic+
+
+Beware of the fact that sleeves of both plugs are connected for PTT. To connect to an ~iPhone(etc.) the [easiest way][7] is:
+
+    Baofeng                                             iPhone TRRS
+    
+    3.5 mm ring --------------------------------------- tip
+    
+                        C1    R1     C2
+    2.5 mm tip ---------||---###-----||---------------- sleeve
+                                 |        |
+                                 #        #
+                                 # R2     # R3
+                                 #        #
+                                 |        |
+                                GND      GND
+    
+    2.5 mm sleeve -----\                         /----- inner ring
+                       |                         |
+                      GND                       GND
+
+Where C1 and C2 is 0.01uF, R1 10k, R2 and R3 2.2k. Use VOX for TX.
+
+[1]:http://www.eham.net/reviews/detail/11094?ehamsid=04ef5uqqodarj5087voeqm6lv1
+[2]:http://www.miklor.com/BF888/
+
+[3]:http://www.eham.net/reviews/detail/10945?ehamsid=buevt3a2q38rtpf0j7uuf00pc0
+[4]:http://miklor.com/UVB5/
+
+[5]:http://chirp.danplanet.com/projects/chirp/wiki/Home
+[6]:http://chirp.danplanet.com/issues/1441
+
+[7]:https://electronics.stackexchange.com/questions/30841/how-do-i-build-a-trrs-headphone-jack-with-a-jack-that-is-detectable-by-an-iphone
+
+[8]:http://www.miklor.com/BF888/888-Manual.php
+[9]:http://www.miklor.com/UVB5/pdf/UVB5_Manual.pdf

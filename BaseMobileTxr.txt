@@ -1,0 +1,39 @@
+Base/Mobile Tranceivers
+=======================
+
+Kenwood TS-680S
+---------------
+
+HF/6m tranceiver that run on 12-16V using just above 1.5A for RX and 20A for full power TX (if you are allowed too).
+
+![Kenwood TS-680S Pic](http://www.universal-radio.com/catalog/hamhf/ts680s.jpg)
+
+General info [here][1], [here][2] and [here][3].
+
+### Data Interface
+
+To connect to a computer the TS-680 needs the IF-10C module installed and IF-232C interface and level converter. They are out of production like the tranceiver itself and hard to find. The latter also is a bit old fashioned nowadays when USB is the norm.
+
+The interface cable can be [made][4] with a USB chip like the FT232RL. The connections from FT232RL to the 6-pin DIN is:
+
+    GND - Pin 1
+    RXD - Pin 2
+    TXD - Pin 3
+    RTS - Pin 4
+    CTS - Pin 5
+
+The [IF-10C][5] module connects the internal logic to the 6-pin DIN socket.
+
+Commercial IF-10C [substitute][6] that also replaces the level converter.
+
+### Audio Interface
+
+TBD
+
+[1]:http://www.rigpix.com/kenwood/ts680s.htm
+[2]:http://www.universal-radio.com/catalog/hamhf/ts680s.html
+[3]:http://www.universal-radio.com/catalog/hamhf/TS140S.html
+
+[4]:http://people.wallawalla.edu/~~Rob.Frohne/SDR/USB%20Interface/IF-232%20USB%20Replacement.html
+[5]:http://www.hamradio.cc/forum/index.php?t=msg&goto=43&
+[6]:http://www.piexx.com/index.php?main_page=product_info&products_id=21
