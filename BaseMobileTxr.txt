@@ -25,7 +25,7 @@ The interface cable can be [made][4] with a USB chip like the FT232RL. The conne
 
 Commercial [cable][7].
 
-The [IF-10C][5] module connects the internal logic to the 6-pin DIN socket ACC1.
+The [IF-10C][5] module connects the internal logic to the 6-pin DIN socket ACC1. It used a [UPD8251AFC][9] Programmable Communications Interface (USART), a [TC4040B][10] 12 Stage Ripple-Carry Binary Counter/Dividers and a HD7404 Inverter.
 
 Commercial IF-10C [substitute][6] that also replaces the level converter.
 
@@ -41,6 +41,9 @@ Audio interface [schematic][7] and commercial [product][8].
 
 [4]:http://people.wallawalla.edu/~~Rob.Frohne/SDR/USB%20Interface/IF-232%20USB%20Replacement.html
 [5]:http://www.hamradio.cc/forum/index.php?t=msg&goto=43&
+[9]:http://datasheet.octopart.com/UPD8251AFC-NEC-datasheet-102656.pdf
+[10]:http://www.toshiba.com/taec/components2/Datasheet_Sync/201205/DST_TC4040BP-TDE_EN_53.pdf
+
 [6]:http://www.piexx.com/index.php?main_page=product_info&products_id=21
 [7]:http://www.qsl.net/ta7i/kenwood%20sema/kw13pd.gif
 [8]:http://www.amazon.co.uk/Data-Mode-Cable-Kenwood-TS-440/dp/B00CDW6FYS
