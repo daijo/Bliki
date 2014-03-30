@@ -12,23 +12,28 @@ General info [here][1], [here][2] and [here][3].
 
 ### Data Interface
 
-To connect to a computer the TS-680 needs the IF-10C module installed and IF-232C interface and level converter. They are out of production like the tranceiver itself and hard to find. The latter also is a bit old fashioned nowadays when USB is the norm.
+To connect to a computer the TS-680 needs the IF-10C module installed and IF-232C interface and level converter. They are out of production like the transceiver itself and hard to find. The latter also is a bit old fashioned nowadays when USB is the norm.
 
 The interface cable can be [made][4] with a USB chip like the FT232RL. The connections from FT232RL to the 6-pin DIN is:
 
+          6-pin DIN  (ACC1)
     GND - Pin 1
     RXD - Pin 2
     TXD - Pin 3
     RTS - Pin 4
     CTS - Pin 5
 
-The [IF-10C][5] module connects the internal logic to the 6-pin DIN socket.
+Commercial [cable][7].
+
+The [IF-10C][5] module connects the internal logic to the 6-pin DIN socket ACC1.
 
 Commercial IF-10C [substitute][6] that also replaces the level converter.
 
 ### Audio Interface
 
-TBD
+Connected via 13-pin DIN ACC2.
+
+Audio interface [schematic][7] and commercial [product][8].
 
 [1]:http://www.rigpix.com/kenwood/ts680s.htm
 [2]:http://www.universal-radio.com/catalog/hamhf/ts680s.html
@@ -37,3 +42,5 @@ TBD
 [4]:http://people.wallawalla.edu/~~Rob.Frohne/SDR/USB%20Interface/IF-232%20USB%20Replacement.html
 [5]:http://www.hamradio.cc/forum/index.php?t=msg&goto=43&
 [6]:http://www.piexx.com/index.php?main_page=product_info&products_id=21
+[7]:http://www.qsl.net/ta7i/kenwood%20sema/kw13pd.gif
+[8]:http://www.amazon.co.uk/Data-Mode-Cable-Kenwood-TS-440/dp/B00CDW6FYS
