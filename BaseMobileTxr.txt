@@ -10,7 +10,7 @@ HF/6m tranceiver that run on 12-16V using just above 1.5A for RX and 20A for ful
 
 General info [here][1], [here][2] and [here][3].
 
-### Data Interface
+### Serial Interface
 
 To connect to a computer the TS-680 needs the IF-10C module installed and IF-232C interface and level converter. They are out of production like the transceiver itself and hard to find. The latter also is a bit old fashioned nowadays when USB is the norm.
 
@@ -23,17 +23,22 @@ The interface cable can be [made][4] with a USB chip like the FT232RL. The conne
     RTS - Pin 4
     CTS - Pin 5
 
-Commercial [cable][7].
+    Serial interface full  duplex
+    Transfer rate:     4800 BPS
+    Sync:              Asynchronous
+    Bit construction:  1 start bit, 8 character bits, 2 stop bits  (NO parity)
 
-The [IF-10C][5] module connects the internal logic to the 6-pin DIN socket ACC1. It used a [UPD8251AFC][9] Programmable Communications Interface (USART), a [TC4040B][10] 12 Stage Ripple-Carry Binary Counter/Dividers and a HD7404 Inverter.
+Even easier it can be made by soldering a 6-pin DIN plug to a cheap off-the-shelf FTDI USB-Serial cable.
 
-Commercial IF-10C [substitute][6] that also replaces the level converter.
+It is tricker to find or replace the IF-10C. There is a commercial IF-10C [substitute][6] from Piexx that also include the level converter and a ribbon cable meant to bypass the 6-pin DIN (ACC1) and connect directly to a serial port.
 
-### Audio Interface
+If you want to roll your own there is a schematic and PCB layout [available][5].
+
+### Audio/PTT/Keyer Interface
 
 Connected via 13-pin DIN ACC2.
 
-Audio interface [schematic][7] and commercial [product][8].
+Audio [interface][11] [schematic][7] and commercial [product][8].
 
 [1]:http://www.rigpix.com/kenwood/ts680s.htm
 [2]:http://www.universal-radio.com/catalog/hamhf/ts680s.html
@@ -47,3 +52,4 @@ Audio interface [schematic][7] and commercial [product][8].
 [6]:http://www.piexx.com/index.php?main_page=product_info&products_id=21
 [7]:http://www.qsl.net/ta7i/kenwood%20sema/kw13pd.gif
 [8]:http://www.amazon.co.uk/Data-Mode-Cable-Kenwood-TS-440/dp/B00CDW6FYS
+[11]:http://www.qsl.net/zs1an/soundcard.html
