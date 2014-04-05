@@ -17,8 +17,17 @@ SWL Magnetic Loop
 70cm Ground Plane
 -----------------
 
+As seen in ARRL Antenna Book etc. Using a N connector instead of the traditional SO-239 connector. Very easy build, did most of it sitting on the sofa watching TV.
 
-70cm/2m Dipole
---------------
+![Connector](https://farm8.staticflickr.com/7011/13637883585_a14f79a4fa_z.jpg)
+![70cm Ground Plane Done](https://farm8.staticflickr.com/7248/13637905363_7e4a6ff321_z.jpg)
 
+70cm Yagi
+---------
 
+http://www.qsl.net/ve3rgw/antproj2/6euyagi.html
+
+70cm Moxon
+----------
+
+http://www.moxonantennaproject.com/sm5jab/sm5jab_2.htm
