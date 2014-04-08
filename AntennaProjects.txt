@@ -16,17 +16,17 @@ The crimped ring terminals make it easy to remove the groud radials for transpor
 
 Got very good reception of APRS packets at 431.04 MHz inside the apartment.
 
-![Quarter Wave Ground Plane Model](https://github.com/daijo/AntennaModels/blob/master/QuarterWave.png?raw=true)
+![Quarter Wave Ground Plane Model](https://github.com/daijo/~AntennaModels/blob/master/~QuarterWave.png?raw=true)
 
 ### 70cm/2m Yagi-Uda
 
 4 element model
 
-![4 Element Dual Band Yagi-Uda](https://github.com/daijo/AntennaModels/blob/master/4ElementDualBandYagi.png?raw=true)
+![4 Element Dual Band Yagi-Uda](https://github.com/daijo/~AntennaModels/blob/master/4ElementDualBandYagi.png?raw=true)
 
 5 element model
 
-![5 Element Dual Band Yagi-Uda](https://github.com/daijo/AntennaModels/blob/master/5ElementDualBandYagi.png?raw=true)
+![5 Element Dual Band Yagi-Uda](https://github.com/daijo/~AntennaModels/blob/master/5ElementDualBandYagi.png?raw=true)
 
 http://www.wb5cxc.com/dualv_ant.html
 
