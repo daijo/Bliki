@@ -10,6 +10,10 @@ HF/6m tranceiver that run on 12-16V using just above 1.5A for RX and 20A for ful
 
 General info [here][1], [here][2] and [here][3].
 
+### Remote Interface
+
+This is a 7-pin DIN plug used to connect to an external linear amplifier or transverter. It has an ALC input and a T/R-relay connection. The ALC input is biased down to -10V for minimum power output.
+
 ### Serial Interface
 
 To connect to a computer the TS-680 needs the IF-10C module installed and IF-232C interface and level converter. They are out of production like the transceiver itself and hard to find. The latter also is a bit old fashioned nowadays when USB is the norm.

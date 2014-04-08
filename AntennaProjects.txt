@@ -1,33 +1,57 @@
 Antenna Projects
 ================
 
-SWL Random Wire
----------------
+UHF
+---
 
-![Rx Random Wire No Un-Un](https://farm9.staticflickr.com/8241/8605181588_7dee67ab24_z.jpg)
-![9:1 Un-Un](https://farm3.staticflickr.com/2872/11264949443_55496ed3f2_z.jpg)
-
-SWL Magnetic Loop
------------------
-
-![Rx Magnetic Loop](https://farm4.staticflickr.com/3728/13349966124_590f08f466_z.jpg)
-![Coupling Loop](https://farm4.staticflickr.com/3823/13349728473_db1932d302_z.jpg)
-![Feedline Connection](https://farm8.staticflickr.com/7296/13349583985_53c9a625e2_z.jpg)
-
-70cm Ground Plane
------------------
+### 70cm Ground Plane
 
 As seen in ARRL Antenna Book etc. Using a N connector instead of the traditional SO-239 connector. Very easy build, did most of it sitting on the sofa watching TV.
 
 ![Connector](https://farm8.staticflickr.com/7011/13637883585_a14f79a4fa_z.jpg)
+
+The crimped ring terminals make it easy to remove the groud radials for transport. They bend to so can be used to adjust the antennas impedans. At 90 degree angle the antennas impedans should be around 30 Ohm and raise to about 50 Ohm if the radials are at 45 degree angle.
+
 ![70cm Ground Plane Done](https://farm8.staticflickr.com/7248/13637905363_7e4a6ff321_z.jpg)
 
-70cm Yagi
----------
+Got very good reception of APRS packets at 431.04 MHz inside the apartment.
+
+![Quarter Wave Ground Plane Model](https://github.com/daijo/AntennaModels/blob/master/QuarterWave.png?raw=true)
+
+### 70cm/2m Yagi-Uda
+
+4 element model
+
+![4 Element Dual Band Yagi-Uda](https://github.com/daijo/AntennaModels/blob/master/4ElementDualBandYagi.png?raw=true)
+
+5 element model
+
+![5 Element Dual Band Yagi-Uda](https://github.com/daijo/AntennaModels/blob/master/5ElementDualBandYagi.png?raw=true)
+
+http://www.wb5cxc.com/dualv_ant.html
+
+### 70cm Yagi-Uda
+
+model
 
 http://www.qsl.net/ve3rgw/antproj2/6euyagi.html
 
-70cm Moxon
-----------
+### 70cm Moxon
 
 http://www.moxonantennaproject.com/sm5jab/sm5jab_2.htm
+
+HF
+--
+
+A few shortwave antennas I tried with very little success. After a while I discovered where I live have severe interference pretty much across the whole HF spectrum and very little I can do about it. Shortwave on a hold until move somewhere else.
+
+### SWL Random Wire
+
+![Rx Random Wire No Un-Un](https://farm9.staticflickr.com/8241/8605181588_7dee67ab24_z.jpg)
+![9:1 Un-Un](https://farm3.staticflickr.com/2872/11264949443_55496ed3f2_z.jpg)
+
+### SWL Magnetic Loop
+
+![Rx Magnetic Loop](https://farm4.staticflickr.com/3728/13349966124_590f08f466_z.jpg)
+![Coupling Loop](https://farm4.staticflickr.com/3823/13349728473_db1932d302_z.jpg)
+![Feedline Connection](https://farm8.staticflickr.com/7296/13349583985_53c9a625e2_z.jpg)
