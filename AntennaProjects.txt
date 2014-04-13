@@ -1,42 +1,66 @@
 Antenna Projects
 ================
 
-UHF
----
+A few antennas of other people's design I have modelled or built.
 
-### 70cm Ground Plane
+VHF/UHF
+-------
 
-As seen in ARRL Antenna Book etc. Using a N connector instead of the traditional SO-239 connector. Very easy build, did most of it sitting on the sofa watching TV.
+### Wire hanger Quarter Wave Ground Plane
+
+As seen in ARRL Antenna Book etc. Using a N connector instead of the traditional SO-239 connector. Very easy build, did most of it sitting on the sofa watching TV. Elements are cut from wire-hangers which are 2mm in diameter.
 
 ![Connector](https://farm8.staticflickr.com/7011/13637883585_a14f79a4fa_z.jpg)
 
-The crimped ring terminals make it easy to remove the groud radials for transport. They bend to so can be used to adjust the antennas impedans. At 90 degree angle the antennas impedans should be around 30 Ohm and raise to about 50 Ohm if the radials are at 45 degree angle.
+The crimped ring terminals make it easy to remove the groud radials for transport. They bend to so can be used to adjust the antennas impedans, although I wouldn't try that more than a couple of times. At 90 degree angle the antennas impedans should be around 30 Ohm and raise to about 50 Ohm if the radials are at 45 degree angle.
 
 ![70cm Ground Plane Done](https://farm8.staticflickr.com/7248/13637905363_7e4a6ff321_z.jpg)
 
-Got very good reception of APRS packets at 431.04 MHz inside the apartment.
+Got very good reception of APRS packets at 431.04 ~MHz inside the apartment. Will probably need scavenge more wire hangers to build a 2m version.
 
-![Quarter Wave Ground Plane Model](https://github.com/daijo/~AntennaModels/blob/master/~QuarterWave.png?raw=true)
+![Quarter Wave Ground Plane Model](https://raw.githubusercontent.com/daijo/~AntennaModels/blob/master/~QuarterWave.png?raw=true)
 
-### 70cm/2m Yagi-Uda
+### 2 Element Wire Hanger Yagi
 
-4 element model
+After building the quarter wave it seemed doable to build a small light Yagi for the 70cm band from wire-hangers too. Although it models pretty good I wouldn't use it for transmitting before tuning it carefully cause millimeters matter.
 
-![4 Element Dual Band Yagi-Uda](https://github.com/daijo/~AntennaModels/blob/master/4ElementDualBandYagi.png?raw=true)
+![2 Element Wire Hanger Yagi Model](https://raw.githubusercontent.com/daijo/~AntennaModels/blob/master/~WireHangerYagi.png?raw=true)
 
-5 element model
+The elements were cut and for boom I used a length of MDF board I had left over. Not the best material probably but worked well for a prototype. Two grooves where cut and the reflector glued into the back one. The driven element soldered to a BNC connector and glued into the front groove.
 
-![5 Element Dual Band Yagi-Uda](https://github.com/daijo/~AntennaModels/blob/master/5ElementDualBandYagi.png?raw=true)
+![Driven element in groove](https://farm8.staticflickr.com/7043/13814268483_933cbfe807_z.jpg)
 
-http://www.wb5cxc.com/dualv_ant.html
+A light Yagi like this could come in handy for receiving a 70cm satellite downlink like that of S0-50.
 
-### 70cm Yagi-Uda
+![Pointed to the sky](https://farm4.staticflickr.com/3712/13814267403_a24ebc8946_z.jpg)
 
-model
+### 70cm/2m Yagi
+
+A 2m Yagi with open sleeve arrangement for 70cm. Described by [WB5CXC](http://www.wb5cxc.com/dualv_ant.html) and [DK7ZB](http://dk7zb.darc.de/Duoband/duoband_2-70_2-3.htm).
+
+4 element model:
+
+![4 Element Dual Band Yagi-Uda](https://raw.githubusercontent.com/daijo/~AntennaModels/blob/master/4ElementDualBandYagi.png?raw=true)
+
+Started with WB5CXC's design but had to tune it a little to bring the VSWR down on both bands.
+
+5 element model:
+
+![5 Element Dual Band Yagi-Uda](https://raw.githubusercontent.com/daijo/~AntennaModels/blob/master/5ElementDualBandYagi.png?raw=true)
+
+Also after WB5CXC's design but was harder to get the VSWR inline for this. Maybe easier if can automaticaly optimise in CocoaNEC (which should be possible).
+
+Will probably try to build a 4 element version. This could be a good antenna for satellite communication.
+
+### 70cm Yagi
+
+Model it!
 
 http://www.qsl.net/ve3rgw/antproj2/6euyagi.html
 
 ### 70cm Moxon
+
+Model it!
 
 http://www.moxonantennaproject.com/sm5jab/sm5jab_2.htm
 
