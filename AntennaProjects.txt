@@ -30,7 +30,7 @@ The elements were cut and for boom I used a length of MDF board I had left over.
 
 ![Driven element in groove](https://farm8.staticflickr.com/7043/13814268483_933cbfe807_z.jpg)
 
-A light Yagi like this could come in handy for receiving a 70cm satellite downlink like that of S0-50.
+A light Yagi like this could come in handy for receiving a 70cm satellite downlink like that of SO-50.
 
 ![Pointed to the sky](https://farm4.staticflickr.com/3712/13814267403_a24ebc8946_z.jpg)
 
