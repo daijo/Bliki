@@ -135,6 +135,8 @@ Change your mind after add
 --------------------------
     git rm -r --cached .
 
+Can also be used after adding files to .gitignore that has already been added and commited. When adding files again the new .gitignore will exclude what you want.
+
 Push to repo
 ------------
     git push /Users/daijo/Dropbox/Patchwork/Projects/webpage.git/
