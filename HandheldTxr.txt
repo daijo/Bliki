@@ -32,7 +32,7 @@ The devices are programmed via the Kenwood 2-plug connected as this:
 * 3.5 mm sleeve - RX Data
 * 3.5 mm tip - V+
 
-[Chirp][5] can be used as programming software. I found a problem programming the BF-888S described in this [issue][6].
+[Chirp][5] can be used as programming software. I found a problem programming the BF-888S described in this [issue][6]. Update: To program the radio it needs to be on Ch 16 or Chirp will show "Radio refused to enter programming mode".
 
 Audio Interface
 ---------------
