@@ -36,7 +36,7 @@ Even easier it can be made by soldering a 6-pin DIN plug to a cheap off-the-shel
 
 It is tricker to find or replace the IF-10C. There is a commercial IF-10C [substitute][6] from Piexx that also include the level converter and a ribbon cable meant to bypass the 6-pin DIN (ACC1) and connect directly to a serial port.
 
-If you want to roll your own there is a schematic and PCB layout [available][5].
+If you want to roll your own there is a schematic and PCB layout [available][5]. This Japanese ham built his own [copy][12].
 
 ### Audio/PTT/Keyer Interface
 
@@ -52,6 +52,7 @@ Audio [interface][11] [schematic][7] and commercial [product][8].
 [5]:http://www.hamradio.cc/forum/index.php?t=msg&goto=43&
 [9]:http://datasheet.octopart.com/UPD8251AFC-NEC-datasheet-102656.pdf
 [10]:http://www.toshiba.com/taec/components2/Datasheet_Sync/201205/DST_TC4040BP-TDE_EN_53.pdf
+[12]:http://www.hirokichi.com/denshi/IF-10C_Compatible.htm
 
 [6]:http://www.piexx.com/index.php?main_page=product_info&products_id=21
 [7]:http://www.qsl.net/ta7i/kenwood%20sema/kw13pd.gif
