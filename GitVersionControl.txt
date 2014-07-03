@@ -91,6 +91,14 @@ Delete from remote:
 
     git push origin :[branch_name]
 
+Track branch in remote
+----------------------
+
+$ git fetch origin
+$ git checkout --track origin/develop
+Branch develop set up to track remote branch develop from origin.
+Switched to a new branch 'develop'
+
 Add upstream and fetch from upstream
 ------------------------------------
     cd Spoon-Knife
