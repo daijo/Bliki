@@ -94,10 +94,10 @@ Delete from remote:
 Track branch in remote
 ----------------------
 
-$ git fetch origin
-$ git checkout --track origin/develop
-Branch develop set up to track remote branch develop from origin.
-Switched to a new branch 'develop'
+    $ git fetch origin
+    $ git checkout --track origin/develop
+    Branch develop set up to track remote branch develop from origin.
+    Switched to a new branch 'develop'
 
 Add upstream and fetch from upstream
 ------------------------------------
