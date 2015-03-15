@@ -1,0 +1,67 @@
+Raspberry Pi
+============
+
+Install
+-------
+
+Flash SD card on Mac:
+
+    $ diskutil list
+    $ diskutil unmount /dev/disk2s1
+    $ sudo dd if=~/Desktop/2015-02-16-raspbian-wheezy.img of=/dev/rdisk2 bs=1m
+
+Boot the Pi connected to Ethernet.
+
+Find Pi:
+
+    $ sudo nmap -sP 192.168.100.2-254
+
+Look for:
+
+    Nmap scan report for 192.168.100.204
+    Host is up (0.00093s latency).
+    MAC Address: B8:27:EB:8D:96:58 (Raspberry Pi Foundation)
+
+SSH to Pi:
+
+    ssh pi@192.168.100.204
+
+Password is ‘raspberry’.
+
+    $ sudo raspi-config
+
+Advanced Options -> Update
+Expand Filesystem
+
+Finish to reboot.
+
+    $ sudo apt-get update && sudo apt-get upgrade
+
+### Running VNC server
+
+    $ sudo apt-get install tightvncserver
+    $ tightvncserver
+    $ vncserver :1 -geometry 1280x720 -depth 24
+
+Start client on mac (~RealVNC) and connect to 192.168.100.204:1
+
+Tunnel VNC
+
+    $ ssh -L 5901:localhost:5901 -N -f -l pi billeberga.homeip.net
+
+Ham Radio
+---------
+
+Some useful things for hams.
+
+    $ sudo apt-get install xastir
+    $ sudo apt-get install fldigi
+
+Raspberry Pi B+ is reportedly too slow for fldigi.
+
+### WSPR
+
+    $ git clone https://github.com/~JamesP6000/~WsprryPi.git
+    $ cd ~WsprryPi
+    $ make
+    $ sudo ./wspr -o -r --self-calibration [YOUR_CALL] [YOUR_GRID] 10 40m
