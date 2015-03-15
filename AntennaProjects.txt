@@ -10,6 +10,18 @@ HF
 
 1:1 current balun/choke built with FT140-43 and RG-174. Built this to cure RF-In-The-Shack problems I got with a commercial OCFD antenna. Apparently the 1:4 balun on the one was a voltage balun and didn't keep the RF from the coax shield.
 
+![1:4 Dual Core Current Balun Winding](https://farm9.staticflickr.com/8729/16824603131_427a42a625_z.jpg)
+
+Two current 1:1 current baluns can be connected in to one 1:4 current balun by connecting the inputs in parallel and shorting the hot side of one to the ground side of the other and using the remaning two leads as the output. Here done with two FT114-43 toroids.
+
+![Enclosure](https://farm8.staticflickr.com/7593/16618369257_6cd9c6db9a_z.jpg)
+
+Enclosure is ready for the balun to be mounted.
+
+![1:4 Dual Core Current Balun Winding](https://farm8.staticflickr.com/7613/16639013550_5d239fd448_z.jpg)
+
+Done!
+
 VHF/UHF
 -------
 
