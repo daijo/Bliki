@@ -6,9 +6,13 @@ A few antennas and related projects I have built.
 HF
 --
 
-![Current Balun](https://farm9.staticflickr.com/8577/16408542007_56ec7e90fb_z.jpg)
+![Current Balun/Choke](https://farm9.staticflickr.com/8577/16408542007_56ec7e90fb_z.jpg)
 
 1:1 current balun/choke built with FT140-43 and RG-174. Built this to cure RF-In-The-Shack problems I got with a commercial OCFD antenna. Apparently the 1:4 balun on the one was a voltage balun and didn't keep the RF from the coax shield.
+
+![Current Balun/Choke](https://farm9.staticflickr.com/8564/16647876658_0902e61427_z.jpg)
+
+Also built one with a balanced output.
 
 ![1:4 Dual Core Current Balun Winding](https://farm9.staticflickr.com/8729/16824603131_427a42a625_z.jpg)
 
