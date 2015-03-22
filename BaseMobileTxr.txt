@@ -40,7 +40,7 @@ If you want to roll your own there is a schematic and PCB layout [available][5].
 
 ### Audio/PTT/Keyer Interface
 
-![Homebrew Audio Interface](https://farm8.staticflickr.com/7615/16885441472_d5d7d03bd5_z.jpg)
+![Homebrew Audio Interface](https://farm8.staticflickr.com/7615/16885441472_8743bbce33_z.jpg)
 
 Connected via 13-pin DIN ACC2.
 
