@@ -65,3 +65,48 @@ Raspberry Pi B+ is reportedly too slow for fldigi.
     $ cd ~WsprryPi
     $ make
     $ sudo ./wspr -o -r --self-calibration [YOUR_CALL] [YOUR_GRID] 10 40m
+
+### rtl-sdr on Raspberry Pi
+
+    sudo apt-get install git 
+    sudo apt-get install cmake
+    sudo apt-get install libusb-1.0-0.dev
+    sudo apt-get install build-essential
+
+    git clone git://git.osmocom.org/rtl-sdr.git
+    cd rtl-sdr/
+    mkdir build
+    cd build
+    cmake ../
+    make
+    sudo make install
+    sudo ldconfig
+
+To block the kernel driver from claming the device we need to blacklist it.
+
+    sudo vi /etc/modprobe.d/raspi-blacklist.conf
+
+Add the following lines:
+
+    blacklist dvb_usb_rtl28xxu
+    blacklist rtl2832
+    blacklist rtl2830
+
+To be able to run the rtl programs as a normal user you need to create a rules file for the dongle.
+
+First run lsusb.
+
+    $ lsusb
+    Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp. 
+    Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+    Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. 
+    Bus 001 Device 006: ID 0bda:2838 Realtek Semiconductor Corp. RTL2838 DVB-T
+
+The last line is the important one. Take note of the ID. The first part of it is the vendor ID and the second the product ID.
+
+Now create the file /etc/udev/rules.d/20.rtlsdr.rules with the content:
+
+    SUBSYSTEM=="usb", ATTRS{idVendor}=="0bda", ATTRS{idProduct}=="2838", GROUP="adm", MODE="0666", SYMLINK+="rtl_sdr"
+
+After these changes we need to reboot.
+
