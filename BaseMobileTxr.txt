@@ -4,7 +4,7 @@ Base/Mobile Tranceivers
 Kenwood TS-680S
 ---------------
 
-HF/6m tranceiver that run on 12-16V using just above 1.5A for RX and 20A for full power TX (if you are allowed too).
+HF/6m tranceiver that run on 12-16V using just above 1.5A for RX and 20A for full power TX.
 
 ![Kenwood TS-680S Pic](http://www.universal-radio.com/catalog/hamhf/ts680s.jpg)
 
@@ -44,7 +44,26 @@ If you want to roll your own there is a schematic and PCB layout [available][5].
 
 Connected via 13-pin DIN ACC2.
 
-Audio [interface][11] [schematic][7] and commercial [product][8].
+The optocoupler for PTT is connected in a non-inverting way to the RTS line of a USB serial port. Some friendly applications like _fldigi_ lets you configure if you want the PTT to be a logical high or low. Some applications like _WSPR_ and _wsjtx_ don't and then the optocoupler might have to be connected so it inverts the RTS line.
+
+         Non-inverting            Inverting
+    
+    --------------------------------------------- +V
+                  |               |       |
+     >-[==]-1[U]4-/               \-1[U]4-/
+             [ ]                     [ ]
+          /-2[_]3-[==]->     >-[==]-2[_]3-[==]->
+          |
+    --------------------------------------------- 0V
+
+Yaesu FT-817ND
+--------------
+
+A very portable HF-UHF all mode QRP tranceiver. A real best seller for Yeasu.
+
+![Yaesu FT-817ND Pic](http://www.universal-radio.com/catalog/hamhf/0817.jpg)
+
+General info [here][7] and [here][8].
 
 [1]:http://www.rigpix.com/kenwood/ts680s.htm
 [2]:http://www.universal-radio.com/catalog/hamhf/ts680s.html
@@ -57,6 +76,6 @@ Audio [interface][11] [schematic][7] and commercial [product][8].
 [12]:http://www.hirokichi.com/denshi/IF-10C_Compatible.htm
 
 [6]:http://www.piexx.com/index.php?main_page=product_info&products_id=21
-[7]:http://www.qsl.net/ta7i/kenwood%20sema/kw13pd.gif
-[8]:http://www.amazon.co.uk/Data-Mode-Cable-Kenwood-TS-440/dp/B00CDW6FYS
-[11]:http://www.qsl.net/zs1an/soundcard.html
+
+[7]:http://www.rigpix.com/yaesu/ft817nd.htm
+[8]:http://www.universal-radio.com/catalog/hamhf/0817.html
