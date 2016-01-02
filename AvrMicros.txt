@@ -56,27 +56,27 @@ Small packages and less I/O.
 ~ATmega series
 --------------
 
-Bigger package and more I/O.
+Bigger package and more I/O including ADC.
 
 ### ~ATmega48/88/168/328
 
 Used in most ArduinoBoards.
 
-       o
-     1 - 28
-     2 - 27
-     3 - 26
-     4 - 25
-     5 - 24
-     6 - 23
-     7 - 22
-     8 - 21
-     9 - 20
-    10 - 19
-    11 - 18
-    12 - 17
-    13 - 16
-    14 - 15
+                  o
+     RESET/PC6  1 - 28 PC5/SCL/A5
+     D0/RXD/PD0 2 - 27 PC4/SDA/A4
+     D1/TXD/PD1 3 - 26 PC3/A3
+     D2/PD2     4 - 25 PC2/A2
+     D3/PD3     5 - 24 PC1/A1
+     D4/PD4     6 - 23 PC0/A0
+     VCC        7 - 22 GND
+     GND        8 - 21 AREF
+     XTAL1/PB6  9 - 20 AVCC (need to be within 0.3V of VCC)
+     XTAL2/PB7 10 - 19 PB5/SCK/D13
+     D5/PD5    11 - 18 PB4/MISO/D12
+     D6/PD6    12 - 17 PB3/MOSI/D11
+     D7/PD7    13 - 16 PB2/D10
+     D8/PB0    14 - 15 PB1/D9
 
 * PWM pins: 6 (PB1-3, PD3, PD5-6)
 * Datasheet: <http://www.atmel.com/Images/8271s.pdf>
@@ -89,13 +89,46 @@ Used in most ArduinoBoards.
 Ports and Registers
 -------------------
 
-In the pinout diagrams above Ax and Dx represent Arduino analog and digital pins respectivly in case it is used. Arduino on ~ATtiny is a separate project and not included in the official Arduino release. How to control the pins via Arduino won't be discussed here. It is well documented in <http://arduino.cc/en/Reference/HomePage>.
+In the pinout diagrams above Ax and Dx represent Arduino analog and digital pins respectivly in case it is used. Arduino on ~ATtiny is a separate project and not included in the official Arduino release. How to control the pins via Arduino won't be discussed here. It is well documented in <http://arduino.cc/en/Reference/~HomePage>.
 
 All else is AVR pin names as in the datasheets. AVR pins are organized in ports named A to D. Which ports/pins actually exist depend on the type of AVR in use.
 
 Every port has 3 registers associated with it, DDRx, PINx, PORTx. Substitute x with A through D. These are used to control the pins.
 
+                           DDRx.n
+                              |
+                              v
+                             /-|
+    MCU Pin n of Port x ----<  |<-- PORTx.n
+                          |  \-|       |
+                          |            |
+                          |  VCC       |
+                          |   |        |
+                          |   \        |
+                          |    \ <-----/ (1 closes switch)
+                          |   o
+                          |   |
+                          |   -
+                          |   R (pull-up resistor)
+                          |   -
+                          |   |
+                          \--------> PINx.n
+    
+
+The possible combinations can be arranged in a table:
+
+                    DDRx = 0            DDRx = 1
+    PORTx = 0        high-Z             output 0
+    PORTx = 1    read with pull-up      output 1
+
 <http://www.embedds.com/controlling-avr-io-ports-with-avr-gcc/>
+
+The ATMega MCUs also have analog input and output via a built in ADC (Analog-Digital Converter). The different analog pins are multiplexed to the same ADC.
+
+<http://www.avrfreaks.net/forum/tut-c-newbies-guide-avr-adc?name=PNphpBB2&file=viewtopic&t=56429>
+
+Interupts
+---------
 
 PWM Pins
 --------
