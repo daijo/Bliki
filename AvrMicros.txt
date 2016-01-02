@@ -125,7 +125,7 @@ The possible combinations can be arranged in a table:
 
 The ATMega MCUs also have analog input and output via a built in ADC (Analog-Digital Converter). The different analog pins are multiplexed to the same ADC.
 
-<http://www.avrfreaks.net/forum/tut-c-newbies-guide-avr-adc?name=PNphpBB2&file=viewtopic&t=56429>
+<http://www.avrfreaks.net/forum/tut-c-newbies-guide-avr-adc?name=~PNphpBB2&file=viewtopic&t=56429>
 
 Interupts
 ---------
