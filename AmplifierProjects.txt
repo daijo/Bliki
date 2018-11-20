@@ -84,8 +84,8 @@ BOM:
 * 1 x Small project enclosure 1200 JPY
 
 
-LM1875 based 25W mono blocks with balanced input
-------------------------------------------------
+LM1875 based 25W mono blocks
+----------------------------
 
 For the livingroom. Using two K50 PCB kits.
 
@@ -104,12 +104,4 @@ The amps need a dual power supply (+/- 25V).
 2x 60VA 35V center tapped secondary.
 
 IEC connector with switch and fuse holder. Grounded chassi.
-
-Balanced tube preamp/buffer amplifier
--------------------------------------
-
-
-
-
-
 
