@@ -53,22 +53,10 @@ Finished!
 
 ![Final back](https://farm6.staticflickr.com/5530/9867892214_68e38b655f_z.jpg)
 
-The Zigmahornet
----------------
+Todo
+---
 
-TBD
+Measure available speakers
 
-http://fullrangedriver.com/singledriver/DIYTQ12.html
-
-Fostex FE-103En Backhorn
-------------------------
-
-TBD
-
-Fostex FE-166En BIB
--------------------
-
-TBD
-
-http://fullrangedriver.com/singledriver/DIYRH10.html
-http://www.fostexinternational.com/docs/speaker_components/pdf/FE103En.pdf
+FF-85Wk Frugalhorn Lite
+FF-125Wk/FE-126En Frugalhorn Mk3

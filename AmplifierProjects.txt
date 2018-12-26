@@ -84,10 +84,12 @@ BOM:
 * 1 x Small project enclosure 1200 JPY
 
 
-LM1875 based 25W mono blocks
-----------------------------
+LM1875 based 2x25W Chip-Amp
+---------------------------
 
-For the livingroom. Using two K50 PCB kits.
+Moving on through the DIY audio standards. Next up a "Chip-Amp" using two K50 PCB kits. A Chip-Amp is a amplifier on a chip that only requires a few additional components to filter the supply voltage, set gain and provide feedback. I basically works as an power op-amp.
+
+Things to remember is to have big enough heatsinks and that the chip mount carries the negative powerrail so it needs to be insulated from the heatsink/chassi.
 
 Similar build:
 
@@ -99,9 +101,38 @@ http://www.ti.com/product/LM1875
 
 ### Powersupply
 
-The amps need a dual power supply (+/- 25V).
+The amps need a dual power supply (+/- 25V). For this build I'm using a unregulated PSU board from the same source as the amp boards (K114).
 
-2x 60VA 35V center tapped secondary.
+80VA 2x18V.
 
 IEC connector with switch and fuse holder. Grounded chassi.
 
+First Watt F4
+-------------
+
+The F4 is a special amplifier in the sense that its voltage gain is 1. In other words it's a current source amplifer and will produce the same voltage swing on the output as on the input but with enough current as needed to maintain that voltage over the load (within reason). Because of this it will need a preamp with enough voltage gain to produce a voltage that will drive the speakers.
+
+It's also special in the sense that all power MOSFETS are arranged in a 'source-follower' configuration which adds very little to the sound passing through the amp.
+
+The output into 8ohm is 2 x 25W at 20 V P-P.
+
+- AMP PCBs and Power MOSFETS ordered
+
+- JFETS 2x2SK170 2x2SJ74
+- Passive components
+- 400VA 2x18V
+- PSU PCB https://diyaudiostore.com/collections/printed-circuit-boards/products/universal-psu
+- Chassi https://diyaudiostore.com/collections/deluxe/products/deluxe-ultimate-amplifier-chassis?variant=5967082564
+- Connectors, wiring etc
+
+http://www.firstwatt.com/f4.html
+http://www.firstwatt.com/pdf/prod_f4_man.pdf
+https://6moons.com/audioreviews/firstwatt6/f4.html
+http://www.6moons.com/audioreviews/firstwatt6/f4_3.html
+http://www.6moons.com/audioreviews/firstwatt6/f4_2.html
+https://www.diyaudio.com/forums/pass-labs/234355-guide-building-pass-f4-amplifier.html
+
+Wishlist
+--------
+
+Pre-amp (2 in 1 out, opt 12dB gain for F4 or headphones, opt balanced out)
