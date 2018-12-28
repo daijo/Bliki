@@ -116,12 +116,11 @@ It's also special in the sense that all power MOSFETS are arranged in a 'source-
 
 The output into 8ohm is 2 x 25W at 20 V P-P.
 
-- AMP PCBs and Power MOSFETS ordered
+- PSU PCB, AMP PCBs and Power MOSFETS ordered from ~DiyAudioStore.
 
 - JFETS 2x2SK170 2x2SJ74
 - Passive components
 - 400VA 2x18V
-- PSU PCB https://diyaudiostore.com/collections/printed-circuit-boards/products/universal-psu
 - Chassi https://diyaudiostore.com/collections/deluxe/products/deluxe-ultimate-amplifier-chassis?variant=5967082564
 - Connectors, wiring etc
 
